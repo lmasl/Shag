@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title><%= htmlWebpackPlugin.options.title %></title>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="container flat-menu">
+        <div class="first-logo">
+            <img src="img/logo-2.png" alt="Logo">
+        </div>
+        <div class="main-navigation">
+            <ul>
+                <li><a href="#">о нас</a></li>
+                <li><a href="#">тренинги</a></li>
+                <li><a href="#">контакты</a></li>
+            </ul>
+        </div>
+        <div class="contacts">
+            <div class="contacts__number">
+                <p>+375 (33) 640-18-11</p>
+            </div>
+            <div class="contacts__mode">
+                <p>время работы 9:00 - 19:00</p>
+            </div>
+        </div>
+        <div class="second-logo">
+            <img src="img/logo-1.png" alt="Logo">
+        </div>
+    </div> 
+ </header>
+<section class="base">
+    <div class="base-caption">
+    <div class="caption">
+        <h1>Образовательный проект</h1>
+    </div>
+    <div class="description">
+        <h2>Помогаем детям-воспитанникам <br>
+           из школ-интернатов развить навыки, <br>
+           которые дети из полноценных семей <br>
+        приобретают дома.</h2>
+    </div>
+    <div class="base-button">
+        <button id=#><p>Узнать больше</p></button>
+    </div>
+</div>
+<div class="form">
+    <div class="form-head">
+        <h2>Пожертвовать</h2>
+        <img src="img/visa.png" alt="visa">
+    </div>
+      <ul class="tab-group">
+        <li class="tab active"><a href="#signup">Сумма</a></li>
+        <li class="tab"><a href="#login">Другая сумма</a></li>
+      </ul>
+      
+      <div class="tab-content">
+        <div id="signup">   
+          
+          <form action="/" method="post">
+            <div class="field-wrap">
+            <label>
+              Назначение платежа<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                Имя<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" />
+            </div>
+        
+            <div class="field-wrap">
+              <label>
+                Фамилия<span class="req">*</span>
+              </label>
+              <input type="text"required autocomplete="off"/>
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              E-mail<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Телефон<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <button type="submit" class="button button-block">Помочь</button>
+          
+          </form>
+
+        </div>
+        
+        <div id="login">   
+          
+          <form action="/" method="post">
+          
+            <div class="field-wrap">
+            <label>
+              E-mail<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Телефон<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          
+          <button class="button button-block">Помочь</button>
+          
+          </form>
+
+        </div>
+        
+      </div>
+      
+</div>
+</section>
+<script src="js/form.js"></script>
+</body>
+
+</html>

@@ -1,9 +1,37 @@
 header {
-    background-image: url(../../images/bg-up.png);
-
-    .flat-menu {
+    .container  {
+        
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-left: 100px;
+        margin-right: 100px;
+    ul {
+         li {
+            font-size: 30px;
+            display: inline;
+            list-style-type: none;
+            font-family: a_FuturaRoundDemi;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 25px;
+            padding-left: 40px;
+        a {
+            text-decoration: none;}
+            }
+        }
+   }
+   .contacts {
+    font-family: a_FuturaRoundDemi;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #D15742;
+    text-align: center;
+    .contacts__mode {
+        font-weight: normal;
+        font-size: 18px;
     }
+   }
+   
 }

@@ -1,0 +1,31 @@
+.base {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 150px;
+    .base-caption {
+        display: flex;
+        flex-direction: column;
+       .caption {
+        font-family: a_FuturaRoundDemi;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        h1 {
+            color: #EC5F72;
+        }
+        .description {
+            h2 {
+                font-family: Ubuntu;
+                font-style: normal;
+                font-weight: normal;
+                color: #000000;
+                font-size: 50px;}
+        }
+        
+       } 
+    }
+       
+    
+}
