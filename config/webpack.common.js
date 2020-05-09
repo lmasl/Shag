@@ -9,7 +9,9 @@ module.exports = {
    *
    * The first place Webpack looks to start building the bundle.
    */
-  entry: [paths.src + '/index.js'],
+  entry: [paths.src + '/index.html',
+  paths.src + '/styles/main.scss',
+  paths.src + '/index.js',],
 
   /**
    * Output
@@ -19,7 +21,7 @@ module.exports = {
   output: {
     path: paths.build,
     filename: '[name].bundle.js',
-    publicPath: '/',
+    publicPath: './',
   },
 
   /**
