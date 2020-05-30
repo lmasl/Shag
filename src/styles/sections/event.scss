@@ -1,0 +1,22 @@
+.heading-event {
+    h1 {
+        font-family: a_FuturaRoundDemi;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 61px;
+        letter-spacing: 0.09em;
+        position: absolute;
+        z-index: 3;
+        margin-left: 35%;
+        margin-top: -1.5%;
+        color: #0A3737;
+    }
+    .bg-event {
+        img {
+        position: relative;
+        z-index: 1;
+        margin-left: 35%;
+        }
+    }
+}

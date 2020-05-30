@@ -1,0 +1,104 @@
+.team {
+    margin: 200px 100px 200px 100px;
+    .heading-team {
+        h1 {
+            font-family: a_FuturaRoundDemi;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 61px;
+            letter-spacing: 0.05em;
+            position: absolute;
+            z-index: 3;
+            margin-left: 31%;
+            margin-top: -1.5%;
+            color: #0A3737;
+        }
+        .bg-heading {
+            img {
+            position: relative;
+            z-index: 1;
+            margin-left: 35%;
+            }
+        }
+    }
+    .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+
+        .curator {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 355px;
+            height: 655px;
+            background: #FFFFFF;
+            box-shadow: 2px 4px 10px rgba(11, 60, 60, 0.3);
+            border-radius: 31px;
+            margin-right: 35px;
+            margin-top: 150px;
+        
+            .foto {
+                padding-left: 25%;
+            }
+
+            h3 {
+                font-family: Ubuntu;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 28px;
+                color: #E55266; 
+                text-align: center;
+            }
+            .function {
+                p {
+                    font-family: Ubuntu;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #000000;
+                    text-align: center;
+                }
+            }
+            .about-me {
+                p {
+                    font-family: Ubuntu;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 20px;
+                    color: #000000;
+                    padding-left: 35px;
+                }
+            }
+            .team-btn {
+                button {
+                    border:0;
+                    border-radius: 50px;
+                    outline:none;
+                    padding:15px 0;
+                    font-size:1rem;
+                    width: 150px;
+                    text-transform:uppercase;
+                    letter-spacing:.1em;
+                    background:#1DA4A4;
+                    color: #FFFFFF;
+                    transition:all.5s ease;
+                    -webkit-appearance: none;
+                    margin-left: 28%;
+                    &:hover, &:focus {
+                        background:rgb(20, 131, 131);
+                    }
+                }
+            
+            }
+            .fb {
+                margin-left: 45%;
+                margin-top: 15px;
+            }
+        }
+    }
+}

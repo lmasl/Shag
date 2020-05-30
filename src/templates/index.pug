@@ -1,0 +1,15 @@
+extends layouts/listing
+block vars
+  - title = "Template Listing"
+
+block content
+  .uk-container
+    h1 Templates Listing
+    ol
+      each item in templatelist
+        if item.indexOf('index') < 0
+          li
+            - var filename = item.replace(/\.[^/.]+$/, '')
+            +link(item, './pages/'+filename+'.html', '')(target="_blank") #{filename}
+
+    include ./components/svgicon-list

@@ -1,6 +1,5 @@
 
-
-
+import './styles/main.scss';
 
 class TestClass {
     constructor() {

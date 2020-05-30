@@ -1,0 +1,71 @@
+.what-doing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 260px;
+    margin-right: 260px;
+    padding-top: 200px;
+
+    .what-doing-heading {
+        
+        h1 {
+        font-family: a_FuturaRoundDemi;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 61px;
+        letter-spacing: 0.05em;
+        margin-top: -25px;
+        position: absolute;
+        z-index: 3;
+        margin-left: 30%;
+        margin-top: -2%;  
+        color: #0A3737;}
+        
+        
+        
+        p {
+            font-family: Ubuntu;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 32px;
+            text-align: center;
+            color: #333333;
+            
+        }
+
+        .bg-text {
+            img {
+            position: relative;
+            z-index: 1;
+            margin-left: 35%;
+        }
+        }
+        .interpretation {
+            .bg-about {
+                    img {
+                    position: relative;
+                    margin-left: 20%;
+                    margin-top: 10%;
+                    z-index: 0;
+                    }
+            }
+
+            .slip_1 {
+                position: absolute;
+                img {
+                    margin-top: -75%;
+                    margin-left: 20%;
+                }
+                
+            }
+            .slip_2 {
+                position: absolute;
+                margin-left: 60%;
+                
+            }
+            
+            
+        }
+    }
+}

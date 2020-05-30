@@ -6,4 +6,13 @@
 @import 'sections/header.scss';
 @import 'sections/base.scss';
 @import 'sections/form.scss';
+@import 'sections/about.scss';
+@import 'sections/team.scss';
+@import 'sections/event.scss';
+@import 'sections/news.scss';
 @import 'includes/normalize.scss';
+
+body {
+        
+        overflow-x:hidden;
+    }

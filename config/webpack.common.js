@@ -1,7 +1,8 @@
-const paths = require('./paths')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path');
+const paths = require('./paths');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   /**
@@ -9,10 +10,10 @@ module.exports = {
    *
    * The first place Webpack looks to start building the bundle.
    */
-  entry: [paths.src + '/index.html',
-  paths.src + '/styles/main.scss',
-  paths.src + '/index.js',],
-
+  entry: [
+    path.resolve(__dirname, '../src/index.js'),
+  ],
+  // G:\rsschool\step\Shag\src/index.html
   /**
    * Output
    *
@@ -20,7 +21,8 @@ module.exports = {
    */
   output: {
     path: paths.build,
-    filename: '[name].bundle.js',
+    // filename: '[name].bundle.js',
+    filename: 'index.js',
     publicPath: './',
   },
 
@@ -56,9 +58,9 @@ module.exports = {
      * Generates an HTML file from a template.
      */
     new HtmlWebpackPlugin({
-      title: 'Webpack Boilerplate',
-      favicon: paths.static + '/favicon.png',
-      template: paths.src + '/template.html', // template file
+      // title: 'Webpack Boilerplate',
+      // favicon: paths.static + '/favicon.png',
+      template: './src/index.html', // template file
       filename: 'index.html', // output file
     }),
   ],
@@ -78,9 +80,12 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ['babel-loader', 'eslint-loader'],
+        use: ['babel-loader'], //, 'eslint-loader'
       },
-
+      {
+        test: /\.html$/,
+        loader: 'html-loader',
+      },
       /**
        * Styles
        *

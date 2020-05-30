@@ -10,7 +10,7 @@ module.exports = merge(common, {
    * Set the mode to development or production.
    */
   mode: 'development',
-
+  watch: true,
   /**
    * Devtool
    *
@@ -26,8 +26,9 @@ module.exports = merge(common, {
   devServer: {
     historyApiFallback: true,
     contentBase: paths.build,
+    liveReload: true,
     open: true,
-    compress: true,
+    // compress: true,
     hot: true,
     port: 8080,
   },

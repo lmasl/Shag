@@ -26,9 +26,16 @@ $br: 4px;
       text-align: center;
       margin-top: -10px;
   }
+  img {
+    width: 80px;
+    height: 35px;
+  }
 
 }
-
+.form-pay {
+  display: flex;
+  flex-direction: column;
+}
 .form {
   background:#FFFFFF;
   padding: 40px;
@@ -38,6 +45,9 @@ $br: 4px;
   border-radius: 30px;
   font-family:Ubuntu;
   font-style: normal; 
+  position: absolute;
+  z-index: 5;
+  margin-left: -560px;
   a {
     text-decoration:none;
     color: #595E62;
@@ -65,6 +75,7 @@ $br: 4px;
   li a {
     display:block;
     text-decoration:none;
+    border-radius: 10px 10px 10px 10px;
     padding:15px;
     background:#FFFFFF;
     color:#333333;
@@ -167,6 +178,7 @@ textarea {
 
 .button {
   border:0;
+  border-radius: 50px;
   outline:none;
   padding:15px 0;
   font-size:1.3rem;
@@ -192,4 +204,35 @@ textarea {
 .forgot {
   margin-top:-20px;
   text-align:right;
+}
+
+.pay {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 4;
+  margin-top: 600px;
+  margin-left: -500px;
+  
+  h2 {
+    font-family: a_FuturaRoundDemi;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 32px;
+  }
+  .pay-caption {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-family: a_FuturaRoundDemi;
+      font-size: 21px;
+      line-height: 20px;
+      letter-spacing: 0.05em;
+      color: #000000;
+      img {
+        padding-right: 20px;
+        width: 50px;
+        height: 40px;
+      }
+  }
 }
