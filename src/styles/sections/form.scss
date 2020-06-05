@@ -39,15 +39,13 @@ $br: 4px;
 .form {
   background:#FFFFFF;
   padding: 40px;
-  max-width:550px;
+  max-width:520px;
   margin:40px auto;
   box-shadow: 2px 4px 10px rgba(81, 102, 102, 0.3);
   border-radius: 30px;
   font-family:Ubuntu;
   font-style: normal; 
-  position: absolute;
-  z-index: 5;
-  margin-left: -560px;
+ 
   a {
     text-decoration:none;
     color: #595E62;
@@ -204,35 +202,4 @@ textarea {
 .forgot {
   margin-top:-20px;
   text-align:right;
-}
-
-.pay {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  z-index: 4;
-  margin-top: 600px;
-  margin-left: -500px;
-  
-  h2 {
-    font-family: a_FuturaRoundDemi;
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 32px;
-  }
-  .pay-caption {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      font-family: a_FuturaRoundDemi;
-      font-size: 21px;
-      line-height: 20px;
-      letter-spacing: 0.05em;
-      color: #000000;
-      img {
-        padding-right: 20px;
-        width: 50px;
-        height: 40px;
-      }
-  }
 }

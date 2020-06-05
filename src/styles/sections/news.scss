@@ -1,5 +1,5 @@
 .news {
-    margin: 200px 100px 200px 100px;
+    margin-top: 150px;
     .heading-news {
         h1 {
             font-family: a_FuturaRoundDemi;
@@ -83,6 +83,9 @@
         }
 
         .btn-details {
+            display: flex;
+            align-items:center;
+            justify-content: center;
             button {
                 border:0;
                 border-radius: 50px;
@@ -92,6 +95,7 @@
                 letter-spacing:.1em;
                 font-family: Ubuntu;
                 font-style: normal;
+                line-height: 22px;
                 background:#1DA4A4;
                 color: #FFFFFF;
                 width: 180px;
@@ -104,10 +108,16 @@
                 &:hover, &:focus {
                     background:rgb(20, 131, 131);
                 }
-                img {   
-                    margin-top: -8px;padding-right: 4px;
+                 img {   
+                    padding-right: 4px;
                 }
             }
         }
     }
+}
+
+.network1 {
+    position: relative;
+    top: 0;
+    left: 0;
 }
