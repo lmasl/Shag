@@ -1,73 +1,69 @@
+var WebpackDevServer = require("webpack-dev-server");
 const path = require('path');
-const Dotenv = require('dotenv-webpack');
+const webpack = require('webpack');
+const sass = require('sass');
 const autoprefixer = require('autoprefixer');
 const TerserPlugin = require('terser-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  // watch: true,
-  mode: 'development', // 'production', //'development',//
-  entry: [
+  watch       : true,
+  mode        : 'development',//'production', //'development',//
+  entry       : [
+    './src/index.jade',
+    './src/scss/styles.scss',
     './src/js/index.js',
   ],
-  output: {
-    filename: 'js/script.js',
+  output      : {
+    filename  : 'js/script.js',
     publicPath: './',
-    path: path.resolve(__dirname, 'dist'),
+    path      : path.resolve(__dirname, 'dist'),
   },
   optimization: {
     minimizer: [
       new TerserPlugin(),
-    ],
+    ]
   },
-  devtool: 'inline-source-map',
-  module: {
+  // devtool:'inline-source-map',
+  module      : {
     rules: [
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
+        test   : /\.js$/,
         include: path.resolve(__dirname, 'src/js'),
-        use: [
-          // {
-          // loader : 'babel-loader',
-          // options: {
-          //     presets: ['@babel/preset-env']
-          // },
-          {
-            loader: 'eslint-loader',
-            options: {
-              // cache: true,
-            },
-          },
-        ],
+        // use    : {
+        //     loader : 'babel-loader',
+        //     options: {
+        //         presets: ['@babel/preset-env']
+        //     }
+        // }
       },
       {
         test: /\.html$/,
         // loader: 'html-loader'
-        use: {
-          loader: 'html-loader',
+        use : {
+          loader : 'html-loader',
           options: {
             // conservativeCollapse: false,
             // minimize            : true,
-            attrs: ['link:href', 'link:type'],
+            attrs               : ['link:href', 'link:type'],
           },
         },
       },
       {
         test: /\.jade$/,
-        use: [
+        use : [
           'html-loader',
           // 'raw-loader',
-          'pug-html-loader',
+          'pug-html-loader'
         ],
 
       },
       {
         test: /\.css$/,
         // exclude: /slick/,
-        use: [
+        use : [
           'style-loader',
           MiniCssExtractPlugin.loader,
           'css-loader',
@@ -75,75 +71,60 @@ module.exports = {
       },
       {
         test: /\.(sa|sc|c)ss$/,
-        use: [
+        use : [
           'style-loader',
           {
-            loader: MiniCssExtractPlugin.loader,
+            loader : MiniCssExtractPlugin.loader,
             options: {
-              publicPath: '../',
-            },
+              publicPath: '../'
+            }
           },
           {
-            loader: 'css-loader',
+            loader : 'css-loader',
             options: {
-              modules: false,
-            },
+              modules: false
+            }
           },
           {
-            loader: 'postcss-loader',
+            loader : 'postcss-loader',
             options: {
               autoprefixer: {
                 browsers: ['last 2 versions'],
-              },
-            },
+              }
+            }
           },
           // 'resolve-url-loader',
           'sass-loader',
           // 'resolve-url'
         ],
       },
+
       {
-        test: /\.(png|jpe?g|gif|svg)$/i,
-        use: [
+        test: /\.(png|jpe?g|gif|svg|)$/i,
+        use : [
           {
-            loader: 'file-loader',
+            loader : 'file-loader',
             options: {
-              name: '[name].[ext]', // [folder]/
-              outputPath: 'images',
-              esModule: false,
+              name           : '[folder]/[name].[ext]',
+              outputPath     : 'images',
+              esModule       : false,
               useRelativePath: true,
 
             },
-          },
-        ],
+          }
+        ]
       },
       {
-        test: /\.(mp3)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[folder]/[name].[ext]',
-              outputPath: 'media',
-              esModule: false,
-              // useRelativePath: true,
-            },
-          },
-        ],
-      },
-      {
-        test: /\.(ttf|otf|webp|eot|woff|woff2)$/i, //
-        loader: 'file-loader',
+        test   : /\.(ttf|otf|webp|eot|woff|woff2)$/i, //
+        loader : 'file-loader',
         options: {
-          name: '[name].[ext]',
+          name      : '[name].[ext]',
           outputPath: 'fonts',
         },
       },
-    ],
+    ]
   },
-  plugins: [
-    // new CleanWebpackPlugin(),
-    new Dotenv(),
+  plugins     : [
     new MiniCssExtractPlugin({
       filename: 'css/styles.css',
     }),
@@ -151,13 +132,12 @@ module.exports = {
       filename: 'index.html',
       template: './src/index.jade',
     }),
-    // new PreloadWebpackPlugin(),
-    autoprefixer,
+    autoprefixer
   ],
-  devServer: {
+  devServer   : {
     // contentBase: [path.join(__dirname, 'dist'), path.join(__dirname, 'src')]
-    contentBase: './dist',
+    contentBase     : './dist',
     watchContentBase: true,
-    port: 9001,
+    port            : 9001
   },
 };

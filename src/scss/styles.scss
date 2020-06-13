@@ -1,8 +1,124 @@
+@import "reset";
+@import "fonts";
+@import "settings";
+
 .wr-doing{
+  .container{
+    @media all and (max-width: 414px) {
+      padding: 0 20px;
+    }
+  }
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 923px;
   width: 100%;
-  height: 500px;
-  background-image: url("../images/snake.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 100%;
+  height: min-content;
+  .snake-background{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 90%;
+  }
+}
+
+.spot{
+  width: 100%;
+  position: relative;
+  &:nth-of-type(2n){
+    align-self: flex-end;
+  }
+
+  @media all and (max-width: 550px) {
+    position: static;
+    &:nth-of-type(2n){
+      align-self: flex-start;
+    }
+    .spot-bkg{
+      width: auto;
+      height: auto;
+    }
+  }
+}
+.spot-1{
+  max-width: 508px;
+  top: 20px;
+  right: 50px;
+}
+.spot-2{
+  max-width: 502px;
+  top: 20px;
+  right: 50px;
+}
+.spot-3{
+  max-width: 488px;
+  left: -40px;
+}
+.spot-4{
+  max-width: 485px;
+  top: -70px;
+  right: -40px;
+  @media all and (max-width: 924px) {
+    position: static;
+    top: -20px;
+  }
+}
+.spot-5{
+  max-width: 502px;
+  top: -25px;
+  left: 67px;
+  @media all and (max-width: 769px) {
+    top: 0px;
+    left: 0px;
+  }
+}
+.spot-6{
+  max-width: 482px;
+  right: 60px;
+  top: -10px;
+}
+
+
+.spot-wrapper {
+  position: relative;
+  .spot-bkg{
+    width: 100%;
+    height: auto;
+  }
+  .bkg{
+    width: 100%;
+    height: auto;
+  }
+  .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    img{
+      width: 24%;
+      margin-right: 7%;
+    }
+    p{
+      font-family: "Ubuntu";
+      font-size: 24px;
+      width: 280px;
+      @media all and (max-width: 550px) {
+        font-size: 20px;
+      }
+      @media all and (max-width: 340px) {
+        font-size: 17px;
+      }
+    }
+  }
+
 }
