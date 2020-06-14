@@ -189,7 +189,7 @@
             <img src="./images/btn.png" alt="button">
             <p>Мы рядом</p>
         </div>
-        <div class="pay-bg">
+        <!-- <div class="pay-bg">
           <svg class="elem-3" width="430" height="383" viewBox="0 0 430 383" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M80 339.966C27.2 353.737 4.66667 374.393 0 383H430V-0.000244141C302 8.6065 278 182.893 250 251.747C222 320.601 146 322.753 80 339.966Z" fill="#FF8DA9"/>
           </svg>
@@ -197,43 +197,60 @@
             <path d="M29.3028 180.412C-6.56026 125.618 50.3907 59.6421 83.3491 33.5032C97.1768 26.4276 122.874 19.9616 153 25.1557L153 237.778C124.063 229.511 66.7839 237.677 29.3028 180.412Z" fill="#FFF968"/>
           </svg>
             
-        </div>
+        </div> -->
       </div>
     </div>
-  <section class="what-doing">
-    <div class="what-doing-heading">
-        <h1>Что мы делаем?</h1>
-          <div class="bg-text">
-            <img src="./images/heading.png">
+    <section class="wr-doing">
+      <div class="wr-container">
+        <div class="wrapper">
+          <svg class="snake-background">
+            <use xlink:href="#snake"></use>
+          </svg>
+          <div class="spot spot-1">
+            <div class="spot-wrapper"><img class="spot-bkg" src="./images/spot1.png" alt="step-background">
+              <div class="content"><img class="icon" src="./images/spot1-icon.png" alt="step-icon">
+                <p>Учим воспитанников распределять бюджет</p>
+              </div>
+            </div>
           </div>
-        <p>Проводим тренинги-интерактивы для детей, где:</p>
-    </div>
-    <div class="interpretation">
-        <div class="bg-about">
-          <svg width="928" height="1115" viewBox="0 0 928 1115" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M214.224 80.5808C214.224 80.5808 670.516 -21.375 755.503 8.07912C840.491 37.5332 943.789 103.145 922.619 197.737C901.449 292.33 341.205 272.237 229.619 286.737C118.032 301.237 -31.0372 359.237 55.2474 603.737C141.532 848.237 465.159 562.737 788.032 562.737C956.032 562.737 936.119 772.237 874.123 801.952C605.808 930.557 158.763 646.262 19.032 883.737C-11.9634 936.415 -1.09304 1018.34 55.2473 1085.24C106.618 1146.23 436.119 1085.24 436.119 1085.24" stroke="#1DA4A4" stroke-width="4" stroke-linecap="round" stroke-dasharray="4 12"/>
-            </svg>            
+          <div class="spot spot-2">
+            <div class="spot-wrapper"><img class="spot-bkg" src="./images/spot2.png" alt="step-background">
+              <div class="content"><img class="icon" src="./images/spot2-icon.png" alt="step-icon">
+                <p>Объясняем, как выбирать продукты в магазине</p>
+              </div>
+            </div>
+          </div>
+          <div class="spot spot-3">
+            <div class="spot-wrapper"><img class="spot-bkg" src="./images/spot3.png" alt="step-background">
+              <div class="content"><img class="icon" src="./images/spot3-icon.png" alt="step-icon">
+                <p>Учим, как платить за коммунальные услуги</p>
+              </div>
+            </div>
+          </div>
+          <div class="spot spot-4">
+            <div class="spot-wrapper"><img class="spot-bkg" src="./images/spot4.png" alt="step-background">
+              <div class="content"><img src="./images/spot4-icon.png" alt="step-icon">
+                <p>Объясняем, что такое кредиты</p>
+              </div>
+            </div>
+          </div>
+          <div class="spot spot-5">
+            <div class="spot-wrapper"><img class="spot-bkg" src="./images/spot5.png" alt="step-background">
+              <div class="content"><img class="icon" src="./images/spot5-icon.png" alt="step-icon">
+                <p>Учим пользоваться банковскими картами</p>
+              </div>
+            </div>
+          </div>
+          <div class="spot spot-6">
+            <div class="spot-wrapper"><img class="spot-bkg" src="./images/spot6.png" alt="step-background">
+              <div class="content"><img class="icon" src="./images/spot6-icon.png" alt="step-icon">
+                <p>Рассказываем, какие бывают документы</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="slip_1">
-          <img src="./images/1.png" alt="picture">
-        </div>
-        <div class="slip_2">
-          <img src="./images/2.png" alt="picture">
-        </div>
-        <div class="slip_3">
-          <img src="./images/3.png" alt="picture">
-        </div>
-        <div class="slip_4">
-          <img src="./images/4.png" alt="picture">
-        </div>
-        <div class="slip_5">
-          <img src="./images/5.png" alt="picture">
-        </div>
-        <div class="slip_6">
-          <img src="./images/6.png" alt="picture">
-        </div>
-    </div>
-  </section>
+      </div>
+    </section>
 
   <section class="team">
      <div class="heading-team">
@@ -474,3 +491,11 @@
 </body>
 
 </html>
+
+<svg display="none">
+  <defs>
+    <symbol id="snake" viewBox="0 0 928 1115" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M214.224 80.5808C214.224 80.5808 670.516 -21.375 755.503 8.07912C840.491 37.5332 943.789 103.145 922.619 197.737C901.449 292.33 341.205 272.237 229.619 286.737C118.032 301.237 -31.0372 359.237 55.2474 603.737C141.532 848.237 465.159 562.737 788.032 562.737C956.032 562.737 936.119 772.237 874.123 801.952C605.808 930.557 158.763 646.262 19.032 883.737C-11.9634 936.415 -1.09304 1018.34 55.2473 1085.24C106.618 1146.23 436.119 1085.24 436.119 1085.24" stroke="#1DA4A4" stroke-width="4" stroke-linecap="round" stroke-dasharray="4 12"></path>
+    </symbol>
+  </defs>
+</svg>

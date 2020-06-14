@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+ul {
+  list-style-type: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  outline: inherit;
+}
+h2, h3 {
+  font-family: "Lato-Black";
+}
+h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  letter-spacing: -0.4px;
+}
+h3 {
+  font-size: 18px;
+}
+.wr-container {
+  max-width: 1020px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+
+
+
