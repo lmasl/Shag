@@ -41,6 +41,11 @@ $br: 4px;
 .form-pay {
   display: flex;
   flex-direction: column;
+  background-image: url(./../images/bg-right.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 85%;
+  background-position: right 0% bottom 0%;
 }
 .form {
   background:#FFFFFF;
@@ -51,6 +56,7 @@ $br: 4px;
   border-radius: 30px;
   font-family:Ubuntu;
   font-style: normal; 
+  margin-right: 100px;
  
   a {
     text-decoration:none;
@@ -209,3 +215,46 @@ textarea {
   margin-top:-20px;
   text-align:right;
 }
+.erip-pay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 50px;
+  margin-bottom: 150px;
+
+  }
+
+  
+  .pay {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 30px;
+      padding-left: 50px;
+      
+      
+      h2 {
+      font-family: a_FuturaRoundDemi;
+      font-weight: bold;
+      font-size: 25px;
+      line-height: 32px;
+      }
+      .pay-caption {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          font-family: a_FuturaRoundDemi;
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: 0.05em;
+          color: #000000;
+          
+          img {
+          padding-right: 20px;
+          width: 50px;
+          height: 40px;
+          }
+      }
+  }
+ 

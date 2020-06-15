@@ -2,13 +2,20 @@
     display: flex;
      flex-direction: row;   
     justify-content: space-between;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 150px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    background-image: url(./../images/bg-left.png);
+    background-repeat: no-repeat;
+    background-position: left 0% bottom 0%;
+    background-size: 65% 60%;
+    
 
     .base-caption {
         display: flex;
         flex-direction: column;
+        margin-top: 70px;
+        margin-left: 100px;
+        
        .caption {
         font-family: a_FuturaRound;
         font-style: normal;
@@ -24,6 +31,7 @@
        } 
     }
     .description {
+        
         p {
             font-family: Ubuntu;
             color: #000;
@@ -49,7 +57,7 @@
         line-height: 28px;
         text-transform: uppercase;
         color: #0B6B6B;
-        padding: 0px 20px 0px 20px;
+        padding: 0px 20px;
         margin-left: 40%;
 
 
@@ -74,87 +82,77 @@
 }
 
 
-.erip-pay {
+
+.social-icons {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-top: 50px;
-    margin-bottom: 150px;
-
-    .social-icons {
-        display: flex;
-        flex-direction: row;
-        .social-icon {
-            position: absolute;
-            z-index: 2;
-        }
-        .social-icons-bg {
-            .elem-1 {
-                position: relative;
-                z-index: 0;
-                margin-left: -150px;
-                 margin-top: -200px;
-            }
-
-            .elem-2 {
-                position: relative;
-                z-index: 1;
-                margin-left: -600px;
-            }
-        }
-        // background-image: url(./../images/bg-left.png);
-        // background-repeat: no-repeat;
-        // padding-right: 480px;
-        // padding-top: 200px;
+    margin-top: 270px;
+    .social-icon {
+    
+       margin-right: 10px;
     }
+    
+}
+// .erip-pay {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     margin-left: 150px;
+//     margin-right: 150px;
+//     margin-top: 50px;
+//     margin-bottom: 150px;
+
+//         // background-image: url(./../images/bg-left.png);
+//         // background-repeat: no-repeat;
+//         // padding-right: 480px;
+//         // padding-top: 200px;
+//     }
 
     
-    .pay {
-        display: flex;
-        flex-direction: column;
-        background-image: url(./../images/bg-right.png);
-        background-repeat: no-repeat;
-        background-position: right;
-        margin-right: -150px;
-        background-size: contain;
+//     .pay {
+//         display: flex;
+//         flex-direction: column;
+//         // background-image: url(./../images/bg-right.png);
+//         // background-repeat: no-repeat;
+//         // background-position: right;
+//         // margin-right: -150px;
+//         // background-size: contain;
         
         
-        h2 {
-        font-family: a_FuturaRoundDemi;
-        font-weight: bold;
-        font-size: 25px;
-        line-height: 32px;
-        }
-        .pay-caption {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            font-family: a_FuturaRoundDemi;
-            font-size: 14px;
-            line-height: 17px;
-            letter-spacing: 0.05em;
-            color: #000000;
+//         h2 {
+//         font-family: a_FuturaRoundDemi;
+//         font-weight: bold;
+//         font-size: 25px;
+//         line-height: 32px;
+//         }
+//         .pay-caption {
+//             display: flex;
+//             flex-direction: row;
+//             align-items: center;
+//             font-family: a_FuturaRoundDemi;
+//             font-size: 14px;
+//             line-height: 17px;
+//             letter-spacing: 0.05em;
+//             color: #000000;
             
-            img {
-            padding-right: 20px;
-            width: 50px;
-            height: 40px;
-            }
-        }
-    }
-    .pay-bg {
-        .elem-3 {
-            position: relative;
-            z-index: 1;
-            margin-left: 60%;
-            margin-top: -180px;
-        }
-        .elem-4 {
-            position: relative;
-            z-index: 2;
-            margin-left: 100%;
-        }
-    }
-}
+//             img {
+//             padding-right: 20px;
+//             width: 50px;
+//             height: 40px;
+//             }
+//         }
+//     }
+//     .pay-bg {
+//         .elem-3 {
+//             position: relative;
+//             z-index: 1;
+//             margin-left: 60%;
+//             margin-top: -180px;
+//         }
+//         .elem-4 {
+//             position: relative;
+//             z-index: 2;
+//             margin-left: 100%;
+//         }
+//     }
+// }

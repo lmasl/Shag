@@ -1,16 +1,20 @@
-.wave{
-    position: relative;
-    width: 100%;
-}
-.letters{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 42vw;
-    margin-top: 727vh;
-}
+// .wave{
+//     position: relative;
+//     width: 100%;
+// }
+// .letters{
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     width: 42vw;
+//     margin-top: 727vh;
+// }
 .foother {
-    
+   
+    background-image: url(./../images/foother.png);
+    background-size: 100% 95%;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
     .heading-foother{
         
         
@@ -25,6 +29,7 @@
             position: absolute;
             z-index: 3;
             margin-left: 39%;
+            // background-image: url(./../images/bg-heading.png);
         }
         .bg-heading {
             margin-left: 39%;
@@ -37,7 +42,8 @@
         flex-direction: row;
         margin-left: 100px;
         margin-right: 100px;
-        margin-top: 200px;
+        margin-top: 70px;
+        margin-bottom: 250px;
         align-items:center;
         justify-content: space-between;
         font-family: Ubuntu;
@@ -67,19 +73,17 @@
         font-weight: normal;
         font-size: 20px;
         line-height: 23px;
+        margin-left: 100px;
+        margin-right: 100px;
 
         color: #FFFFFF;
 
-        position: absolute;
-        z-index: 4;
-        margin-top: 170px;
-        margin-left: 100px;
+       
 
         .social-icons {
             display: flex;
             flex-direction: row;
-            margin-top: 270px;
-            margin-left: 280px;
+            
 
             img {
                 padding-left: 10px;
