@@ -1,0 +1,122 @@
+.project-history {
+    background-image: url(./../images/bg-history.png),
+                    url(./../images/bg-history-2.png);
+    background-repeat: no-repeat;
+    background-position: left bottom, right top;
+    padding-top: 200px; 
+    padding-bottom: 300px;
+    margin-bottom: 100px;
+    
+    .heading-history {
+        h1 {
+            font-family: a_FuturaRoundDemi;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 61px;
+            letter-spacing: 0.05em;
+            margin-top: -2%;
+            position: absolute;
+            z-index: 3;
+            margin-left: 40%;
+           
+        }
+        .bg-heading {
+            margin-left: 39%;
+            position: relative;
+        }
+    }
+    .content {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-top: 100px;
+        
+        .history-content-1 {
+            margin-right: 70px;
+           p {
+            font-family: Ubuntu;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 21px;
+            color: #1F1F1F;  
+           } 
+        }
+        .history-content-2 {
+           
+            h5 {
+                font-family: Ubuntu;
+                font-style: italic;
+                font-size: 25px;
+                line-height: 110%;
+                color: #FFFFFF;
+                 padding: 100px;
+                 background-image: url(./../images/bg-birth.png);
+                 background-repeat: no-repeat;
+                 background-size:contain;
+            }
+            p {
+                font-family: Ubuntu;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 18px;
+                line-height: 21px;
+                color: #1F1F1F; 
+                margin-left: 40px; 
+            } 
+        }
+        .description-history {
+            h5 {
+                font-family: Ubuntu;
+                font-style: italic;
+                font-weight: bold;
+                font-size: 30px;
+                line-height: 130%;
+                color: #0D9797;
+            }
+        }
+        .schedule {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #FFFFFF;
+            background: #FFFFFF;
+            box-shadow: 2px 4px 10px rgba(11, 60, 60, 0.3);
+            border-radius: 46px;
+            width: 590px;
+            height: 750px;
+            margin-top: 50px;
+            h4 {
+                font-family: Ubuntu;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 30px;
+                line-height: 39px;
+                text-indent: 8px;
+                color: #0A8B8B;
+                text-align: center;
+                margin-top: 50px;
+            }
+            .point {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-left: 70px;
+                margin-right: 70px;
+
+                p {
+                    margin-left: 15px;
+                    font-family: Ubuntu;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 20px;
+                    color: #0A8B8B;
+                }
+               
+            }
+        }
+    }
+}

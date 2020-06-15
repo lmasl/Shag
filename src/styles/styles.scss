@@ -122,3 +122,37 @@
   }
 
 }
+.heading-doing {
+  margin-bottom: 100px;
+  h1 {
+    font-family: a_FuturaRoundDemi;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 61px;
+    letter-spacing: 0.05em;
+    position: absolute;
+    z-index: 3;
+    margin-left: 36%;
+    margin-top: -1.5%;
+    color: #0A3737;
+  }
+  .bg-heading {
+      img {
+      position: relative;
+      z-index: 1;
+      margin-left: 35%;
+      }
+  }
+  .doing-description {
+    p {
+      font-family: Ubuntu;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 32px;
+      line-height: 130%;
+      text-align: center;
+      color: #333333;
+    }
+  }
+}

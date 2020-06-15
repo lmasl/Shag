@@ -63,6 +63,24 @@ module.exports = {
       template: './src/index.html', // template file
       filename: 'index.html', // output file
     }),
+    new HtmlWebpackPlugin({
+      // title: 'Webpack Boilerplate',
+      // favicon: paths.static + '/favicon.png',
+      template: './src/about.html', // template file
+      filename: 'about.html', // output file
+    }),
+    new HtmlWebpackPlugin({
+      // title: 'Webpack Boilerplate',
+      // favicon: paths.static + '/favicon.png',
+      template: './src/event.html', // template file
+      filename: 'event.html', // output file
+    }),
+    new HtmlWebpackPlugin({
+      // title: 'Webpack Boilerplate',
+      // favicon: paths.static + '/favicon.png',
+      template: './src/contacts.html', // template file
+      filename: 'contacts.html', // output file
+    }),
   ],
 
   /**
