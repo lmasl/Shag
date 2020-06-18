@@ -1,6 +1,4 @@
 
-
-
 .heading-event {
     h1 {
         font-family: a_FuturaRoundDemi;
@@ -27,8 +25,107 @@
 
 
 
-.event-background {
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0 0 5px;
+}
+
+
+/* Faq */
+
+.faq {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.faq-item {
+    margin-bottom: 5px;
+
+    background: #FFFFFF;
+/* 1 */
+
+    box-shadow: 2px 4px 10px rgba(11, 60, 60, 0.3);
+    border-radius: 30px;
+}
+
+.faq-title {
+    display: block;
+    padding: 30px 35px 30px 35px;
     position: relative;
-    width: 100%;
+    color:#000000;
+    cursor: pointer;
+
+}
+
+.faq-title:after {
+    content: "";
+    display: block;
+
+    border-style: solid;
+    border-width: 8px 5px 0 5px;
+    border-color: #0A8B8B transparent transparent transparent;
+
+    position: absolute;
+    top: 50%;
+    right: 45px;
+
+    transform: translateY(-10%);
+}
+
+.faq-title:hover {
+    background-color: #DCDFDF;
+    border-radius: 30px;
+}
+
+.faq-input {
+    width: 0;
+    height: 0;
+
+    -webkit-appearance: none;
+    appearance: none;
+
+    position: absolute;
+}
+
+.faq-input:checked ~ .faq-title {
+    background-color:  #DCDFDF;
+    border-radius: 30px;
+}
+
+.faq-input:checked ~ .faq-title:after {
+    border-style: solid;
+    border-width: 0 5px 8px 5px;
+    border-color: transparent transparent #0A8B8B transparent;
    
+}
+
+.faq-input:checked ~ .faq-text {
+    display: block;
+}
+
+.faq-text {
+    display: none;
+    padding: 10px 15px;
+
+  color: #000000;
+    font-size: 14px;
+}
+
+
+.faq-description {
+  color: #000000;
+}
+span {
+  margin-right: 15%;
+
+}
+.data {
+  color: #E55266;
 }

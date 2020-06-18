@@ -156,3 +156,37 @@
 //         }
 //     }
 // }
+@media (max-width: 1024px ) {
+
+    .base {
+    
+        background-size: 107% 60%;
+        
+    
+        .base-caption {
+           
+            margin-top: 70px;
+            margin-left: 40px;
+            margin-right: 40px;
+            
+           .caption {
+            font-size: 30px;
+            line-height: 110%;
+            letter-spacing: 0.05em;
+            color: #EC5F72;
+            h1 {
+                font-size: 38px;}
+            
+           } 
+        }
+        .base-button {
+            margin-top: 30px;
+            button {
+            
+            font-size: 16px;
+           
+            padding: 0px 15px;
+            }
+        }
+    }
+}

@@ -92,3 +92,27 @@
         }
     }
 }
+
+@media (max-width: 1024px ) {
+
+    .foother {
+   
+        background-image: url(./../images/f-bg-min.png);
+        background-size: 100% 65%;
+        background-repeat: no-repeat;
+        background-position-y: 100%;
+        
+    
+        .foother-content {
+            margin-left: 80px;
+            margin-right: 80px;
+        
+           
+            .unit-3 {
+                display: none;
+            }
+           
+        }
+    
+    }
+}

@@ -33,8 +33,8 @@ $br: 4px;
       color: #333333;
   }
   img {
-    width: 80px;
-    height: 35px;
+    width: 70px;
+    height: 30px;
   }
 
 }
@@ -258,3 +258,10 @@ textarea {
       }
   }
  
+  @media (max-width: 1024px ) {
+    .form-pay {
+      
+      background-image: none;
+     
+    }
+  }

@@ -18,11 +18,11 @@
             margin-top: -2%;
             position: absolute;
             z-index: 3;
-            margin-left: 40%;
+            margin-left: 37%;
            
         }
         .bg-heading {
-            margin-left: 39%;
+            margin-left: 36%;
             position: relative;
         }
     }
@@ -31,8 +31,8 @@
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 180px;
+        padding-right: 180px;
         margin-top: 100px;
         
         .history-content-1 {
@@ -41,7 +41,7 @@
             font-family: Ubuntu;
             font-style: normal;
             font-weight: 900;
-            font-size: 18px;
+            font-size: 20px;
             line-height: 21px;
             color: #1F1F1F;  
            } 
@@ -63,13 +63,14 @@
                 font-family: Ubuntu;
                 font-style: normal;
                 font-weight: 900;
-                font-size: 18px;
+                font-size: 20px;
                 line-height: 21px;
                 color: #1F1F1F; 
                 margin-left: 40px; 
             } 
         }
         .description-history {
+           
             h5 {
                 font-family: Ubuntu;
                 font-style: italic;
@@ -108,7 +109,7 @@
                 margin-right: 70px;
 
                 p {
-                    margin-left: 15px;
+                    margin-left: 20px;
                     font-family: Ubuntu;
                     font-style: normal;
                     font-weight: 900;
@@ -116,6 +117,220 @@
                     color: #0A8B8B;
                 }
                
+            }
+        }
+    }
+}
+
+.founders {
+   padding-bottom: 200px;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-image:  url(./../images/history-bg-1.png),
+                   url(./../images/history-bg-2.png),
+                   url(./../images/history-bg-1.png);
+  background-repeat: no-repeat;
+  background-position: left top,                    
+                    right top 55%,
+                    left top 110%;
+
+  background-size: 100% 40%;
+
+    .heading-founders {
+        margin-bottom: 100px;
+        
+        h1 {
+            font-family: a_FuturaRoundDemi;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 61px;
+            letter-spacing: 0.05em;
+            margin-top: -2%;
+            position: absolute;
+            z-index: 3;
+            // margin-left: 37%;
+           
+        }
+        .bg-heading {
+            // margin-left: 36%;
+            position: relative;
+        }
+    }
+    .wr-founders {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+       
+       
+
+        .photo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-top: 20px;
+
+            .icon {
+                margin-top: 10px;
+                width: 55px;
+            }
+        }
+
+        .info-founders {
+          display: flex;
+          flex-direction: column;
+          border: 1px solid #FFFFFF;
+          background: #FFFFFF;
+          box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+          border-radius: 46px;
+          padding: 40px;
+          width: 670px;
+          margin-top: 100px;
+          margin-bottom: 50px;
+          h4 {
+            font-family: Ubuntu;
+            font-size: 35px;
+            line-height: 44px;
+            color: #E5445A;
+          }
+          .function {
+            font-family: Ubuntu;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 23px; 
+            color: #0D9797; 
+                  
+          }
+
+          .story {
+            font-family: Ubuntu;
+            font-style: normal;
+            font-weight: 840;
+            font-size: 16px;
+            line-height: 21px;
+            color: #0A3737;
+           
+  
+          }
+          .quotation {
+            font-family: Ubuntu;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 130%;
+            color: #0A8B8B;
+            
+          }
+          .quotation-1 {
+            font-family: Ubuntu;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 26px;
+            color: #E5445A; 
+              
+          }
+        }
+    }
+}
+
+@media (max-width: 1024px ) {
+    header {
+    
+       .contacts {
+        display: none;
+       }
+       
+    }
+   
+    .second-logo {
+        display: none;
+    }
+    .project-history {
+        background-image: url(./../images/bg-history.png),
+                        url(./../images/bg-history-2.png);
+        background-repeat: no-repeat;
+        background-position: left bottom, right top;
+        padding-top: 100px; 
+        padding-bottom: 100px;
+        margin-bottom: 100px;
+        
+        .heading-history {
+            h1 {
+                margin-left: 30%;
+               
+            }
+            .bg-heading {
+                margin-left: 29%;
+                
+            }
+        }
+        .content {
+            
+            justify-content: center;
+            padding-left: 180px;
+            padding-right: 180px;
+            margin-top: 100px;
+            
+            .history-content-1 {
+                img {
+                    display:none;
+                }
+            }
+        } 
+    }
+    .founders {
+        padding-bottom: 200px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+         .heading-founders {
+             
+             
+             h1 {
+            
+                 margin-left: 30%;
+                
+             }
+             .bg-heading {
+                 margin-left: 29%;
+                
+             }
+        }
+        .wr-founders {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+           
+    
+            .photo {
+            
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top: 20px;
+    
+            }
+    
+            .info-founders {
+              display: flex;
+              flex-direction: column;
+              border: 1px solid #FFFFFF;
+              background: #FFFFFF;
+              box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+              border-radius: 46px;
+              padding: 40px;
+              width: 600px;
+              margin-top: 100px;
+              margin-bottom: 50px;
             }
         }
     }
