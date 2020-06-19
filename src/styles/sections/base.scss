@@ -1,21 +1,21 @@
 .base {
     display: flex;
-     flex-direction: row;   
+     flex-direction: row;
     justify-content: space-between;
     margin-top: 50px;
     margin-bottom: 150px;
-    background-image: url(./../images/bg-left.png);
+    background-image: url("/images/bg-left.png");
     background-repeat: no-repeat;
     background-position: left 0% bottom 0%;
     background-size: 65% 60%;
-    
+
 
     .base-caption {
         display: flex;
         flex-direction: column;
         margin-top: 70px;
         margin-left: 100px;
-        
+
        .caption {
         font-family: a_FuturaRound;
         font-style: normal;
@@ -27,11 +27,11 @@
         h1 {
             color: #EC5F72;
             font-size: 48px;}
-        
-       } 
+
+       }
     }
     .description {
-        
+
         p {
             font-family: Ubuntu;
             color: #000;
@@ -49,7 +49,7 @@
         box-shadow: 7px 11px 19px rgba(0, 83, 83, 0.2);
         border-radius: 50px;
         cursor:pointer;
-        transition:all.5s ease; 
+        transition:all.5s ease;
         font-family: Ubuntu;
         font-style: normal;
         font-weight: 500;
@@ -76,22 +76,20 @@
           }
       }
     }
-    
-    
+
+
 
 }
-
-
 
 .social-icons {
     display: flex;
     flex-direction: row;
     margin-top: 270px;
     .social-icon {
-    
+
        margin-right: 10px;
     }
-    
+
 }
 // .erip-pay {
 //     display: flex;
@@ -108,7 +106,7 @@
 //         // padding-top: 200px;
 //     }
 
-    
+
 //     .pay {
 //         display: flex;
 //         flex-direction: column;
@@ -117,8 +115,8 @@
 //         // background-position: right;
 //         // margin-right: -150px;
 //         // background-size: contain;
-        
-        
+
+
 //         h2 {
 //         font-family: a_FuturaRoundDemi;
 //         font-weight: bold;
@@ -134,7 +132,7 @@
 //             line-height: 17px;
 //             letter-spacing: 0.05em;
 //             color: #000000;
-            
+
 //             img {
 //             padding-right: 20px;
 //             width: 50px;
@@ -159,16 +157,16 @@
 @media (max-width: 1024px ) {
 
     .base {
-    
+
         background-size: 107% 60%;
-        
-    
+
+
         .base-caption {
-           
+
             margin-top: 70px;
             margin-left: 40px;
             margin-right: 40px;
-            
+
            .caption {
             font-size: 30px;
             line-height: 110%;
@@ -176,15 +174,15 @@
             color: #EC5F72;
             h1 {
                 font-size: 38px;}
-            
-           } 
+
+           }
         }
         .base-button {
             margin-top: 30px;
             button {
-            
+
             font-size: 16px;
-           
+
             padding: 0px 15px;
             }
         }

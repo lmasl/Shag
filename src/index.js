@@ -1,10 +1,7 @@
 
 import './styles/main.scss';
+import Tabs from './js/tabs';
 
-class TestClass {
-    constructor() {
-        let msg = "Using ES2015+ syntax";
-        console.log(msg);
-    }
-}
-let test = new TestClass();
+(() => {
+  const donationTabs = new Tabs('.tab', 'active', (el, index) => {console.log(el, index)});
+})();
