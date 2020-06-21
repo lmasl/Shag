@@ -1,12 +1,12 @@
 .project-history {
-    background-image: url(./../images/bg-history.png),
-                    url(./../images/bg-history-2.png);
+    background-image: url(/images/bg-history.png),
+                    url(/images/bg-history-2.png);
     background-repeat: no-repeat;
     background-position: left bottom, right top;
-    padding-top: 200px; 
+    padding-top: 200px;
     padding-bottom: 300px;
     margin-bottom: 100px;
-    
+
     .heading-history {
         h1 {
             font-family: a_FuturaRoundDemi;
@@ -19,7 +19,7 @@
             position: absolute;
             z-index: 3;
             margin-left: 37%;
-           
+
         }
         .bg-heading {
             margin-left: 36%;
@@ -34,7 +34,7 @@
         padding-left: 180px;
         padding-right: 180px;
         margin-top: 100px;
-        
+
         .history-content-1 {
             margin-right: 70px;
            p {
@@ -43,11 +43,11 @@
             font-weight: 900;
             font-size: 20px;
             line-height: 21px;
-            color: #1F1F1F;  
-           } 
+            color: #1F1F1F;
+           }
         }
         .history-content-2 {
-           
+
             h5 {
                 font-family: Ubuntu;
                 font-style: italic;
@@ -55,7 +55,7 @@
                 line-height: 110%;
                 color: #FFFFFF;
                  padding: 100px;
-                 background-image: url(./../images/bg-birth.png);
+                 background-image: url(/images/bg-birth.png);
                  background-repeat: no-repeat;
                  background-size:contain;
             }
@@ -65,12 +65,12 @@
                 font-weight: 900;
                 font-size: 20px;
                 line-height: 21px;
-                color: #1F1F1F; 
-                margin-left: 40px; 
-            } 
+                color: #1F1F1F;
+                margin-left: 40px;
+            }
         }
         .description-history {
-           
+
             h5 {
                 font-family: Ubuntu;
                 font-style: italic;
@@ -116,7 +116,7 @@
                     font-size: 20px;
                     color: #0A8B8B;
                 }
-               
+
             }
         }
     }
@@ -128,11 +128,11 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   background-image:  url(./../images/history-bg-1.png),
-                   url(./../images/history-bg-2.png),
-                   url(./../images/history-bg-1.png);
+   background-image:  url(/images/history-bg-1.png),
+                   url(/images/history-bg-2.png),
+                   url(/images/history-bg-1.png);
   background-repeat: no-repeat;
-  background-position: left top,                    
+  background-position: left top,
                     right top 55%,
                     left top 110%;
 
@@ -140,7 +140,7 @@
 
     .heading-founders {
         margin-bottom: 100px;
-        
+
         h1 {
             font-family: a_FuturaRoundDemi;
             font-style: normal;
@@ -152,7 +152,7 @@
             position: absolute;
             z-index: 3;
             // margin-left: 37%;
-           
+
         }
         .bg-heading {
             // margin-left: 36%;
@@ -164,8 +164,8 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-       
-       
+
+
 
         .photo {
             display: flex;
@@ -204,9 +204,9 @@
             font-style: normal;
             font-weight: bold;
             font-size: 20px;
-            line-height: 23px; 
-            color: #0D9797; 
-                  
+            line-height: 23px;
+            color: #0D9797;
+
           }
 
           .story {
@@ -216,8 +216,8 @@
             font-size: 16px;
             line-height: 21px;
             color: #0A3737;
-           
-  
+
+
           }
           .quotation {
             font-family: Ubuntu;
@@ -226,7 +226,7 @@
             font-size: 22px;
             line-height: 130%;
             color: #0A8B8B;
-            
+
           }
           .quotation-1 {
             font-family: Ubuntu;
@@ -234,8 +234,8 @@
             font-weight: bold;
             font-size: 22px;
             line-height: 26px;
-            color: #E5445A; 
-              
+            color: #E5445A;
+
           }
         }
     }
@@ -243,48 +243,48 @@
 
 @media (max-width: 1024px ) {
     header {
-    
+
        .contacts {
         display: none;
        }
-       
+
     }
-   
+
     .second-logo {
         display: none;
     }
     .project-history {
-        background-image: url(./../images/bg-history.png),
-                        url(./../images/bg-history-2.png);
+        background-image: url(/images/bg-history.png),
+                        url(/images/bg-history-2.png);
         background-repeat: no-repeat;
         background-position: left bottom, right top;
-        padding-top: 100px; 
+        padding-top: 100px;
         padding-bottom: 100px;
         margin-bottom: 100px;
-        
+
         .heading-history {
             h1 {
                 margin-left: 30%;
-               
+
             }
             .bg-heading {
                 margin-left: 29%;
-                
+
             }
         }
         .content {
-            
+
             justify-content: center;
             padding-left: 180px;
             padding-right: 180px;
             margin-top: 100px;
-            
+
             .history-content-1 {
                 img {
                     display:none;
                 }
             }
-        } 
+        }
     }
     .founders {
         padding-bottom: 200px;
@@ -293,33 +293,33 @@
         justify-content: center;
         align-items: center;
          .heading-founders {
-             
-             
+
+
              h1 {
-            
+
                  margin-left: 30%;
-                
+
              }
              .bg-heading {
                  margin-left: 29%;
-                
+
              }
         }
         .wr-founders {
             display: flex;
             align-items: center;
             justify-content: center;
-           
-           
-    
+
+
+
             .photo {
-            
+
                 margin-left: 20px;
                 margin-right: 20px;
                 margin-top: 20px;
-    
+
             }
-    
+
             .info-founders {
               display: flex;
               flex-direction: column;

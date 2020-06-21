@@ -1,143 +1,79 @@
-var WebpackDevServer = require("webpack-dev-server");
-const path = require('path');
-const webpack = require('webpack');
-const sass = require('sass');
-const autoprefixer = require('autoprefixer');
-const TerserPlugin = require('terser-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  watch       : true,
-  mode        : 'development',//'production', //'development',//
-  entry       : [
-    './src/index.jade',
-    './src/scss/styles.scss',
-    './src/js/index.js',
-  ],
-  output      : {
-    filename  : 'js/script.js',
-    publicPath: './',
-    path      : path.resolve(__dirname, 'dist'),
+  entry: ['@babel/polyfill', './src/index.js'],
+  output: {
+    path: `${__dirname}/dist`,
+    filename: 'bundle.js',
   },
-  optimization: {
-    minimizer: [
-      new TerserPlugin(),
-    ]
+  devServer: {
+    contentBase: `${__dirname}/dist`,
   },
-  // devtool:'inline-source-map',
-  module      : {
+  module: {
     rules: [
       {
-        test   : /\.js$/,
-        include: path.resolve(__dirname, 'src/js'),
-        // use    : {
-        //     loader : 'babel-loader',
-        //     options: {
-        //         presets: ['@babel/preset-env']
-        //     }
-        // }
-      },
-      {
-        test: /\.html$/,
-        // loader: 'html-loader'
-        use : {
-          loader : 'html-loader',
-          options: {
-            // conservativeCollapse: false,
-            // minimize            : true,
-            attrs               : ['link:href', 'link:type'],
-          },
-        },
-      },
-      {
-        test: /\.jade$/,
-        use : [
-          'html-loader',
-          // 'raw-loader',
-          'pug-html-loader'
-        ],
-
+        test: /\.js$/,
+        loader: 'babel-loader',
+        exclude: '/node_modules/',
       },
       {
         test: /\.css$/,
-        // exclude: /slick/,
-        use : [
+        use: [
           'style-loader',
           MiniCssExtractPlugin.loader,
-          'css-loader',
+          {
+            loader: 'css-loader',
+            options: { sourceMap: true },
+          }, {
+            loader: 'postcss-loader',
+            options: { sourceMap: true, config: { path: 'config/postcss.config.js' } },
+          },
         ],
       },
       {
-        test: /\.(sa|sc|c)ss$/,
-        use : [
+        test: /\.scss$/,
+        use: [
           'style-loader',
+          MiniCssExtractPlugin.loader,
           {
-            loader : MiniCssExtractPlugin.loader,
-            options: {
-              publicPath: '../'
-            }
+            loader: 'css-loader',
+            options: { sourceMap: true },
+          }, {
+            loader: 'postcss-loader',
+            options: { sourceMap: true, config: { path: 'config/postcss.config.js' } },
+          }, {
+            loader: 'sass-loader',
+            options: { sourceMap: true },
           },
-          {
-            loader : 'css-loader',
-            options: {
-              modules: false
-            }
-          },
-          {
-            loader : 'postcss-loader',
-            options: {
-              autoprefixer: {
-                browsers: ['last 2 versions'],
-              }
-            }
-          },
-          // 'resolve-url-loader',
-          'sass-loader',
-          // 'resolve-url'
         ],
       },
-
       {
-        test: /\.(png|jpe?g|gif|svg|)$/i,
-        use : [
-          {
-            loader : 'file-loader',
-            options: {
-              name           : '[folder]/[name].[ext]',
-              outputPath     : 'images',
-              esModule       : false,
-              useRelativePath: true,
-
-            },
-          }
-        ]
-      },
-      {
-        test   : /\.(ttf|otf|webp|eot|woff|woff2)$/i, //
-        loader : 'file-loader',
+        test: /\.(ttf|otf|webp|eot|woff|woff2)$/i,
+        loader: 'file-loader',
         options: {
-          name      : '[name].[ext]',
+          name: '[name].[ext]',
           outputPath: 'fonts',
         },
       },
-    ]
+    ],
   },
-  plugins     : [
-    new MiniCssExtractPlugin({
-      filename: 'css/styles.css',
-    }),
+  plugins: [
     new HtmlWebpackPlugin({
+      title : 'Hello',
       filename: 'index.html',
-      template: './src/index.jade',
+      template: './src/index.html',
     }),
-    autoprefixer
+    new MiniCssExtractPlugin({
+      filename: 'styles.css',
+
+    }),
+    new CopyWebpackPlugin([
+      { from: './src/images/', to: './images/' },
+    ]),
   ],
-  devServer   : {
-    // contentBase: [path.join(__dirname, 'dist'), path.join(__dirname, 'src')]
-    contentBase     : './dist',
-    watchContentBase: true,
-    port            : 9001
+  resolve: {
+    extensions: ['.js'],
   },
 };
