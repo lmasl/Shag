@@ -10,14 +10,14 @@
 //     margin-top: 727vh;
 // }
 .foother {
-   
-    background-image: url(./../images/foother.png);
+
+    background-image: url(/images/foother.png);
     background-size: 100% 95%;
     background-repeat: no-repeat;
     background-position-y: 100%;
     .heading-foother{
-        
-        
+
+
         h1 {
             font-family: a_FuturaRoundDemi;
             font-style: normal;
@@ -58,9 +58,9 @@
             font-style: normal;
             font-weight: bold;
             font-size: 20px;
-            line-height: 25px;         
-            letter-spacing: 0.03em;  
-            color: #E55266; 
+            line-height: 25px;
+            letter-spacing: 0.03em;
+            color: #E55266;
         }
     }
     .contacts {
@@ -79,12 +79,12 @@
 
         color: #FFFFFF;
 
-       
+
 
         .social-icons {
             display: flex;
             flex-direction: row;
-            
+
 
             img {
                 padding-left: 10px;
@@ -96,23 +96,23 @@
 @media (max-width: 1024px ) {
 
     .foother {
-   
-        background-image: url(./../images/f-bg-min.png);
+
+        background-image: url(/images/f-bg-min.png);
         background-size: 100% 65%;
         background-repeat: no-repeat;
         background-position-y: 100%;
-        
-    
+
+
         .foother-content {
             margin-left: 80px;
             margin-right: 80px;
-        
-           
+
+
             .unit-3 {
                 display: none;
             }
-           
+
         }
-    
+
     }
 }

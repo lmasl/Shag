@@ -41,7 +41,7 @@ $br: 4px;
 .form-pay {
   display: flex;
   flex-direction: column;
-  background-image: url(./../images/bg-right.png);
+  background-image: url(/images/bg-right.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: 85%;
@@ -55,9 +55,9 @@ $br: 4px;
   box-shadow: 2px 4px 10px rgba(81, 102, 102, 0.3);
   border-radius: 30px;
   font-family:Ubuntu;
-  font-style: normal; 
+  font-style: normal;
   margin-right: 100px;
- 
+
   a {
     text-decoration:none;
     color: #595E62;
@@ -66,7 +66,7 @@ $br: 4px;
       color:$main-dark;
     }
   }
-  
+
 
 }
 
@@ -180,7 +180,7 @@ textarea {
     float:left;
     width:48%;
     margin-right:4%;
-    &:last-child { 
+    &:last-child {
       margin:0;
     }
   }
@@ -208,7 +208,7 @@ textarea {
 
 .button-block {
   display:block;
-  
+
 }
 
 .forgot {
@@ -226,14 +226,14 @@ textarea {
 
   }
 
-  
+
   .pay {
       display: flex;
       flex-direction: column;
       padding-bottom: 30px;
       padding-left: 50px;
-      
-      
+
+
       h2 {
       font-family: a_FuturaRoundDemi;
       font-weight: bold;
@@ -249,7 +249,7 @@ textarea {
           line-height: 17px;
           letter-spacing: 0.05em;
           color: #000000;
-          
+
           img {
           padding-right: 20px;
           width: 50px;
@@ -257,11 +257,11 @@ textarea {
           }
       }
   }
- 
+
   @media (max-width: 1024px ) {
     .form-pay {
-      
+
       background-image: none;
-     
+
     }
   }

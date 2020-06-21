@@ -1,5 +1,7 @@
-
-  document.getElementsByClassName('.form-signup').find('input, textarea').on('keyup blur focus', function (e) {
+  document
+    .getElementsByClassName('.form-signup')
+    .find('input, textarea')
+    .on('keyup blur focus', function (e) {
 
     var $this = $(this),
       label = $this.prev('label');
@@ -43,7 +45,7 @@
     $(this).parent().addClass('active');
     $(this).parent().siblings().removeClass('active');
 
-    target = $(this).attr('href');
+    const target = $(this).attr('href');
 
     $('.tab-content > div').not(target).hide();
 

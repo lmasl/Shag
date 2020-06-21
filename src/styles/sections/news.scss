@@ -2,9 +2,9 @@
     margin-top: 250px;
     margin-bottom: 250px;
     padding-bottom: 200px;
-    background-image: url(./../images/news-bg-1.png),
-                    url(./../images/news-bg-2.png),
-                    url(./../images/news-bg-3.png);
+    background-image: url(/images/news-bg-1.png),
+                    url(/images/news-bg-2.png),
+                    url(/images/news-bg-3.png);
     background-position: left top 30%, left bottom, right bottom;
     background-repeat: no-repeat;
 
@@ -32,7 +32,7 @@
             }
         }
     }
-    
+
 }
 
 .all-news {
@@ -61,7 +61,7 @@
 
         flex-direction: column;
         justify-content: center;
-        
+
         width: 344px;
         height: 575px;
         background: #FFFFFF;
@@ -79,7 +79,7 @@
             margin-left: 30px;
             margin-right: 30px;
 
-            
+
 
             .foto {
                 margin-left: 30px;
@@ -96,7 +96,7 @@
                     font-weight: 500;
                     font-size: 18px;
                     line-height: 21px;
-                    color: #000000; 
+                    color: #000000;
                 }
                 p {
                     font-family: Ubuntu;
@@ -135,7 +135,7 @@
                 &:hover, &:focus {
                     background:rgb(20, 131, 131);
                 }
-                 
+
             }
         }
     }
@@ -151,14 +151,14 @@
     .news {
         margin-top: 150px;
         margin-bottom: 150px;
-        background-image: url(./../images/news-bg-1.png),
+        background-image: url(/images/news-bg-1.png),
                         none,
-                        url(./../images/news-bg-3.png);
-    
-      
-        
+                        url(/images/news-bg-3.png);
+
+
+
     }
-    
+
     .all-news {
         display: flex;
         justify-content: flex-end;
@@ -168,13 +168,13 @@
         font-weight: 500;
         font-size: 24px;
         margin-top: 100px;
-    
+
         a {
             text-decoration: underline;
             text-decoration-style: dotted;
             color:#0B6B6B;
         }
-    
+
     }
     .networks {
         margin-top: 150px;
@@ -187,7 +187,7 @@
         }
 
 
-    
-    
-    }    
+
+
+    }
 }
