@@ -1,4 +1,6 @@
-  document
+
+
+document
     .getElementsByClassName('.form-signup')
     .find('input, textarea')
     .on('keyup blur focus', function (e) {
