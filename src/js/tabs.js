@@ -24,4 +24,3 @@ export default class {
     typeof this.callback === 'function' && this.callback(e.currentTarget, tabIndex);
   }
 }
-

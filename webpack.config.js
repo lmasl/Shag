@@ -57,7 +57,7 @@ module.exports = {
           outputPath: 'fonts',
         },
       },
-      ],
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
