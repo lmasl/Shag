@@ -6,495 +6,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title><%= htmlWebpackPlugin.options.title %></title>
-
-  
-
+  <title>The step</title>
 </head>
 
 <body>
-  <section class="wr-header">
-    <header>
-      <div class="container flat-menu">
-          <div class="first-logo">
-              <img src="./images/logo-2.png" alt="Logo">
-          </div>
-          <div class="bg">
-            <!-- <img src="./images/bg-up.png"> -->
-          </div>
-          <div class="main-navigation">
-              <ul>
-                  <li><a href="about.html">о нас</a></li>
-                  <li><a href="#">тренинги</a></li>
-                  <li><a href="#">контакты</a></li>
-              </ul>
-          </div>
-          <div class="contacts">
-              <div class="contacts__number">
-                  <p>+375 (33) 640-18-11</p>
-              </div>
-              <div class="contacts__mode">
-                  <p>время работы 9:00 - 19:00</p>
-              </div>
-          </div>
-          <div class="second-logo">
-              <img src="./images/logo-1.png" alt="Logo">
-          </div>
-      </div> 
-    </header>
-    <section class="base">
-        <div class="base-caption">
-          <div class="caption">
-              <h1>Образовательный проект</h1>
-          </div>
-          <div class="description">
-              <p>Помогаем детям-воспитанникам <br>
-                из школ-интернатов развить навыки, <br>
-                которые дети из полноценных семей <br>
-                приобретают дома.
-              </p>
-          </div>
-          <div class="base-button">
-              <button id=#><p>Узнать больше</p></button>
-          </div>
-          <div class="social-icons">
-            <div class="social-icon">
-              <img src="./images/fb-icon.png" alt="fb">
-            </div>
-            <div class="social-icon">
-              <img src="./images/inst-icon.png" alt="instagram">
-            </div>
-            <div class="social-icon">
-              <img src="./images/yt-icon.png" alt="youtube">
-            </div>
-        
-          </div>
+<section class="wr-header">
+  <header>
+    <div class="container flat-menu">
+      <div class="first-logo">
+        <img src="./images/logo-2.png" alt="Logo">
+      </div>
+      <div class="bg">
+        <!-- <img src="./images/bg-up.png"> -->
+      </div>
+      <div class="main-navigation">
+        <ul>
+          <li><a href="about.html">о нас</a></li>
+          <li><a href="#">тренинги</a></li>
+          <li><a href="#">контакты</a></li>
+        </ul>
+      </div>
+      <div class="contacts">
+        <div class="contacts__number">
+          <p>+375 (33) 640-18-11</p>
         </div>
-        <div class="form-pay">
-            <div class="form">
-                <div class="form-head">
-                    <h2>Пожертвовать</h2>
-                    <img src="./images/visa.png" alt="visa">
-                </div>
-                  <ul class="tab-group">
-                    <li class="tab active"><a href="#signup">Сумма</a></li>
-                    <li class="tab"><a href="#login">Другая сумма</a></li>
-                  </ul>
-                  
-                  <div class="tab-content">
-                    <div id="signup">   
-                      
-                      <form action="/" method="post" class="form-signup">
-                        <div class="field-wrap">
-                        <label>
-                          Назначение платежа<span class="req">*</span>
-                        </label>
-                        <input type="email"required autocomplete="off"/>
-                      </div>
-                      
-                      <div class="top-row">
-                        <div class="field-wrap">
-                          <label>
-                            Имя<span class="req">*</span>
-                          </label>
-                          <input type="text" required autocomplete="off" />
-                        </div>
-                    
-                        <div class="field-wrap">
-                          <label>
-                            Фамилия<span class="req">*</span>
-                          </label>
-                          <input type="text"required autocomplete="off"/>
-                        </div>
-                      </div>
-
-                      <div class="field-wrap">
-                        <label>
-                          E-mail<span class="req">*</span>
-                        </label>
-                        <input type="email"required autocomplete="off"/>
-                      </div>
-                      
-                      <div class="field-wrap">
-                        <label>
-                          Телефон<span class="req">*</span>
-                        </label>
-                        <input type="password"required autocomplete="off"/>
-                      </div>
-                      
-                      <button type="submit" class="button button-block">Помочь</button>
-                      
-                      </form>
-
-                    </div>
-                    
-                    <div id="login">   
-                      
-                      <form action="/" method="post">
-                      
-                        <div class="field-wrap">
-                        <label>
-                          E-mail<span class="req">*</span>
-                        </label>
-                        <input type="email"required autocomplete="off"/>
-                      </div>
-                      
-                      <div class="field-wrap">
-                        <label>
-                          Телефон<span class="req">*</span>
-                        </label>
-                        <input type="password"required autocomplete="off"/>
-                      </div>
-                      
-                      
-                      <button class="button button-block">Помочь</button>
-                      
-                      </form>
-
-                    </div>
-                    
-                  </div>         
-            </div>  
-            <div class="pay">
-              <div class="erip">
-                  <h2>Оплата через систему ЕРИП</h2>
-              </div>
-              <div class="pay-caption">
-                  <img src="./images/btn.png" alt="button"> 
-                  
-                  <p>Благотворительность, общественные объединения</p>
-              </div>
-              <div class="pay-caption">
-                  <img src="./images/btn.png" alt="button">
-                  <p>Помощь детям, взрослым</p>
-              </div>
-              <div class="pay-caption">
-                  <img src="./images/btn.png" alt="button">
-                  <p>Мы рядом</p>
-              </div>
-              <!-- <div class="pay-bg">
-                <svg class="elem-3" width="430" height="383" viewBox="0 0 430 383" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M80 339.966C27.2 353.737 4.66667 374.393 0 383H430V-0.000244141C302 8.6065 278 182.893 250 251.747C222 320.601 146 322.753 80 339.966Z" fill="#FF8DA9"/>
-                </svg>
-                <svg class="elem-4" width="152" height="242" viewBox="0 0 152 242" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M29.3028 180.412C-6.56026 125.618 50.3907 59.6421 83.3491 33.5032C97.1768 26.4276 122.874 19.9616 153 25.1557L153 237.778C124.063 229.511 66.7839 237.677 29.3028 180.412Z" fill="#FFF968"/>
-                </svg>
-                  
-              </div> -->
-            </div>  
-        </div>
-  
-    </section>
-  </section>
-   
-    <section class="wr-doing">
-      <div class="heading-doing">
-        <h1>Что мы делаем?</h1>
-        <div class="bg-heading">
-          <img src="./images/heading.png">
-        </div>
-        <div class="doing-description">
-          <p>Проводим тренинги-интерактивы для детей, где:</p>
+        <div class="contacts__mode">
+          <p>время работы 9:00 - 19:00</p>
         </div>
       </div>
-      <div class="wr-container">
-        <div class="wrapper">
-          <svg class="snake-background">
-            <use xlink:href="#snake"></use>
-          </svg>
-          <div class="spot spot-1">
-            <div class="spot-wrapper"><img class="spot-bkg" src="./images/spot1.png" alt="step-background">
-              <div class="content"><img class="icon" src="./images/spot1-icon.png" alt="step-icon">
-                <p>Учим воспитанников распределять бюджет</p>
-              </div>
-            </div>
-          </div>
-          <div class="spot spot-2">
-            <div class="spot-wrapper"><img class="spot-bkg" src="./images/spot2.png" alt="step-background">
-              <div class="content"><img class="icon" src="./images/spot2-icon.png" alt="step-icon">
-                <p>Объясняем, как выбирать продукты в магазине</p>
-              </div>
-            </div>
-          </div>
-          <div class="spot spot-3">
-            <div class="spot-wrapper"><img class="spot-bkg" src="./images/spot3.png" alt="step-background">
-              <div class="content"><img class="icon" src="./images/spot3-icon.png" alt="step-icon">
-                <p>Учим, как платить за коммунальные услуги</p>
-              </div>
-            </div>
-          </div>
-          <div class="spot spot-4">
-            <div class="spot-wrapper"><img class="spot-bkg" src="./images/spot4.png" alt="step-background">
-              <div class="content"><img src="./images/spot4-icon.png" alt="step-icon">
-                <p>Объясняем, что такое кредиты</p>
-              </div>
-            </div>
-          </div>
-          <div class="spot spot-5">
-            <div class="spot-wrapper"><img class="spot-bkg" src="./images/spot5.png" alt="step-background">
-              <div class="content"><img class="icon" src="./images/spot5-icon.png" alt="step-icon">
-                <p>Учим пользоваться банковскими картами</p>
-              </div>
-            </div>
-          </div>
-          <div class="spot spot-6">
-            <div class="spot-wrapper"><img class="spot-bkg" src="./images/spot6.png" alt="step-background">
-              <div class="content"><img class="icon" src="./images/spot6-icon.png" alt="step-icon">
-                <p>Рассказываем, какие бывают документы</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  <section class="team">
-     <div class="heading-team">
-      <h1>Наша команда</h1>
-      <div class="bg-heading">
-        <img src="./images/heading.png">
-      </div>
-     </div>
-          <div class="info">
-                  <div class="curator">
-                    <div class="foto">
-                      <img src="./images/ekaterina.png">
-                    </div> 
-                      <h3>Архипова Екатерина</h3>
-                      <div class="function">
-                          <p>руководитель образовательных проектов</p>
-                      </div>
-                      <div class="about-me">
-                          <p>Дети, воспитанные в семье,<br>
-                              получают основные жизненные навыки, знания <br>
-                              в рамках семьи. Нас в детстве <br>
-                              отправляли за хлебом, <br>
-                              молоком, давали деньги - мы <br>
-                              приносили сдачу...</p>
-                      </div>
-                      <div class="team-btn">
-                            <button>Подробнее</button>
-                      </div>  
-                      <div class="fb">
-                        <a><img src="./images/fb-pink.png"></a>
-                      </div>
-                    </div>
-                  
-                  <div class="curator">
-                    <div class="foto">
-                      <img src="./images/alexandra.png">
-                    </div>
-                      <h3>Хвойницкая Александра</h3>
-                      <div class="function">
-                        <p >председатель правления</p>
-                      </div>
-                      <div class="about-me">
-                          <p>В благотворительной <br>
-                            деятельности я с 15 лет: <br>
-                            случайно попала <br>
-                            в организацию, которая <br>
-                            организовывала <br>
-                            поздравление для детей <br>
-                            с инвалидностью...</p>
-                      </div>
-                      <div class="team-btn">
-                          <button>Подробнее</button>
-                      </div>  
-                      <div class="fb">
-                        <a><img src="./images/fb-pink.png"></a>
-                      </div>
-                  </div>
-                  <div class="curator">
-                    <div class="foto">
-                      <img src="./images/anatoly.png">
-                    </div>
-                      <h3>Гаврилов Анатолий</h3>
-                      <div class="function">
-                          <p>руководитель спортивных проектов</p>
-                      </div> 
-                      <div class="about-me">
-                          <p >
-                            Александр Македонский <br>
-                            просил, чтобы его хоронили <br>
-                            таким образом, чтобы руки <br>
-                            лежали не в гробу. Этим он <br>
-                            показал, что смог завоевать <br>
-                            весь мир, но с собой ничего <br>
-                            не забирает...
-                          </p>
-                      </div>
-                      
-                    
-                      <div class="team-btn">
-                        <button>Подробнее</button>
-                      </div>  
-                      <div class="fb">
-                        <a><img src="./images/fb-pink.png"></a>
-                      </div>
-                  </div>
-                  </div>
-          </div> 
-          <!-- <svg class="team-background" viewBox="0 0 1280 784" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M651 253.472C875.065 -81.3359 1331 11.9435 1331 11.9435V784H-31C-31 784 426.935 588.28 651 253.472Z" fill="#FF8DA9"/>
-            </svg> -->
-                 
-  </section>
-
-  <section class="event">
-    <div class="heading-event">
-      <h1>Ближайшие события</h1>
-      <div class="bg-event">
-         <img src="./images/bg-event.png">
-      </div>
-            
-     </div>
-
-     <div class="faq">
-      <div class="faq-item">
-          <input class="faq-input" type="checkbox" id="faq_1">
-          <label class="faq-title" for="faq_1"><span class="name">Банк (часть1)</span> <span class="data"> 12 августа</span> <span class="time">11:00 </span></label>
-         
-          <div class="faq-text">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eum, ipsum. Voluptatum deleniti ut ipsa blanditiis, modi facere distinctio impedit illum fugiat ex vel, quasi sit, explicabo veniam nemo reprehenderit!</p>
-          </div>
-      </div>
-
-      <div class="faq-item">
-          <input class="faq-input" type="checkbox" id="faq_2">
-          <label class="faq-title" for="faq_2"><span class="name">Банк (часть1)</span> <span class="data"> 12 августа</span> <span class="time">11:00 </span></label>
-          <div class="faq-text">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eum, ipsum. Voluptatum deleniti ut ipsa blanditiis, modi facere distinctio impedit illum fugiat ex vel, quasi sit, explicabo veniam nemo reprehenderit!</p>
-          </div>
-      </div>
-         <div class="faq-item">
-          <input class="faq-input" type="checkbox" id="faq_3">
-          <label class="faq-title" for="faq_3"><span class="name">Банк (часть1)</span> <span class="data"> 12 августа</span> <span class="time">11:00 </span></label>
-          <div class="faq-text">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eum, ipsum. Voluptatum deleniti ut ipsa blanditiis, modi facere distinctio impedit illum fugiat ex vel, quasi sit, explicabo veniam nemo reprehenderit!</p>
-          </div>
-      </div>
-  </div>
-    
-  </section>
-  <section class="news">
-    <div class="heading-news">
-      <h1>Новости</h1>
-        <div class="bg-news">
-          <img src="./images/heading.png">
-        </div>
-    </div>
-    <div class="networks">
-        <div class="instagram-1">
-            <div class="foto">
-              <img src="./images/instagram.png" alt="picture">
-            </div>
-            <div class="contents">
-                <div class="logo-instagram">
-                  <img src="./images/logo-instagram.png" alt="logo">
-                </div>
-                <div class="text-content">
-                    <h4>mi.ryadom &bull; <a>Подписаться</a> </h4>
-                    <p>Первый образовательный <br>
-                      проект "Шаг вперёд". Что <br>
-                      мы делаем? &#9989;...</p>
-                </div>
-            </div>
-            <div class="btn-details">
-                <button>Подробнее</button>
-            </div>
-        </div>
-        <div class="instagram-2">
-          <div class="foto">
-            <img src="./images/instagram.png" alt="picture">
-          </div>
-          <div class="contents">
-              <div class="logo-instagram">
-                <img src="./images/logo-instagram.png" alt="logo">
-              </div>
-              <div class="text-content">
-                  <h4>mi.ryadom &bull; <a>Подписаться</a> </h4>
-                  <p>Первый образовательный <br>
-                    проект "Шаг вперёд". Что <br>
-                    мы делаем? &#9989;...</p>
-              </div>
-          </div>
-          <div class="btn-details">
-              <button>Подробнее</button>
-          </div>
-        </div>
-        <div class="instagram-3">
-          <div class="foto">
-            <img src="./images/instagram.png" alt="picture">
-          </div>
-          <div class="contents">
-              <div class="logo-instagram">
-                <img src="./images/logo-instagram.png" alt="logo">
-              </div>
-              <div class="text-content">
-                  <h4>mi.ryadom &bull; <a>Подписаться</a> </h4>
-                  <p>Первый образовательный <br>
-                    проект "Шаг вперёд". Что <br>
-                    мы делаем? &#9989;...</p>
-              </div>
-          </div>
-          <div class="btn-details">
-              <button>Подробнее</button>
-          </div>
-        </div>
-    </div>
-
-    <div class="all-news">
-      <a href="#">Все новости</a>
-    </div>
-
-    <!-- <svg class="network1" width="324" height="502" viewBox="0 0 324 502" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M-87.1113 310.138C19.0783 208.263 -124.358 55.6635 -40.1426 0.839642C-40.1426 0.839642 165.415 4.71373 261.877 68.7266C468.805 206.045 96.9376 532.047 -9.28449 498.675C-115.507 465.304 -175.924 395.341 -87.1113 310.138Z" fill="#FF8DA9"/>
-      </svg> -->
-      
-  </section>
-
-  <section class="foother">
-    
-    <div class="heading-foother">
-      <h1>Контакты </h1>
-       <img class="bg-heading" src="./images/bg-event.png"> 
-     </div>
-     <div class="foother-content">
-       <div class="unit-1">
-         <p>
-          Благотворительное общественное<br>
-          объединение «Мы Рядом».<br>
-          <br>
-          Все права защищены и охраняются <br>
-          законом.<br>
-          <br>
-          Политика конфиденциальности.
-         </p>        
-       </div>
-       <div class="unit-2">
-         <h4>Что мы делаем</h4>
-         <p>Мы учим воспитанников распределять бюджет,<br>
-          выбирать продукты в магазине, платить за <br>
-          коммунальные услуги, объясняем, что такое <br>
-          кредиты, как пользоваться банковскими <br>
-          картами, какие бывают документы.</p>
-       </div>
-       <div class="unit-3">
+      <div class="second-logo">
         <img src="./images/logo-1.png" alt="Logo">
-       </div>
-     </div>
-     <div class="contacts">
-       <div class="requisites">
-         <h4>Наши реквизиты</h4>
-         <p>Благотворительное общественное объединение «Мы Рядом» УНП 194905074 </p>
-         <p> Свидетельство о государственной регистрации №05/1161 от 3 мая 2017 года </p>
-         <br>
-         <br>
-         <p>+375 33 640-18-11<br>
-           mi.ryadom.rb@gmail.com <br>
-           Минск, ул.Тимирязева 65, пом. 221 (№209)</p>
-       </div>
-       <div class="social-icons">
+      </div>
+    </div>
+  </header>
+  <section class="base">
+    <div class="base-caption">
+      <div class="caption">
+        <h1>Образовательный проект</h1>
+      </div>
+      <div class="description">
+        <p>Помогаем детям-воспитанникам <br>
+          из школ-интернатов развить навыки, <br>
+          которые дети из полноценных семей <br>
+          приобретают дома.
+        </p>
+      </div>
+      <div class="base-button">
+        <button id=#><p>Узнать больше</p></button>
+      </div>
+      <div class="social-icons">
         <div class="social-icon">
           <img src="./images/fb-icon.png" alt="fb">
         </div>
@@ -504,10 +64,458 @@
         <div class="social-icon">
           <img src="./images/yt-icon.png" alt="youtube">
         </div>
+
       </div>
-     </div>
-   
+    </div>
+    <div class="form-pay">
+      <div class="form">
+        <div class="form-head">
+          <h2>Пожертвовать</h2>
+          <img src="./images/visa.png" alt="visa">
+        </div>
+        <ul class="tab-group">
+          <!--href="#signup"-->
+          <li class="tab active"><a>Сумма</a></li>
+          <!--#login-->
+          <li class="tab"><a>Другая сумма</a></li>
+        </ul>
+
+        <div class="tab-content">
+          <div id="signup">
+
+            <form action="/" method="post" class="form-signup">
+              <div class="field-wrap">
+                <label>
+                  Назначение платежа<span class="req">*</span>
+                </label>
+                <input type="email" required autocomplete="off" name="email"/>
+              </div>
+
+              <div class="top-row">
+                <div class="field-wrap">
+                  <label>
+                    Имя<span class="req">*</span>
+                  </label>
+                  <input type="text" required autocomplete="off"/>
+                </div>
+
+                <div class="field-wrap">
+                  <label>
+                    Фамилия<span class="req">*</span>
+                  </label>
+                  <input type="text" required autocomplete="off"/>
+                </div>
+              </div>
+
+              <div class="field-wrap">
+                <label>
+                  E-mail<span class="req">*</span>
+                </label>
+                <input type="email" required autocomplete="off"/>
+              </div>
+
+              <div class="field-wrap">
+                <label>
+                  Телефон<span class="req">*</span>
+                </label>
+                <input type="password" required autocomplete="off"/>
+              </div>
+
+              <button type="submit" class="button button-block">Помочь</button>
+
+            </form>
+
+          </div>
+
+          <div id="login" class="hide">
+
+            <form action="/" method="post">
+
+              <div class="field-wrap">
+                <label>
+                  E-mail<span class="req">*</span>
+                </label>
+                <input type="email" required autocomplete="off"/>
+              </div>
+
+              <div class="field-wrap">
+                <label>
+                  Телефон<span class="req">*</span>
+                </label>
+                <input type="password" required autocomplete="off"/>
+              </div>
+
+
+              <button type="submit" class="button button-block">Помочь</button>
+
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="pay">
+        <div class="erip">
+          <h2>Оплата через систему ЕРИП</h2>
+        </div>
+        <div class="pay-caption">
+          <img src="./images/btn.png" alt="button">
+
+          <p>Благотворительность, общественные объединения</p>
+        </div>
+        <div class="pay-caption">
+          <img src="./images/btn.png" alt="button">
+          <p>Помощь детям, взрослым</p>
+        </div>
+        <div class="pay-caption">
+          <img src="./images/btn.png" alt="button">
+          <p>Мы рядом</p>
+        </div>
+        <!-- <div class="pay-bg">
+          <svg class="elem-3" width="430" height="383" viewBox="0 0 430 383" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M80 339.966C27.2 353.737 4.66667 374.393 0 383H430V-0.000244141C302 8.6065 278 182.893 250 251.747C222 320.601 146 322.753 80 339.966Z" fill="#FF8DA9"/>
+          </svg>
+          <svg class="elem-4" width="152" height="242" viewBox="0 0 152 242" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M29.3028 180.412C-6.56026 125.618 50.3907 59.6421 83.3491 33.5032C97.1768 26.4276 122.874 19.9616 153 25.1557L153 237.778C124.063 229.511 66.7839 237.677 29.3028 180.412Z" fill="#FFF968"/>
+          </svg>
+
+        </div> -->
+      </div>
+    </div>
+
   </section>
+</section>
+
+<section class="wr-doing">
+  <div class="heading-doing">
+    <h1>Что мы делаем?</h1>
+    <div class="bg-heading">
+      <img src="./images/heading.png">
+    </div>
+    <div class="doing-description">
+      <p>Проводим тренинги-интерактивы для детей, где:</p>
+    </div>
+  </div>
+  <div class="wr-container">
+    <div class="wrapper">
+      <svg class="snake-background">
+        <use xlink:href="#snake"></use>
+      </svg>
+      <div class="spot spot-1">
+        <div class="spot-wrapper"><img class="spot-bkg" src="./images/spot1.png" alt="step-background">
+          <div class="content"><img class="icon" src="./images/spot1-icon.png" alt="step-icon">
+            <p>Учим воспитанников распределять бюджет</p>
+          </div>
+        </div>
+      </div>
+      <div class="spot spot-2">
+        <div class="spot-wrapper"><img class="spot-bkg" src="./images/spot2.png" alt="step-background">
+          <div class="content"><img class="icon" src="./images/spot2-icon.png" alt="step-icon">
+            <p>Объясняем, как выбирать продукты в магазине</p>
+          </div>
+        </div>
+      </div>
+      <div class="spot spot-3">
+        <div class="spot-wrapper"><img class="spot-bkg" src="./images/spot3.png" alt="step-background">
+          <div class="content"><img class="icon" src="./images/spot3-icon.png" alt="step-icon">
+            <p>Учим, как платить за коммунальные услуги</p>
+          </div>
+        </div>
+      </div>
+      <div class="spot spot-4">
+        <div class="spot-wrapper"><img class="spot-bkg" src="./images/spot4.png" alt="step-background">
+          <div class="content"><img src="./images/spot4-icon.png" alt="step-icon">
+            <p>Объясняем, что такое кредиты</p>
+          </div>
+        </div>
+      </div>
+      <div class="spot spot-5">
+        <div class="spot-wrapper"><img class="spot-bkg" src="./images/spot5.png" alt="step-background">
+          <div class="content"><img class="icon" src="./images/spot5-icon.png" alt="step-icon">
+            <p>Учим пользоваться банковскими картами</p>
+          </div>
+        </div>
+      </div>
+      <div class="spot spot-6">
+        <div class="spot-wrapper"><img class="spot-bkg" src="./images/spot6.png" alt="step-background">
+          <div class="content"><img class="icon" src="./images/spot6-icon.png" alt="step-icon">
+            <p>Рассказываем, какие бывают документы</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="team">
+  <div class="heading-team">
+    <h1>Наша команда</h1>
+    <div class="bg-heading">
+      <img src="./images/heading.png">
+    </div>
+  </div>
+  <div class="info">
+    <div class="curator">
+      <div class="foto">
+        <img src="./images/ekaterina.png">
+      </div>
+      <h3>Архипова Екатерина</h3>
+      <div class="function">
+        <p>руководитель образовательных проектов</p>
+      </div>
+      <div class="about-me">
+        <p>Дети, воспитанные в семье,<br>
+          получают основные жизненные навыки, знания <br>
+          в рамках семьи. Нас в детстве <br>
+          отправляли за хлебом, <br>
+          молоком, давали деньги - мы <br>
+          приносили сдачу...</p>
+      </div>
+      <div class="team-btn">
+        <button>Подробнее</button>
+      </div>
+      <div class="fb">
+        <a><img src="./images/fb-pink.png"></a>
+      </div>
+    </div>
+
+    <div class="curator">
+      <div class="foto">
+        <img src="./images/alexandra.png">
+      </div>
+      <h3>Хвойницкая Александра</h3>
+      <div class="function">
+        <p>председатель правления</p>
+      </div>
+      <div class="about-me">
+        <p>В благотворительной <br>
+          деятельности я с 15 лет: <br>
+          случайно попала <br>
+          в организацию, которая <br>
+          организовывала <br>
+          поздравление для детей <br>
+          с инвалидностью...</p>
+      </div>
+      <div class="team-btn">
+        <button>Подробнее</button>
+      </div>
+      <div class="fb">
+        <a><img src="./images/fb-pink.png"></a>
+      </div>
+    </div>
+    <div class="curator">
+      <div class="foto">
+        <img src="./images/anatoly.png">
+      </div>
+      <h3>Гаврилов Анатолий</h3>
+      <div class="function">
+        <p>руководитель спортивных проектов</p>
+      </div>
+      <div class="about-me">
+        <p>
+          Александр Македонский <br>
+          просил, чтобы его хоронили <br>
+          таким образом, чтобы руки <br>
+          лежали не в гробу. Этим он <br>
+          показал, что смог завоевать <br>
+          весь мир, но с собой ничего <br>
+          не забирает...
+        </p>
+      </div>
+
+
+      <div class="team-btn">
+        <button>Подробнее</button>
+      </div>
+      <div class="fb">
+        <a><img src="./images/fb-pink.png"></a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- <svg class="team-background" viewBox="0 0 1280 784" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M651 253.472C875.065 -81.3359 1331 11.9435 1331 11.9435V784H-31C-31 784 426.935 588.28 651 253.472Z" fill="#FF8DA9"/>
+    </svg> -->
+
+</section>
+
+<section class="event">
+  <div class="heading-event">
+    <h1>Ближайшие события</h1>
+    <div class="bg-event">
+      <img src="./images/bg-event.png">
+    </div>
+
+  </div>
+
+  <div class="faq">
+    <div class="faq-item">
+      <input class="faq-input" type="checkbox" id="faq_1">
+      <label class="faq-title" for="faq_1"><span class="name">Банк (часть1)</span> <span class="data"> 12 августа</span>
+        <span class="time">11:00 </span></label>
+
+      <div class="faq-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eum, ipsum. Voluptatum deleniti ut ipsa
+          blanditiis, modi facere distinctio impedit illum fugiat ex vel, quasi sit, explicabo veniam nemo
+          reprehenderit!</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input class="faq-input" type="checkbox" id="faq_2">
+      <label class="faq-title" for="faq_2"><span class="name">Банк (часть1)</span> <span class="data"> 12 августа</span>
+        <span class="time">11:00 </span></label>
+      <div class="faq-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eum, ipsum. Voluptatum deleniti ut ipsa
+          blanditiis, modi facere distinctio impedit illum fugiat ex vel, quasi sit, explicabo veniam nemo
+          reprehenderit!</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <input class="faq-input" type="checkbox" id="faq_3">
+      <label class="faq-title" for="faq_3"><span class="name">Банк (часть1)</span> <span class="data"> 12 августа</span>
+        <span class="time">11:00 </span></label>
+      <div class="faq-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eum, ipsum. Voluptatum deleniti ut ipsa
+          blanditiis, modi facere distinctio impedit illum fugiat ex vel, quasi sit, explicabo veniam nemo
+          reprehenderit!</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+<section class="news">
+  <div class="heading-news">
+    <h1>Новости</h1>
+    <div class="bg-news">
+      <img src="./images/heading.png">
+    </div>
+  </div>
+  <div class="networks">
+    <div class="instagram-1">
+      <div class="foto">
+        <img src="./images/instagram.png" alt="picture">
+      </div>
+      <div class="contents">
+        <div class="logo-instagram">
+          <img src="./images/logo-instagram.png" alt="logo">
+        </div>
+        <div class="text-content">
+          <h4>mi.ryadom &bull; <a>Подписаться</a></h4>
+          <p>Первый образовательный <br>
+            проект "Шаг вперёд". Что <br>
+            мы делаем? &#9989;...</p>
+        </div>
+      </div>
+      <div class="btn-details">
+        <button>Подробнее</button>
+      </div>
+    </div>
+    <div class="instagram-2">
+      <div class="foto">
+        <img src="./images/instagram.png" alt="picture">
+      </div>
+      <div class="contents">
+        <div class="logo-instagram">
+          <img src="./images/logo-instagram.png" alt="logo">
+        </div>
+        <div class="text-content">
+          <h4>mi.ryadom &bull; <a>Подписаться</a></h4>
+          <p>Первый образовательный <br>
+            проект "Шаг вперёд". Что <br>
+            мы делаем? &#9989;...</p>
+        </div>
+      </div>
+      <div class="btn-details">
+        <button>Подробнее</button>
+      </div>
+    </div>
+    <div class="instagram-3">
+      <div class="foto">
+        <img src="./images/instagram.png" alt="picture">
+      </div>
+      <div class="contents">
+        <div class="logo-instagram">
+          <img src="./images/logo-instagram.png" alt="logo">
+        </div>
+        <div class="text-content">
+          <h4>mi.ryadom &bull; <a>Подписаться</a></h4>
+          <p>Первый образовательный <br>
+            проект "Шаг вперёд". Что <br>
+            мы делаем? &#9989;...</p>
+        </div>
+      </div>
+      <div class="btn-details">
+        <button>Подробнее</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="all-news">
+    <a href="#">Все новости</a>
+  </div>
+
+  <!-- <svg class="network1" width="324" height="502" viewBox="0 0 324 502" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M-87.1113 310.138C19.0783 208.263 -124.358 55.6635 -40.1426 0.839642C-40.1426 0.839642 165.415 4.71373 261.877 68.7266C468.805 206.045 96.9376 532.047 -9.28449 498.675C-115.507 465.304 -175.924 395.341 -87.1113 310.138Z" fill="#FF8DA9"/>
+    </svg> -->
+
+</section>
+
+<section class="foother">
+
+  <div class="heading-foother">
+    <h1>Контакты </h1>
+    <img class="bg-heading" src="./images/bg-event.png">
+  </div>
+  <div class="foother-content">
+    <div class="unit-1">
+      <p>
+        Благотворительное общественное<br>
+        объединение «Мы Рядом».<br>
+        <br>
+        Все права защищены и охраняются <br>
+        законом.<br>
+        <br>
+        Политика конфиденциальности.
+      </p>
+    </div>
+    <div class="unit-2">
+      <h4>Что мы делаем</h4>
+      <p>Мы учим воспитанников распределять бюджет,<br>
+        выбирать продукты в магазине, платить за <br>
+        коммунальные услуги, объясняем, что такое <br>
+        кредиты, как пользоваться банковскими <br>
+        картами, какие бывают документы.</p>
+    </div>
+    <div class="unit-3">
+      <img src="./images/logo-1.png" alt="Logo">
+    </div>
+  </div>
+  <div class="contacts">
+    <div class="requisites">
+      <h4>Наши реквизиты</h4>
+      <p>Благотворительное общественное объединение «Мы Рядом» УНП 194905074 </p>
+      <p> Свидетельство о государственной регистрации №05/1161 от 3 мая 2017 года </p>
+      <br>
+      <br>
+      <p>+375 33 640-18-11<br>
+        mi.ryadom.rb@gmail.com <br>
+        Минск, ул.Тимирязева 65, пом. 221 (№209)</p>
+    </div>
+    <div class="social-icons">
+      <div class="social-icon">
+        <img src="./images/fb-icon.png" alt="fb">
+      </div>
+      <div class="social-icon">
+        <img src="./images/inst-icon.png" alt="instagram">
+      </div>
+      <div class="social-icon">
+        <img src="./images/yt-icon.png" alt="youtube">
+      </div>
+    </div>
+  </div>
+
+</section>
 
 <script src="./index.js"></script></body>
 
@@ -516,7 +524,9 @@
 <svg display="none">
   <defs>
     <symbol id="snake" viewBox="0 0 928 1115" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M214.224 80.5808C214.224 80.5808 670.516 -21.375 755.503 8.07912C840.491 37.5332 943.789 103.145 922.619 197.737C901.449 292.33 341.205 272.237 229.619 286.737C118.032 301.237 -31.0372 359.237 55.2474 603.737C141.532 848.237 465.159 562.737 788.032 562.737C956.032 562.737 936.119 772.237 874.123 801.952C605.808 930.557 158.763 646.262 19.032 883.737C-11.9634 936.415 -1.09304 1018.34 55.2473 1085.24C106.618 1146.23 436.119 1085.24 436.119 1085.24" stroke="#1DA4A4" stroke-width="4" stroke-linecap="round" stroke-dasharray="4 12"></path>
+      <path
+        d="M214.224 80.5808C214.224 80.5808 670.516 -21.375 755.503 8.07912C840.491 37.5332 943.789 103.145 922.619 197.737C901.449 292.33 341.205 272.237 229.619 286.737C118.032 301.237 -31.0372 359.237 55.2474 603.737C141.532 848.237 465.159 562.737 788.032 562.737C956.032 562.737 936.119 772.237 874.123 801.952C605.808 930.557 158.763 646.262 19.032 883.737C-11.9634 936.415 -1.09304 1018.34 55.2473 1085.24C106.618 1146.23 436.119 1085.24 436.119 1085.24"
+        stroke="#1DA4A4" stroke-width="4" stroke-linecap="round" stroke-dasharray="4 12"></path>
     </symbol>
   </defs>
 </svg>

@@ -1,5 +1,6 @@
 
 .heading-event {
+    margin-bottom: 10%;
     h1 {
         font-family: a_FuturaRoundDemi;
         font-style: normal;
@@ -21,107 +22,110 @@
         }
     }
 }
- /* Vector 9 */
+ 
 
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
+.accordion{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
-p {
-    margin: 0 0 5px;
-}
+    ul {
+       
+        li {
+            background: #ffffff38;           
+            box-shadow: 2px 4px 10px rgba(11, 60, 60, 0.3);
+            border-radius: 30px; 
 
+            max-width: 1000px;
+            margin-bottom: 50px;
 
-/* Faq */
+            .acc-banner {
+                display: flex;
+                justify-content: space-between;
+                align-items:center;
+                
+                padding: 30px;
 
-.faq {
-    max-width: 900px;
-    margin: 40px auto;
-}
+                background: #FFFFFF;           
+                box-shadow: 2px 4px 10px rgba(11, 60, 60, 0.3);
+                border-radius: 30px; 
 
-.faq-item {
-    margin-bottom: 5px;
+                span {
+                    font-family: Ubuntu;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 28px;
 
-    background: #FFFFFF;
-/* 1 */
+                    color: #000000;
+                }
+                .data {
+                    color: #E55266;
+                }
 
-    box-shadow: 2px 4px 10px rgba(11, 60, 60, 0.3);
-    border-radius: 30px;
-}
-
-.faq-title {
-    display: block;
-    padding: 30px 35px 30px 35px;
-    position: relative;
-    color:#000000;
-    cursor: pointer;
-
-}
-
-.faq-title:after {
-    content: "";
-    display: block;
-
-    border-style: solid;
-    border-width: 8px 5px 0 5px;
-    border-color: #0A8B8B transparent transparent transparent;
-
-    position: absolute;
-    top: 50%;
-    right: 45px;
-
-    transform: translateY(-10%);
-}
-
-.faq-title:hover {
-    background-color: #DCDFDF;
-    border-radius: 30px;
-}
-
-.faq-input {
-    width: 0;
-    height: 0;
-
-    -webkit-appearance: none;
-    appearance: none;
-
-    position: absolute;
-}
-
-.faq-input:checked ~ .faq-title {
-    background-color:  #DCDFDF;
-    border-radius: 30px;
-}
-
-.faq-input:checked ~ .faq-title:after {
-    border-style: solid;
-    border-width: 0 5px 8px 5px;
-    border-color: transparent transparent #0A8B8B transparent;
-
-}
-
-.faq-input:checked ~ .faq-text {
-    display: block;
-}
-
-.faq-text {
-    display: none;
-    padding: 10px 15px;
-
-  color: #000000;
-    font-size: 14px;
-}
+                .open {
+                    border:0;
+                    border-radius: 50px;
+                    outline:none;
+                    font-size:19 px;
+                    text-transform:uppercase;
+                    letter-spacing:.1em;
+                    font-family: Ubuntu;
+                    font-style: normal;
+                    line-height: 22px;
+                    background:#1DA4A4;
+                    color: #FFFFFF;
+                    width: 180px;
+                    height: 45px;
+                    transition:all.5s ease;
+                    -webkit-appearance: none;
+                    box-shadow: 0px 3.18095px 3.18095px rgba(170, 175, 182, 0.49);
+                    border-radius: 39.7619px;
+                    &:hover, &:focus {
+                        background:rgb(20, 131, 131);
+                    }
+                }
+            }
+            .acc-content {
+                display: flex;
+                flex-direction: column;
+                padding: 40px;
+                margin-block-start: 0em;
+                margin-block-end: 0em;
 
 
-.faq-description {
-  color: #000000;
-}
-span {
-  margin-right: 15%;
+                .acc-tit {
+                    font-family: Ubuntu;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 28px;
+                    
+                    color: #0A8B8B; 
+                    margin-block-start: 0em;
+                    margin-block-end: 0em;
+                }
+                .acc-text {
+                    font-family: Ubuntu;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 22.9792px;
+                    line-height: 35px;
+                    padding-bottom:20px;
+                }
 
-}
-.data {
-  color: #E55266;
+                .acc-description {
+                    font-family: Ubuntu;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    color: #E55266;
+
+                    margin-block-start: 0em;
+                    margin-block-end: 0em;
+                }
+            }
+        }
+    }
 }
