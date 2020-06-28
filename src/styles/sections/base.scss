@@ -1,20 +1,38 @@
+.wrapper-base {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("/images/bg-left.png"),
+                    url("/images/bg-right.png") ;
+    background-repeat: no-repeat;
+    background-position: left 0% bottom 0%,  right 0% bottom 0%;
+    background-size: 65% 60%, 35% 60%;
+
+    // background-image: url("/images/bg-right.png");
+    // background-repeat: no-repeat;
+    // background-position: right;
+    // background-size: 35%;
+    // background-position: right 0% bottom 0%;
+
+
+    margin-bottom: 50px;
+
+}
+
 .base {
     display: flex;
-     flex-direction: row;
+    flex-direction: row;
     justify-content: space-between;
-    margin-top: 50px;
-    margin-bottom: 150px;
-    background-image: url("/images/bg-left.png");
-    background-repeat: no-repeat;
-    background-position: left 0% bottom 0%;
-    background-size: 65% 60%;
-
+    // flex-wrap: wrap;
+    width: 80%;
+   
 
     .base-caption {
         display: flex;
         flex-direction: column;
-        margin-top: 70px;
-        margin-left: 100px;
+        // margin-top: 70px;
+        // margin-left: 100px;
 
        .caption {
         font-family: a_FuturaRound;
@@ -84,77 +102,17 @@
 .social-icons {
     display: flex;
     flex-direction: row;
-    margin-top: 270px;
+    position: border-bottom;
+
+    margin-top: 65%;
     .social-icon {
 
        margin-right: 10px;
     }
 
 }
-// .erip-pay {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-//     margin-left: 150px;
-//     margin-right: 150px;
-//     margin-top: 50px;
-//     margin-bottom: 150px;
 
-//         // background-image: url(./../images/bg-left.png);
-//         // background-repeat: no-repeat;
-//         // padding-right: 480px;
-//         // padding-top: 200px;
-//     }
-
-
-//     .pay {
-//         display: flex;
-//         flex-direction: column;
-//         // background-image: url(./../images/bg-right.png);
-//         // background-repeat: no-repeat;
-//         // background-position: right;
-//         // margin-right: -150px;
-//         // background-size: contain;
-
-
-//         h2 {
-//         font-family: a_FuturaRoundDemi;
-//         font-weight: bold;
-//         font-size: 25px;
-//         line-height: 32px;
-//         }
-//         .pay-caption {
-//             display: flex;
-//             flex-direction: row;
-//             align-items: center;
-//             font-family: a_FuturaRoundDemi;
-//             font-size: 14px;
-//             line-height: 17px;
-//             letter-spacing: 0.05em;
-//             color: #000000;
-
-//             img {
-//             padding-right: 20px;
-//             width: 50px;
-//             height: 40px;
-//             }
-//         }
-//     }
-//     .pay-bg {
-//         .elem-3 {
-//             position: relative;
-//             z-index: 1;
-//             margin-left: 60%;
-//             margin-top: -180px;
-//         }
-//         .elem-4 {
-//             position: relative;
-//             z-index: 2;
-//             margin-left: 100%;
-//         }
-//     }
-// }
-@media (max-width: 1024px ) {
+@media (max-width: 1400px ) {
 
     .base {
 
@@ -186,5 +144,52 @@
             padding: 0px 15px;
             }
         }
+        
     }
+
+}
+
+
+@media (min-width: 1024px ) {
+  
+    
+        .wrapper-base {
+            background-size: 105% 70%;
+            background-image:url("/images/bg-mobile.png"),
+            none ;
+            
+            .base {
+
+                
+
+
+                .base-caption {
+
+                    margin-top: 70px;
+                    margin-left: 40px;
+                    margin-right: 40px;
+
+                .caption {
+                    font-size: 30px;
+                    line-height: 110%;
+                    letter-spacing: 0.05em;
+                    color: #EC5F72;
+                    h1 {
+                        font-size: 38px;}
+
+                }
+                }
+                .base-button {
+                    margin-top: 30px;
+                    button {
+
+                    font-size: 16px;
+
+                    padding: 0px 15px;
+                    }
+                }
+                
+            }
+        }
+    
 }
