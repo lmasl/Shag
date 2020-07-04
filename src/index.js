@@ -1,6 +1,7 @@
 import './styles/main.scss';
 // import './js/form';
 import Tabs from './js/tabs';
+import Accordion from './js/accordion';
 
 (() => {
   const donationTabs = new Tabs('.tab', 'active', (el, index) => {
@@ -22,3 +23,12 @@ import Tabs from './js/tabs';
     console.log(el, index);
   });
 })();
+
+const eventsTabs = new Accordion({
+  itemSelector: '.accordion-item',
+  buttonSelector: '.accordion .toggle',
+  contentSelector: '.acc-content',
+  displayNoneClass: 'hidden',
+  showClass: 'show',
+  cb: ({ target }, index) => console.log(target, index),
+});
