@@ -8,14 +8,6 @@
     background-repeat: no-repeat;
     background-position: left 0% bottom 0%,  right 0% bottom 0%;
     background-size: 65% 60%, 35% 60%;
-
-    // background-image: url("/images/bg-right.png");
-    // background-repeat: no-repeat;
-    // background-position: right;
-    // background-size: 35%;
-    // background-position: right 0% bottom 0%;
-
-
     margin-bottom: 50px;
 
 }
@@ -78,16 +70,6 @@
         padding: 0px 20px;
         margin-left: 40%;
 
-
-        // p {
-        //     font-family: Ubuntu;
-        //     font-style: normal;
-        //     text-transform: uppercase;
-        //     color: #0B6B6B;
-        //     padding: 10px 25px 10px 25px;
-        //     font-size: 18px;
-        //     font-weight: 500;
-        // }
         &:hover, &:focus {
             border:  2px solid #EC5F72;
             color: #EC5F72;
@@ -116,7 +98,9 @@
 
     .base {
 
-        background-size: 107% 60%;
+        background-size: 100% 55%;
+        display:flex;
+        justify-content: center;
 
 
         .base-caption {
@@ -150,11 +134,12 @@
 }
 
 
-@media (min-width: 1024px ) {
+@media screen and (max-width: 1024px ) {
   
+   
     
         .wrapper-base {
-            background-size: 105% 70%;
+            background-size: 100% 70%;
             background-image:url("/images/bg-mobile.png"),
             none ;
             
@@ -191,5 +176,53 @@
                 
             }
         }
+    
+}
+@media screen and (max-width: 768px ) {
+    .base {
+        flex-wrap: wrap;
+      
+    
+        .base-caption {
+           margin: 50px;
+    
+           .caption {
+            font-family: a_FuturaRound;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 120%;
+            letter-spacing: 0.05em;
+            color: #EC5F72;
+            h1 {
+                color: #EC5F72;
+                font-size: 48px;}
+    
+           }
+        }
+        .description {
+    
+            p {
+                
+                font-size: 26px;
+               
+            }
+        }
+        .base-button {
+            margin-top: 60px;
+            button {
+            padding: 0px 30px;
+            margin-left: 30%;
+            font-weight: 800;
+            width:40%
+          }
+        }
+        .social-icons {
+            display: none;
+        }
+    
+    
+    
+    }
     
 }

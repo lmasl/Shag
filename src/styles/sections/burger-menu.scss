@@ -1,0 +1,359 @@
+// vars
+$color: #000000;		  // icon color
+$blue: #000000;	  // background color #158fef
+$animation: 0.6s;	// animation speed
+$scale: 1;			  // icon scale 68/68 default
+
+.hamburglar {
+  top: 17px;
+  right: 16px;
+  margin: 5px;
+  position: fixed;
+  display: block;
+  width: 28px;
+  height: 28px;
+  //background: $blue;
+  -webkit-touch-callout: none;
+  user-select: none;
+  cursor: pointer;
+  z-index: 20;
+}
+
+// transition mask
+.path-burger {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 28px;
+  height: 26px;
+  //height: 68px;
+  //width: 68px;
+  // two masks because... browser support.
+  mask: url(#mask);
+  -webkit-mask-box-image: url(https://raygun.io/upload/mask.svg);
+}
+
+.animate-path {
+  position: absolute;
+  top: 0;
+  left: 0;
+  //width: 68px;
+  //height: 68px;
+  width: 28px;
+  height: 28px;
+}
+
+// what this does is create a small square that I then rotate behind an svg mask, giving the apparence of the line animating
+.path-rotation {
+  height: 14px;
+  width: 14px;
+  margin: 14px 14px 0 0;
+  transform: rotate(0deg);
+  transform-origin: 100% 0;
+  &:before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 14px;
+    margin: 0 2px 0 0;
+    background: $color;
+  }
+}
+
+// box rotation animation
+@keyframes rotate-out {
+  0% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-in {
+  0% {
+    transform: rotate(360deg);
+  }
+  40% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+// offset moves
+// dasharray is the dash size
+// need to be able to control dash space size.
+
+.hamburglar.is-open {
+  .path {
+    animation: dash-in $animation linear normal;
+    animation-fill-mode:forwards;
+  }
+  .animate-path {
+    animation: rotate-in $animation linear normal;
+    animation-fill-mode:forwards;
+  }
+}
+
+.hamburglar.is-closed {
+  .path {
+    animation: dash-out $animation linear normal;
+    animation-fill-mode:forwards;
+  }
+  .animate-path {
+    animation: rotate-out $animation linear normal;
+    animation-fill-mode:forwards;
+  }
+}
+
+.path {
+  stroke-dasharray: 240;
+  stroke-dashoffset: 240px;
+  stroke-linejoin: round;
+}
+
+@keyframes dash-in {
+  0% {
+    stroke-dashoffset: 240px;
+  }
+  40% {
+    stroke-dashoffset: 240px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash-out {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 240px;
+  }
+  100% {
+    stroke-dashoffset: 240px;
+  }
+}
+
+
+
+// All good burgers need filling!
+
+.burger-icon {
+  position: absolute;
+  left: 35%;
+  top: 25%;
+  height: 100%;
+  width: 100%;
+}
+
+.burger-container {
+  position: relative;
+  height: 13px;
+  width: 15px;
+}
+
+.burger-bun-top,
+.burger-bun-bot,
+.burger-filling {
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 15px;
+  border-radius: 2px;
+  background: $color;
+}
+
+.burger-bun-top {
+  top: 0;
+  transform-origin: 15px -1px;
+}
+
+.burger-bun-bot {
+  bottom: 1px;
+  transform-origin: 15px 3px;
+}
+
+.burger-filling {
+  top: 5px;
+}
+
+.burger-ring {
+  position: absolute;
+  top: 0;
+  left: 2px;
+  width: 100%;
+  height: 100%;
+}
+
+.svg-ring {
+  width: 28px;
+  height: 28px;
+}
+
+
+// bun animations
+.hamburglar.is-open {
+  .burger-bun-top {
+    animation: bun-top-out $animation linear normal;
+    animation-fill-mode:forwards;
+  }
+  .burger-bun-bot {
+    animation: bun-bot-out $animation linear normal;
+    animation-fill-mode:forwards;
+  }
+}
+.hamburglar.is-closed {
+  .burger-bun-top {
+    animation: bun-top-in $animation linear normal;
+    animation-fill-mode:forwards;
+  }
+  .burger-bun-bot {
+    animation: bun-bot-in $animation linear normal;
+    animation-fill-mode:forwards;
+  }
+}
+
+@keyframes bun-top-out {
+  0% {
+    left: 0;
+    top: 0;
+    transform: rotate(0deg);
+  }
+  20% {
+    left: 0;
+    top: 0;
+    transform: rotate(15deg);
+  }
+  80% {
+    left: -5.2px;
+    top: 0;
+    transform: rotate(-60deg);
+  }
+  100% {
+    left: -5.2px;
+    top: 1px;
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes bun-bot-out {
+  0% {
+    left: 0;
+    transform: rotate(0deg);
+  }
+  20% {
+    left: 0;
+    transform: rotate(-15deg);
+  }
+  80% {
+    left: -5.2px;
+    transform: rotate(60deg);
+  }
+  100% {
+    left: -5.2px;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes bun-top-in {
+  0% {
+    left: -5px;
+    bot: 0;
+    transform: rotate(-45deg);
+  }
+  20% {
+    left: -5px;
+    bot: 0;
+    transform: rotate(-60deg);
+  }
+  80% {
+    left: 0;
+    bot: 0;
+    transform: rotate(15deg);
+  }
+  100% {
+    left: 0;
+    bot: 1px;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bun-bot-in {
+  0% {
+    left: -5px;
+    transform: rotate(45deg);
+  }
+  20% {
+    left: -5px;
+    bot: 0;
+    transform: rotate(60deg);
+  }
+  80% {
+    left: 0;
+    bot: 0;
+    transform: rotate(-15deg);
+  }
+  100% {
+    left: 0;
+    transform: rotate(0deg);
+  }
+}
+
+// burger filling
+.hamburglar.is-open {
+  .burger-filling {
+    animation: burger-fill-out $animation linear normal;
+    animation-fill-mode:forwards;
+  }
+}
+
+.hamburglar.is-closed {
+  .burger-filling {
+    animation: burger-fill-in $animation linear normal;
+    animation-fill-mode:forwards;
+  }
+}
+
+@keyframes burger-fill-in {
+  0% {
+    width: 0;
+    left: 15px;
+  }
+  40% {
+    width: 0;
+    left: 15.5px;
+  }
+  80% {
+    width: 15px;
+    left: -1px;
+  }
+  100% {
+    width: 15px;
+    left: 0;
+  }
+}
+
+@keyframes burger-fill-out {
+  0% {
+    width: 15px;
+    left: 0;
+  }
+  20% {
+    width: 17px;
+    left: -1px;
+  }
+  40% {
+    width: 0;
+    left: 15.5px;
+  }
+  100% {
+    width: 0;
+    left: 15px;
+  }
+}

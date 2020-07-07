@@ -12,6 +12,7 @@
 @import 'sections/foother.scss';
 @import 'sections/history.scss';
 @import 'includes/normalize.scss';
+// @import 'sections/burger-menu.scss';
  //@import 'reset.scss';
 @import 'fonts';
 @import 'settings.scss';
@@ -20,5 +21,23 @@
 body {
 
   overflow-x: hidden;
+  margin : 0;
+padding : 0;
 }
+
+@media screen and (max-width: 1024px ) {
+  html, body {
+  overflow-x: hidden;
+  margin : 0;
+padding : 0;
+  }
+}
+
+// @media screen and (min-width: 768px ) {
+//   html {
+//     width: 768px;
+//     overflow-x: scroll;
+
+//   }
+// }
 

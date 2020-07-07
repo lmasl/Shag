@@ -5,7 +5,7 @@
 .wr-doing{
   .container{
     @media all and (max-width: 414px) {
-      padding: 0 20px;
+      padding: 0 70px;
     }
   }
 }
@@ -153,6 +153,28 @@
       line-height: 130%;
       text-align: center;
       color: #333333;
+    }
+  }
+  @media screen and (max-width: 768px ) {
+    h1 {
+      font-size: 40px;
+      margin-left: 30%;
+      margin-top: -1.5%;
+      @media screen and (max-width: 600px ) {
+        font-size: 30px;
+      }
+    }
+    .bg-heading {
+        img {
+        position: relative;
+        z-index: 1;
+        margin-left: 29%;
+        }
+    }
+    .doing-description {
+      p {
+        font-size: 27px;
+      }
     }
   }
 }

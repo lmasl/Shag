@@ -7,6 +7,9 @@
     padding-bottom: 300px;
     margin-bottom: 100px;
 
+ 
+
+
     .heading-history {
         h1 {
             font-family: a_FuturaRoundDemi;
@@ -31,12 +34,13 @@
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding-left: 180px;
-        padding-right: 180px;
+         padding-left: 13%;
+         padding-right: 13%;
+     
         margin-top: 100px;
 
         .history-content-1 {
-            margin-right: 70px;
+            
            p {
             font-family: Ubuntu;
             font-style: normal;
@@ -88,8 +92,9 @@
             box-shadow: 2px 4px 10px rgba(11, 60, 60, 0.3);
             border-radius: 46px;
             width: 590px;
-            height: 750px;
+            // height: 750px;
             margin-top: 50px;
+            padding-bottom: 50px;
             h4 {
                 font-family: Ubuntu;
                 font-style: normal;
@@ -136,7 +141,7 @@
                     right top 55%,
                     left top 110%;
 
-  background-size: 100% 40%;
+  background-size: 100% 45%;
 
     .heading-founders {
         margin-bottom: 100px;
@@ -180,6 +185,9 @@
                 margin-top: 10px;
                 width: 55px;
             }
+        }
+        .mobile-founders {
+            display:none;
         }
 
         .info-founders {
@@ -241,7 +249,7 @@
     }
 }
 
-@media (max-width: 1024px ) {
+@media screen and (max-width: 1024px ) {
     header {
 
        .contacts {
@@ -297,7 +305,7 @@
 
              h1 {
 
-                 margin-left: 30%;
+                 margin-left: 20%;
 
              }
              .bg-heading {
@@ -323,6 +331,131 @@
             .info-founders {
               display: flex;
               flex-direction: column;
+              border: 1px solid #FFFFFF;
+              background: #FFFFFF;
+              box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+              border-radius: 46px;
+              padding: 40px;
+              width: 600px;
+              margin-top: 100px;
+              margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px ) {
+    
+    .project-history {
+        background-image: url(/images/bg-history.png),
+                        url(/images/bg-history-2.png);
+        background-repeat: no-repeat;
+        background-position: left bottom, right top;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        margin-bottom: 100px;
+
+        .heading-history {
+            h1 {
+                margin-left: 20%;
+
+            }
+            .bg-heading {
+                margin-left: 19%;
+
+            }
+        }
+        .content {
+
+            justify-content: center;
+            padding-left: 80px;
+            padding-right: 80px;
+            margin-top: 100px;
+
+            .history-content-1 {
+                p {
+                    font-weight: 600;
+                    font-size: 25px;
+                    line-height: 30px;
+                }
+                 
+                
+                img {
+                    display:none;
+                }
+            }
+            .history-content-2 {
+                p {
+                    font-weight: 800;
+                    font-size: 25px;
+                    margin-left: 0px;
+                   line-height: 30px;
+                } 
+                h5 {
+                    font-family: Ubuntu;
+                font-style: italic;
+                font-size: 25px;
+                line-height: 110%;
+                color: #FFFFFF;
+                 padding: 150px 200px;
+                 background-image: url(/images/bg-birth.png);
+                 background-repeat: no-repeat;
+                 background-size:100% 105%;
+                }
+                
+            }
+            .schedule {
+               
+                width: 590px;
+                // height: 750px;
+                margin-top: 50px;
+                padding-bottom: 50px;
+            }
+        }
+    }
+    .founders {
+        padding-bottom: 200px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+         .heading-founders {
+
+
+             h1 {
+
+                 margin-left: 20%;
+
+             }
+             .bg-heading {
+                 margin-left: 29%;
+
+             }
+        }
+        .wr-founders {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+
+            .photo {
+
+               display:none;
+
+            }
+            .mobile-founders {
+                display:flex;
+                justify-content: center;
+                width:45%;
+                align-self: center;
+            }
+
+            .info-founders {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
               border: 1px solid #FFFFFF;
               background: #FFFFFF;
               box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
