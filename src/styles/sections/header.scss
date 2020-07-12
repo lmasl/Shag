@@ -7,9 +7,8 @@ header {
     margin-right: 100px;
     ul {
       li {
-        font-family: a_FuturaRoundDemi;
-        font-style: normal;
-        font-weight: normal;
+        font-family: a_FuturaRound;
+        font-weight: 700px;
         font-size: 20px;
         line-height: 25px;
         letter-spacing: 0.1em;
@@ -52,12 +51,6 @@ header {
     }
   }
 }
-
-// .bg {
-//     position: relative;
-//     img {
-//     width: 600px;}
-// }
 .main-navigation {
   background-image: url("/images/bg-up.png");
   left: 350px;

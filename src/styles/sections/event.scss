@@ -5,44 +5,12 @@
   background-position: bottom;
   background-size: 100%;
   padding-top: 100px;
-  padding-bottom: 100px;
-}
-.heading-event {
-  margin-bottom: 10%;
-  h1 {
-    font-family: a_FuturaRoundDemi;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 61px;
-    letter-spacing: 0.09em;
-    position: absolute;
-    z-index: 3;
-    margin-left: 36%;
-    margin-top: -1.5%;
-    color: #0A3737;
-  }
-  .bg-event {
-    img {
-      position: relative;
-      z-index: 1;
-      margin-left: 35%;
-    }
-  }
-  @media screen and (max-width: 768px ) {
-    h1 {
-      font-size: 40px;
-      margin-left: 25%;
-    }
-    .bg-event {
-      img {
-        margin-left: 24%;
-      }
-    }
+  @media screen and (max-width: 1024px ) {
+    padding-top: 0%;
   }
 }
-
 .accordion {
+  padding-top: 100px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -92,9 +60,7 @@
         border: 0;
         border-radius: 50px;
         outline: none;
-        font-size: 19px;
-        text-transform: uppercase;
-        letter-spacing: .1em;
+        font-size: 22px;
         font-family: Ubuntu;
         font-style: normal;
         line-height: 22px;
@@ -130,9 +96,19 @@
       margin-block-start: 0em;
       margin-block-end: 0em;
 
-      margin-top: calc(-100% + 113px);
+      margin-top: calc(-106% + 113px);
       transition: all 0.35s;
       z-index: 0;
+      @media screen and (max-width: 1024px ) {
+        margin-top: calc(-137% + 113px);
+        transition: all 0.35s;
+        z-index: 0;
+      }
+      @media screen and (max-width: 768px ) {
+        margin-top: calc(-163% + 113px);
+        transition: all 0.35s;
+        z-index: 0;
+      }
 
       .acc-tit {
         font-family: Ubuntu;
@@ -182,7 +158,8 @@
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 
     a {
         text-decoration: underline;

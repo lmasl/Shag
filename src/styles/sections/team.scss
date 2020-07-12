@@ -1,58 +1,33 @@
 .team {
-    margin-bottom: 100px;
-    margin-top: 100px;
+    
+    margin-top: 70px;
     background-image: url(/images/bg-team.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    padding-bottom: 70px;
-    .heading-team {
-        h1 {
-            font-family: a_FuturaRoundDemi;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 48px;
-            line-height: 61px;
-            letter-spacing: 0.05em;
-            position: absolute;
-            z-index: 3;
-            margin-left: 36%;
-            margin-top: -1.5%;
-            color: #0A3737;
-        }
-        .bg-heading {
-            img {
-            position: relative;
-            z-index: 1;
-            margin-left: 35%;
-            }
-        }
-    }
+    
     .info {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        // position: absolute;
-        // z-index: 2;
-
-
+        padding-top: 70px;
+         padding-bottom: 70px;
+        padding-left: 5%;
+        padding-right: 5%;
+   
         .curator {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items:center;
             width: 355px;
-            height: 655px;
+            height: 644px;
             background: #FFFFFF;
             box-shadow: 2px 4px 10px rgba(11, 60, 60, 0.3);
             border-radius: 31px;
-            margin-right: 35px;
-            margin-top: 150px;
-
-            .foto {
-                // padding-left: 25%;
-            }
+            
+            margin-top: 50px;
 
             h3 {
                 font-family: Ubuntu;
@@ -62,8 +37,11 @@
                 line-height: 28px;
                 color: #E55266;
                 text-align: center;
+                margin: 10px;
+                
             }
             .function {
+                
                 p {
                     font-family: Ubuntu;
                     font-style: normal;
@@ -72,16 +50,20 @@
                     line-height: 21px;
                     color: #000000;
                     text-align: center;
+                    margin: 10px;
+                
                 }
             }
             .about-me {
+               display: flex;
+               justify-content: flex-start;
                 p {
                     font-family: Ubuntu;
                     font-style: normal;
                     font-weight: normal;
                     font-size: 20px;
                     color: #000000;
-                    padding-left: 35px;
+                    padding-left: 30px;
                 }
             }
             .team-btn {
@@ -90,15 +72,19 @@
                     border-radius: 50px;
                     outline:none;
                     padding:15px 0;
-                    font-size:1rem;
-                    width: 150px;
-                    text-transform:uppercase;
-                    letter-spacing:.1em;
+                    width: 170px;
+                    font-family: Ubuntu;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 22px;
+                    line-height: 28px;
+                    text-transform: capitalize;
                     background:#1DA4A4;
                     color: #FFFFFF;
                     transition:all.5s ease;
                     -webkit-appearance: none;
-                    // margin-left: 28%;
+                    box-shadow: 0px 4px 4px rgba(170, 175, 182, 0.49);
+                  
                     &:hover, &:focus {
                         background:rgb(20, 131, 131);
                     }
@@ -106,18 +92,12 @@
 
             }
             .fb {
-                // margin-left: 45%;
-                margin-top: 15px;
+               padding-top: 20px;
             }
         }
     }
 }
 
-// .team-background {
-//     position: relative;
-//     width: 100%;
-
-// }
 
 @media (max-width: 1024px )  {
 
@@ -125,3 +105,4 @@
         display: none;
     }
 }
+

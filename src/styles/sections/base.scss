@@ -6,7 +6,7 @@
     background-image: url("/images/bg-left.png"),
                     url("/images/bg-right.png") ;
     background-repeat: no-repeat;
-    background-position: left 0% bottom 0%,  right 0% bottom 0%;
+    background-position: left 0% bottom 5%,  right 0% bottom 5%;
     background-size: 65% 60%, 35% 60%;
     margin-bottom: 50px;
 
@@ -23,6 +23,8 @@
     .base-caption {
         display: flex;
         flex-direction: column;
+        padding-top: 100px;
+        padding-bottom: 70px;
         // margin-top: 70px;
         // margin-left: 100px;
 
@@ -30,9 +32,8 @@
         font-family: a_FuturaRound;
         font-style: normal;
         font-weight: bold;
-        font-size: 48px;
-        line-height: 120%;
-        letter-spacing: 0.05em;
+        font-size: 58px;
+        margin: 0px;
         color: #EC5F72;
         h1 {
             color: #EC5F72;
@@ -41,7 +42,8 @@
        }
     }
     .description {
-
+        margin-top: -6%;
+        padding: 0%;
         p {
             font-family: Ubuntu;
             color: #000;
@@ -52,11 +54,12 @@
         }
     }
     .base-button {
-        margin-top: 60px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: flex-end;
         button {
         border:  2px solid #1DA4A4;
         box-sizing: border-box;
-        box-shadow: 7px 11px 19px rgba(0, 83, 83, 0.2);
         border-radius: 50px;
         cursor:pointer;
         transition:all.5s ease;
@@ -68,7 +71,7 @@
         text-transform: uppercase;
         color: #0B6B6B;
         padding: 0px 20px;
-        margin-left: 40%;
+        
 
         &:hover, &:focus {
             border:  2px solid #EC5F72;
@@ -86,7 +89,7 @@
     flex-direction: row;
     position: border-bottom;
 
-    margin-top: 65%;
+    margin-top: 77%;
     .social-icon {
 
        margin-right: 10px;

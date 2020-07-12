@@ -1,0 +1,127 @@
+
+.heading {
+    background-image:url(/images/heading.png);
+    background-repeat:no-repeat;
+    background-position-x: 54%;
+    background-position-y: 100%;
+    background-size: 40%;
+    text-align: center;
+   
+    h2 {
+          font-family: a_FuturaRoundDemi;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 48px;
+          line-height: 61px;
+          letter-spacing: 0.05em;
+          color: #0A3737;
+          text-transform: uppercase;
+          @media screen and (max-width: 768px ) {
+            font-size: 40px;
+          }  
+        }
+    @media screen and (max-width: 1024px ) {
+        background-position-x: 55%;
+        background-position-y: 100%;
+        background-size: 60%;
+    }
+  }
+  .heading-event {
+    background-image:url(/images/heading.png);
+    background-repeat:no-repeat;
+    background-position-x: 53%;
+    background-position-y: 65%;
+    background-size: 45%;
+    text-align: center;
+   
+    h2 {
+          font-family: a_FuturaRoundDemi;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 48px;
+          line-height: 61px;
+          letter-spacing: 0.05em;
+          color: #0A3737;
+          text-transform: uppercase;
+          @media screen and (max-width: 768px ) {
+            font-size: 40px;
+          }  
+        }
+     @media screen and (max-width: 1024px ) {
+        background-position-x: 55%;
+        background-position-y: 100%;
+        background-size: 65%;
+    }
+  }
+  .heading-second {
+    background-image:url(/images/heading.png);
+    background-repeat:no-repeat;
+    background-position-x: 60%;
+    background-position-y: 65%;
+    background-size: 35%;
+    text-align: center;
+   
+    h2 {
+          font-family: a_FuturaRoundDemi;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 48px;
+          line-height: 61px;
+          letter-spacing: 0.05em;
+          color: #0A3737;
+          text-transform: uppercase;
+          @media screen and (max-width: 768px ) {
+            font-size: 40px;
+          }  
+        }
+     @media screen and (max-width: 1024px ) {
+        background-position-x: 60%;
+        background-position-y: 80%;
+        background-size: 40%;
+    }
+  }
+  
+  .heading-team {
+    background-image:url(/images/heading.png);
+    background-repeat:no-repeat;
+    background-position-x: 58%;
+    background-position-y: 70%;
+    background-size: 40%;
+    text-align: center;
+   
+    h2 {
+          font-family: a_FuturaRoundDemi;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 48px;
+          line-height: 61px;
+          letter-spacing: 0.05em;
+          color: #0A3737;
+          text-transform: uppercase;
+          @media screen and (max-width: 768px ) {
+            font-size: 40px;
+          }  
+        }
+  }
+  .heading-founders {
+    background-image:url(/images/heading.png);
+    background-repeat:no-repeat;
+    background-position-x: 53%;
+    background-position-y: 65%;
+    background-size: 145%;
+    text-align: center;
+   
+    h2 {
+          font-family: a_FuturaRoundDemi;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 48px;
+          line-height: 61px;
+          letter-spacing: 0.05em;
+          color: #0A3737;
+          text-transform: uppercase;
+          @media screen and (max-width: 768px ) {
+            font-size: 40px;
+          }  
+        }
+  }

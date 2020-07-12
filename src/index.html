@@ -11,7 +11,7 @@
 
 <body>
   <!-- шапка+навигационное меню -->
-<section class="wr-header">
+<section class="wrapper-header">
   <header>
     <div class="container flat-menu">
         <div class="first-logo">
@@ -39,6 +39,7 @@
   </header>
 
 </section>
+<!-- форма для оплаты -->
 <section class="wrapper-base">
   <div class="base">
     <div class="base-caption">
@@ -53,17 +54,17 @@
         </p>
       </div>
       <div class="base-button">
-        <button id=#><p>Узнать больше</p></button>
+        <button id=#><a href="about.html"><p>Узнать больше</p></a></button>
       </div>
       <div class="social-icons">
         <div class="social-icon">
-          <img src="./images/fb-icon.png" alt="fb">
+          <a href="#"><img src="./images/fb-icon.png" alt="fb"></a>
         </div>
         <div class="social-icon">
-          <img src="./images/inst-icon.png" alt="instagram">
+          <a href="#"><img src="./images/inst-icon.png" alt="instagram"></a>
         </div>
         <div class="social-icon">
-          <img src="./images/yt-icon.png" alt="youtube">
+          <a href="#"><img src="./images/yt-icon.png" alt="youtube"></a>
         </div>
 
       </div>
@@ -119,16 +120,20 @@
             <form action="/" method="post">
 
               <div class="field-wrap">
-                <!-- <label>
-                  E-mail<span class="req">*</span>
-                </label> -->
+                <div class="top-row">
+                  <div class="field-wrap">
+                    <input type="text" required autocomplete="off" placeholder="Имя*"/>
+                  </div>
+  
+                  <div class="field-wrap">
+                    <input type="text" required autocomplete="off" placeholder="Фамилия*"/>
+                  </div>
+                </div>
+  
                 <input type="email" required autocomplete="off" placeholder="E-mail*"/>
               </div>
 
               <div class="field-wrap">
-                <!-- <label>
-                  Телефон<span class="req">*</span>
-                </label> -->
                 <input type="password" required autocomplete="off" placeholder="Телефон*"/>
               </div>
 
@@ -146,41 +151,32 @@
           <h2>Оплата через систему ЕРИП</h2>
         </div>
         <div class="pay-caption">
-          <img src="./images/btn.png" alt="button">
+          <img src="./images/erip.svg" alt="button">
 
           <p>Благотворительность, общественные объединения</p>
         </div>
         <div class="pay-caption">
-          <img src="./images/btn.png" alt="button">
+          <img src="./images/erip.svg" alt="button">
           <p>Помощь детям, взрослым</p>
         </div>
         <div class="pay-caption">
-          <img src="./images/btn.png" alt="button">
+          <img src="./images/erip.svg" alt="button">
           <p>Мы рядом</p>
         </div>
-        <!-- <div class="pay-bg">
-          <svg class="elem-3" width="430" height="383" viewBox="0 0 430 383" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M80 339.966C27.2 353.737 4.66667 374.393 0 383H430V-0.000244141C302 8.6065 278 182.893 250 251.747C222 320.601 146 322.753 80 339.966Z" fill="#FF8DA9"/>
-          </svg>
-          <svg class="elem-4" width="152" height="242" viewBox="0 0 152 242" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M29.3028 180.412C-6.56026 125.618 50.3907 59.6421 83.3491 33.5032C97.1768 26.4276 122.874 19.9616 153 25.1557L153 237.778C124.063 229.511 66.7839 237.677 29.3028 180.412Z" fill="#FFF968"/>
-          </svg>
-
-        </div> -->
+       
       </div>
     </div>
 </div>
 </section>
+<!-- "что мы делаем?" -->
 <section class="wr-doing">
-  <div class="heading-doing">
-    <h1>Что мы делаем?</h1>
-    <div class="bg-heading">
-      <img src="./images/heading.png">
-    </div>
-    <div class="doing-description">
-      <p>Проводим тренинги-интерактивы для детей, где:</p>
-    </div>
+  <div class="heading doing">
+    <h2>Что мы делаем?</h2>
   </div>
+  <div class="doing-description">
+    <p>Проводим тренинги-интерактивы для детей, где:</p>
+  </div>
+ 
   <div class="wr-container">
     <div class="wrapper">
       <svg class="snake-background">
@@ -231,12 +227,10 @@
     </div>
   </div>
 </section>
+<!-- команда -->
 <section class="team">
   <div class="heading-team">
-    <h1>Наша команда</h1>
-    <div class="bg-heading">
-      <img src="./images/heading.png">
-    </div>
+    <h2>Наша команда</h2>
   </div>
   <div class="info">
     <div class="curator">
@@ -322,14 +316,12 @@
     </svg> -->
 
 </section>
+<!-- мероприятия  -->
 <section class="event">
   <div class="container">
     <div class="heading-event">
-      <h1>Ближайшие события</h1>
-      <div class="bg-event">
-        <img src="./images/bg-event.png">
-      </div>
-
+      <h2>Ближайшие события</h2>
+      
     </div>
 
     <!-- аккордеон -->
@@ -416,12 +408,11 @@
     </div>
   </div>
 </section>
+<!-- новости instagram -->
 <section class="news">
-  <div class="heading-news">
-    <h1>Новости</h1>
-    <div class="bg-news">
-      <img src="./images/heading.png">
-    </div>
+  <div class="heading-second">
+    <h2>Новости</h2>
+ 
   </div>
   <div class="networks">
     <div class="instagram-1">
@@ -487,16 +478,15 @@
     <a href="#">Все новости</a>
   </div>
 
-  <!-- <svg class="network1" width="324" height="502" viewBox="0 0 324 502" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M-87.1113 310.138C19.0783 208.263 -124.358 55.6635 -40.1426 0.839642C-40.1426 0.839642 165.415 4.71373 261.877 68.7266C468.805 206.045 96.9376 532.047 -9.28449 498.675C-115.507 465.304 -175.924 395.341 -87.1113 310.138Z" fill="#FF8DA9"/>
-    </svg> -->
+
 
 </section>
+<!-- контакты -->
 <section class="foother">
 
-  <div class="heading-foother">
-    <h1>Контакты </h1>
-    <img class="bg-heading" src="./images/bg-event.png">
+  <div class="heading-second">
+    <h2>Контакты </h2>
+    <!-- <img class="bg-heading" src="./images/bg-event.png"> -->
   </div>
   <div class="foother-content">
     <div class="unit-1">
@@ -535,19 +525,18 @@
     </div>
     <div class="soc-icons">
       <div class="icon 1">
-        <img src="./images/fb-icon.png" alt="fb">
+        <a href="#"><img src="./images/fb-icon.png" alt="fb"></a>
       </div>
       <div class="icon 2">
-        <img src="./images/inst-icon.png" alt="instagram">
+        <a href="#"><img src="./images/inst-icon.png" alt="instagram"></a>
       </div>
       <div class="icon 3">
-        <img src="./images/yt-icon.png" alt="youtube">
+        <a href="#"><img src="./images/yt-icon.png" alt="youtube"></a>
       </div>
     </div>
   </div>
 
 </section>
-
 </body>
 
 </html>

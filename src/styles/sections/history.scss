@@ -10,25 +10,7 @@
  
 
 
-    .heading-history {
-        h1 {
-            font-family: a_FuturaRoundDemi;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 48px;
-            line-height: 61px;
-            letter-spacing: 0.05em;
-            margin-top: -2%;
-            position: absolute;
-            z-index: 3;
-            margin-left: 37%;
-
-        }
-        .bg-heading {
-            margin-left: 36%;
-            position: relative;
-        }
-    }
+    
     .content {
         display: flex;
         align-items: center;
@@ -143,27 +125,7 @@
 
   background-size: 100% 45%;
 
-    .heading-founders {
-        margin-bottom: 100px;
-
-        h1 {
-            font-family: a_FuturaRoundDemi;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 48px;
-            line-height: 61px;
-            letter-spacing: 0.05em;
-            margin-top: -2%;
-            position: absolute;
-            z-index: 3;
-            // margin-left: 37%;
-
-        }
-        .bg-heading {
-            // margin-left: 36%;
-            position: relative;
-        }
-    }
+    
     .wr-founders {
         display: flex;
         flex-wrap: wrap;
@@ -182,7 +144,7 @@
             margin-top: 20px;
 
             .icon {
-                margin-top: 10px;
+                margin-top: 20px;
                 width: 55px;
             }
         }
@@ -195,7 +157,7 @@
           flex-direction: column;
           border: 1px solid #FFFFFF;
           background: #FFFFFF;
-          box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 9px -7px 21px -5px rgba(0, 0, 0, 0.1);
           border-radius: 46px;
           padding: 40px;
           width: 670px;
@@ -206,6 +168,7 @@
             font-size: 35px;
             line-height: 44px;
             color: #E5445A;
+            margin: 0px;
           }
           .function {
             font-family: Ubuntu;
@@ -428,7 +391,7 @@
 
              }
              .bg-heading {
-                 margin-left: 29%;
+                 margin-left: 19%;
 
              }
         }

@@ -24,14 +24,14 @@ $br: 4px;
   justify-content: space-between;
   align-items: center;
   h2 {
-      text-align: center;
-      font-family: Ubuntu;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 28px;
-      letter-spacing: 0.05em;
-      color: #333333;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 28px;
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
   .card-icon {
     display: flex;
@@ -47,11 +47,7 @@ $br: 4px;
 .form-pay {
   display: flex;
   flex-direction: column;
-  // background-image: url(/images/bg-right.png);
-  // background-repeat: no-repeat;
-  // background-position: right;
-  // background-size: 85%;
-  // background-position: right 0% bottom 0%;
+ 
 }
 .form {
   background:#FFFFFF;
@@ -60,14 +56,21 @@ $br: 4px;
   margin:40px auto;
   box-shadow: 2px 4px 10px rgba(81, 102, 102, 0.3);
   border-radius: 30px;
-  font-family:Ubuntu;
+  font-family: Comic Sans MS;
   font-style: normal;
-  // margin-right: 100px;
-
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  
   a {
     text-decoration:none;
     color: #595E62;
     transition:.5s ease;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
     &:hover {
       color:$main-dark;
     }
@@ -160,7 +163,7 @@ input, textarea {
   background:none;
   background-image:none;
   border:none;
-  border-bottom:  1px solid #1DA4A4 ;
+  border-bottom:  1.5px solid #1DA4A4 ;
   color:#595E62;
   transition:border-color .25s ease, box-shadow .25s ease;
   
@@ -207,11 +210,16 @@ textarea {
   padding:15px 0;
   font-size:1.3rem;
   width: 150px;
-  margin-left: 300px;
+  margin-left: 270px;
   font-weight:$bold;
   text-transform:uppercase;
   letter-spacing:.1em;
   background:#E55266;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
   color:$white;
   transition:all.5s ease;
   -webkit-appearance: none;
@@ -233,12 +241,7 @@ textarea {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  // margin-left: 150px;
-  // margin-right: 150px;
-  // margin-top: 50px;
-  // margin-bottom: 150px;
-
-  }
+}
 
 
   .pay {
@@ -275,11 +278,3 @@ textarea {
       }
   }
 
-//  @media (max-width: 1024px ) {
-    
-//   .pay {
-
-//        background-image: none;
-
-//     }
-// }
