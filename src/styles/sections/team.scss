@@ -1,5 +1,5 @@
-.team {
-    
+.wrapper-team {
+    height: 120vh;
     margin-top: 70px;
     background-image: url(/images/bg-team.png);
     background-size: contain;
@@ -101,7 +101,7 @@
 
 @media (max-width: 1024px )  {
 
-    .team {
+    .wrapper-team {
         display: none;
     }
 }

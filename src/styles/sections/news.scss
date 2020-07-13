@@ -1,7 +1,5 @@
-.news {
+.wrapper-news {
     padding-top: 150px;
-    // margin-top: 250px;
-    // margin-bottom: 250px;
      padding-bottom: 200px;
     background-image: url(/images/news-bg-1.png),
                     url(/images/news-bg-2.png),
@@ -128,9 +126,9 @@
 
 
 @media screen and (max-width: 1024px )  {
-    .news {
-        margin-top: 150px;
-        margin-bottom: 150px;
+    .wrapper-news {
+        margin-top: 0px;
+        margin-bottom: 0px;
         background-image: url(/images/news-bg-1.png),
                         none,
                         url(/images/news-bg-3.png);

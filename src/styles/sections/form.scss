@@ -53,6 +53,7 @@ $br: 4px;
   background:#FFFFFF;
   padding: 40px;
   max-width:500px;
+  max-height:580px;
   margin:40px auto;
   box-shadow: 2px 4px 10px rgba(81, 102, 102, 0.3);
   border-radius: 30px;
@@ -86,6 +87,8 @@ $br: 4px;
   border: 1px solid #B1B7BC;
   box-sizing: border-box;
   border-radius: 10px 10px 10px 10px;
+  // margin-block-start: 0em;
+  // margin-block-end: 0.7em;
   &:after {
     content: "";
     display: table;
@@ -158,8 +161,8 @@ input, textarea {
   font-size:22px;
   display:block;
   width:100%;
-  height:100%;
-  padding:5px 10px;
+  height:50%;
+  padding:0px 10px;
   background:none;
   background-image:none;
   border:none;
@@ -208,7 +211,6 @@ textarea {
   border-radius: 50px;
   outline:none;
   padding:15px 0;
-  font-size:1.3rem;
   width: 150px;
   margin-left: 270px;
   font-weight:$bold;
@@ -229,7 +231,7 @@ textarea {
 }
 
 .button-block {
-  display:block;
+  margin-top: -10px;
 
 }
 

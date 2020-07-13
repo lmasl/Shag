@@ -1,49 +1,17 @@
-// .wave{
-//     position: relative;
-//     width: 100%;
-// }
-// .letters{
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     width: 42vw;
-//     margin-top: 727vh;
-// }
-.foother {
+
+.wrapper-foother {
+   
     padding-top: 100px;
     background-image: url(/images/foother.png);
-    background-size: 100% 80%;
+    background-size: 100% 75%;
     background-repeat: no-repeat;
     background-position-y: 100%;
-    // .heading-foother{
-
-
-    //     h1 {
-    //         font-family: a_FuturaRoundDemi;
-    //         font-style: normal;
-    //         font-weight: bold;
-    //         font-size: 48px;
-    //         line-height: 61px;
-    //         letter-spacing: 0.05em;
-    //         margin-top: -2%;
-    //         position: absolute;
-    //         z-index: 3;
-    //         margin-left: 40%;
-    //         // background-image: url(./../images/bg-heading.png);
-    //     }
-    //     .bg-heading {
-    //         margin-left: 39%;
-    //         position: relative;
-    //     }
-    // }
+   
 
     .foother-content {
         display: flex;
         flex-direction: row;
-        margin-left: 100px;
-        margin-right: 100px;
-        margin-top: 70px;
-        margin-bottom: 250px;
+        padding: 70px 100px 100px 100px;
         align-items:center;
         justify-content: space-between;
         font-family: Ubuntu;
@@ -67,15 +35,16 @@
 
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         font-family: Ubuntu;
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
         line-height: 23px;
-        margin-left: 100px;
-        margin-right: 100px;
-        padding-bottom: 100px;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 50px;
+        padding-bottom: 70px;
 
         color: #FFFFFF;
 
@@ -97,7 +66,7 @@
 
 @media (max-width: 1024px ) {
 
-    .foother {
+    .wrapper-foother {
 
         background-image: url(/images/f-bg-min.png);
         background-size: 100% 55%;
@@ -120,10 +89,10 @@
 }
 
 @media screen and (max-width: 768px ) {
-    .foother {
+    .wrapper-foother {
         padding-top: 100px;
         background-image: url(/images/f-bg-min.png);
-        background-size: 100% 55%;
+        background-size: 100% 52%;
         background-repeat: no-repeat;
         background-position-y: 100%;
         .heading-foother{
