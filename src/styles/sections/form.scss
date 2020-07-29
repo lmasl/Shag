@@ -23,7 +23,7 @@ $br: 4px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  h2 {
+  h4 {
     font-family: Ubuntu;
     font-style: normal;
     font-weight: 700;
@@ -280,3 +280,58 @@ textarea {
       }
   }
 
+  @media screen and (max-width: 650px) {
+    .form {
+      width: 100%;
+      font-size: 15px;
+      line-height: 25px;
+    
+    
+    
+    .tab-group {
+     
+      li a {
+        display:block;
+        text-decoration:none;
+        border-radius: 10px 10px 10px 10px;
+        padding:15px;
+        background:#FFFFFF;
+        color:#333333;
+        font-size:17px;
+        float:left;
+        width:50%;
+        text-align:center;
+        cursor:pointer;
+        transition:.5s ease;
+        &:hover {
+          background:$main-dark;
+          color:$white;
+        }
+      }
+    }
+    .button {
+      border:0;
+      border-radius: 50px;
+      outline:none;
+      padding:15px 0;
+      width: 130px;
+       margin-left: 80px;
+      
+      font-weight:$bold;
+      text-transform:uppercase;
+      letter-spacing:.1em;
+      background:#E55266;
+      font-family: Ubuntu;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 23px;
+      color:$white;
+      transition:all.5s ease;
+      -webkit-appearance: none;
+      
+    }
+
+  }
+  
+} 

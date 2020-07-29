@@ -18,13 +18,22 @@
           text-transform: uppercase;
           @media screen and (max-width: 768px ) {
             font-size: 40px;
-          }  
+          } 
+         
         }
     @media screen and (max-width: 1024px ) {
         background-position-x: 55%;
         background-position-y: 100%;
         background-size: 60%;
     }
+    @media screen and (max-width: 650px ) {
+      background-position-x: 54%;
+      background-position-y: 70%;
+      background-size: 65%;
+      h2 {
+        font-size: 25px;
+      }
+    } 
   }
   .heading-event {
     background-image:url(/images/heading.png);
@@ -52,6 +61,14 @@
         background-position-y: 100%;
         background-size: 65%;
     }
+    @media screen and (max-width: 650px ) {
+      background-position-x: 54%;
+      background-position-y: 70%;
+      background-size: 75%;
+      h2 {
+        font-size: 25px;
+      }
+    } 
   }
   .heading-second {
     background-image:url(/images/heading.png);
@@ -79,6 +96,14 @@
         background-position-y: 80%;
         background-size: 40%;
     }
+    @media screen and (max-width: 650px ) {
+      background-position-x: 65%;
+      background-position-y: 59%;
+      background-size: 55%;
+      h2 {
+        font-size: 25px;
+      }
+    } 
   }
   
   .heading-team {

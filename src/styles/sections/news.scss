@@ -9,6 +9,9 @@
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    @media screen and (max-width: 650px ) {
+        padding-top: 50px;
+       }
 }
 
 .all-news {
@@ -23,7 +26,6 @@
 
     a {
         text-decoration: underline;
-        text-decoration-style: dotted;
         color:#0B6B6B;
     }
 
@@ -144,8 +146,12 @@
 
             a {
                 text-decoration: underline;
-                text-decoration-style: dotted;
+                // text-decoration-style: dotted;
                 color:#0B6B6B;
+            }
+
+            @media screen and (max-width: 650px ) {
+                 font-size: 20px;
             }
 
         }
@@ -176,6 +182,12 @@
             // .instagram-2 {
             //     display: none;
             // }
+        }
+        @media screen and (max-width: 650px ) {
+            margin-top: 70px;
+            .instagram-2 {
+                display: none;
+            }
         }
 
 

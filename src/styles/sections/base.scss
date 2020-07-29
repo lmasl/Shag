@@ -236,3 +236,48 @@
     }
 }
 
+@media screen and (max-width: 650px) {
+    .wrapper-base{
+        .base {
+            flex-wrap: wrap;
+        
+        
+            .base-caption {
+                padding-top: 0px;
+                padding-bottom: 30px;
+        
+                
+            .caption {
+                line-height: 90%;
+                letter-spacing: .02em;
+                h1 {
+                    font-size: 35px;}
+        
+            }
+            }
+            .description {
+        
+                p {
+                    
+                    font-size: 20px;
+                
+                }
+            }
+            .base-button {
+                margin-top: 30px;
+                button {
+                padding: 0px 30px;
+                margin-left: -10%;
+                font-weight: 800;
+                width: 200px;
+                }
+            }
+            .social-icons {
+                display: none;
+            }
+        
+        
+        
+        }
+    }
+}

@@ -1,5 +1,5 @@
 .wrapper-event {
-  height: 120vh;
+  // height: 120vh;
   background-image: url(/images/event.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -54,9 +54,19 @@
         line-height: 28px;
 
         color: #000000;
+        @media all and (max-width: 550px) {
+          font-size: 14px;
+
+        }
       }
       .data {
         color: #E55266;
+      }
+      .time {
+        @media all and (max-width: 550px) {
+         display: none;
+          
+        }
       }
       .toggle {
         border: 0;
@@ -77,6 +87,7 @@
         &:hover, &:focus {
           background: rgb(20, 131, 131);
         }
+        
       }
       @media screen and (max-width: 768px ) {
         font-size: 17px;
@@ -85,6 +96,16 @@
           font-size: 16px;
           width: 150px;
           height: 45px;
+          
+        }
+      }
+      @media screen and (max-width: 650px ) {
+        font-size: 17px;
+
+        .toggle {
+          font-size: 15px;
+          width: 100px;
+          height: 40px;
           
         }
       }
@@ -111,6 +132,11 @@
         transition: all 0.35s;
         z-index: 0;
       }
+      @media screen and (max-width: 650px ) {
+        margin-top: calc(-330% + 113px);
+        transition: all 0.35s;
+        z-index: 0;
+      }
 
       .acc-tit {
         font-family: Ubuntu;
@@ -121,6 +147,9 @@
         color: #0A8B8B;
         margin-block-start: 0em;
         margin-block-end: 0em;
+        @media screen and (max-width: 650px ) {
+          font-size: 16px;
+        }
       }
       .acc-text {
         font-family: Ubuntu;
@@ -129,6 +158,9 @@
         font-size: 22.9792px;
         line-height: 35px;
         padding-bottom: 20px;
+        @media screen and (max-width: 650px ) {
+          font-size: 16px;
+        }
       }
 
       .acc-description {
@@ -142,6 +174,10 @@
 
         margin-block-start: 0em;
         margin-block-end: 0em;
+
+        @media screen and (max-width: 650px ) {
+          font-size: 16px;
+        }
       }
     }
     .acc-content.show {
@@ -151,6 +187,9 @@
       display: none;
     }
   }
+  @media screen and (max-width: 650px ) {
+    padding-top: 50px;
+   }
 }
 .event-link {
   display: flex;
@@ -165,9 +204,12 @@
 
     a {
         text-decoration: underline;
-        text-decoration-style: dotted;
+        // text-decoration-style: dotted;
         color:#0B6B6B;
     }
+    @media screen and (max-width: 650px ) {
+      font-size: 20px;
+     }
 }
 
 .events {
