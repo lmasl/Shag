@@ -1,9 +1,13 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: ['@babel/polyfill', './src/index.js'],
+  entry: [
+    '@babel/polyfill',
+    './src/index.js',
+  ],
   output: {
     path: `${__dirname}/dist`,
     filename: 'bundle.js',
@@ -17,6 +21,22 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel-loader',
         exclude: '/node_modules/',
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif|svg)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'images',
+        },
+      },
+      {
+        test: /\.(ttf|otf|webp|eot|woff|woff2)$/i,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'fonts',
+        },
       },
       {
         test: /\.css$/,
@@ -49,19 +69,17 @@ module.exports = {
           },
         ],
       },
+
       {
-        test: /\.(ttf|otf|webp|eot|woff|woff2)$/i,
-        loader: 'file-loader',
-        options: {
-          name: '[name].[ext]',
-          outputPath: 'fonts',
-        },
+        test: /\.html$/,
+        loader: 'html-loader',
       },
     ],
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title : 'Hello',
+      title: 'Step forward',
       filename: 'index.html',
       template: './src/index.html',
     }),
