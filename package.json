@@ -14,14 +14,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Persik3221/rs_lang.git"
+    "url": "git+https://github.com/rgovin/step-forward.git"
   },
   "author": "73 group",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Persik3221/rs_lang/issues"
+    "url": "https://github.com/rgovin/step-forward/issues"
   },
-  "homepage": "https://github.com/Persik3221/rs_lang#readme",
+  "homepage": "https://github.com/rgovin/step-forward#readme",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
@@ -60,9 +60,14 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.8.7",
+    "accordion-js": "^2.8.0",
+    "bootstrap": "^4.5.2",
     "core-js": "^3.6.5",
     "jquery": "^3.5.1",
     "jquery-ui": "^1.12.1",
-    "jquery-ui-dist": "^1.12.1"
+    "jquery-ui-dist": "^1.12.1",
+    "popper.js": "^1.16.1",
+    "pug": "^3.0.0",
+    "pug-loader": "^2.4.0"
   }
 }

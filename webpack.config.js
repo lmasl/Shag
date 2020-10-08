@@ -69,7 +69,10 @@ module.exports = {
           },
         ],
       },
-
+      {
+        test: /\.(pug|jade)$/,
+        loader: 'pug-loader',
+      },
       {
         test: /\.html$/,
         loader: 'html-loader',
@@ -81,7 +84,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Step forward',
       filename: 'index.html',
-      template: './src/index.html',
+      template: './src/index.jade',
     }),
     new MiniCssExtractPlugin({
       filename: 'styles.css',
@@ -89,6 +92,9 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       { from: './src/images/', to: './images/' },
+      { from: './src/about.html', to: './' },
+      { from: './src/contacts.html', to: './' },
+      { from: './src/event.html', to: './' },
     ]),
   ],
   resolve: {

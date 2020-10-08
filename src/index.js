@@ -1,7 +1,8 @@
-import $ from 'jquery-ui';
+import 'bootstrap';
 import './styles/main.scss';
 import Tabs from './js/tabs';
 import Accordion from './js/accordion';
+
 
 
 // import about from './about.html';
@@ -29,20 +30,21 @@ import Accordion from './js/accordion';
   });
 })();
 
-const toggleButtons = Array.from(document.querySelectorAll('.toggle'));
+// const toggleButtons = Array.from(document.querySelectorAll('.toggle'));
 
-$('.toggle').button();
-// toggleButtons.forEach((btn) => {
-//   .button();
-//   btn.addEventListener('click', (e) => {
-//     console.log('btn');
-//   })
+// $('.toggle').button();
+// // toggleButtons.forEach((btn) => {
+// //   .button();
+// //   btn.addEventListener('click', (e) => {
+// //     console.log('btn');
+// //   })
+// // });
+//
+//  console.log('>>>', $);
+// $('.accordion').accordion({
+//   header: 'div.acc-banner',
+//   animate: 200,
 // });
-
- console.log('>>>', $);
-$('#accordion').accordion({
-  header: "h3"
-});
 
 // const eventsTabs = new Accordion({
 //   itemSelector: '.accordion-item',
