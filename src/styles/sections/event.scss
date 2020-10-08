@@ -88,15 +88,17 @@
     }
   }
 }
-.acc-content {
+.acc-content-container {
   display: flex;
   flex-direction: column;
   position: relative;
 
-  padding: 40px;
+  //padding: 40px;
   margin-block-start: 0em;
   margin-block-end: 0em;
-
+  .acc-content{
+    padding: 40px;
+  }
   //margin-top: calc(-100% + 113px);
   //transition: all 0.35s;
   z-index: 0;
@@ -131,6 +133,11 @@
 
     margin-block-start: 0em;
     margin-block-end: 0em;
+  }
+  .toggle {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 .acc-content.show {

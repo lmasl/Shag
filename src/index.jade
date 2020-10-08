@@ -250,11 +250,11 @@ html(lang='en')
         <path d="M651 253.472C875.065 -81.3359 1331 11.9435 1331 11.9435V784H-31C-31 784 426.935 588.28 651 253.472Z" fill="#FF8DA9"/>
         </svg>
     section.event
+      .heading-event
+        h1 Ближайшие события
+        .bg-event
+          img(src='./images/bg-event.png')
       .container
-        .heading-event
-          h1 Ближайшие события
-          .bg-event
-            img(src='./images/bg-event.png')
         .accordion#accordion
           .accordion-item
             .acc-banner#headOne
@@ -262,78 +262,81 @@ html(lang='en')
               span.data 12 января
               span 11:00
               button.toggle(data-toggle='collapse' data-target='#contentOne' aria-expanded='true' aria-controls='contentOne')  Подробнее
-            .acc-content.collapse#contentOne(aria-labelledby="headOne" data-parent="#accordion")
-              p.acc-tit Место проведения:
-              p.acc-text «Руденская вспомогательная школа-интернат», г.п. Руденск.
-              p.acc-tit Целевая аудитория:
-              p.acc-text 9, 10, 12 класс (42 человека)
-              p.acc-tit  Цель занятия:
-              p.acc-text
-                | Формирование основ финансовой грамотности у детей-сирот с интеллектуальной
-                | недостаточностью.
-              p.acc-tit  Задачи:
-              p.acc-text
-                | Познакомить детей с понятиями «деньги», «купюра», «монеты», «банк», «бюджет», «расходы»,
-                | «доходы»; объяснить необходимость и возможность покупки того или иного товара; воспитать правильное
-                | отношение к деньгам.
-              p.acc-description  ОПИСАНИЕ:
-              p.acc-text
-                | Теоретическая часть — презентация, подготовленная командой «Мы рядом». Проверка полученных
-                | знаний в конце занятия — тест по пройденному материалу.
-              button.toggle(data-toggle='collapse' data-target='#contentOne' aria-expanded='true' aria-controls='contentOne')
-                img(src='./images/сlose.png')
+            .acc-content-container.collapse#contentOne(aria-labelledby="headOne" data-parent="#accordion")
+              .acc-content
+                p.acc-tit Место проведения:
+                p.acc-text «Руденская вспомогательная школа-интернат», г.п. Руденск.
+                p.acc-tit Целевая аудитория:
+                p.acc-text 9, 10, 12 класс (42 человека)
+                p.acc-tit  Цель занятия:
+                p.acc-text
+                  | Формирование основ финансовой грамотности у детей-сирот с интеллектуальной
+                  | недостаточностью.
+                p.acc-tit  Задачи:
+                p.acc-text
+                  | Познакомить детей с понятиями «деньги», «купюра», «монеты», «банк», «бюджет», «расходы»,
+                  | «доходы»; объяснить необходимость и возможность покупки того или иного товара; воспитать правильное
+                  | отношение к деньгам.
+                p.acc-description  ОПИСАНИЕ:
+                p.acc-text
+                  | Теоретическая часть — презентация, подготовленная командой «Мы рядом». Проверка полученных
+                  | знаний в конце занятия — тест по пройденному материалу.
+                button.toggle(data-toggle='collapse' data-target='#contentOne' aria-expanded='true' aria-controls='contentOne')
+                  img(src='./images/сlose.png')
           .accordion-item
             .acc-banner#headTwo
               span  Банк и деньги (часть 1)
               span.data 12 января
               span 11:00
               button.toggle(data-toggle='collapse' data-target='#contentTwo' aria-expanded='true' aria-controls='contentTwo')  Подробнее
-            .acc-content.collapse#contentTwo(aria-labelledby="headTwo" data-parent="#accordion")
-              p.acc-tit Место проведения:
-              p.acc-text «Руденская вспомогательная школа-интернат», г.п. Руденск.
-              p.acc-tit Целевая аудитория:
-              p.acc-text 9, 10, 12 класс (42 человека)
-              p.acc-tit  Цель занятия:
-              p.acc-text
-                | Формирование основ финансовой грамотности у детей-сирот с интеллектуальной
-                | недостаточностью.
-              p.acc-tit  Задачи:
-              p.acc-text
-                | Познакомить детей с понятиями «деньги», «купюра», «монеты», «банк», «бюджет», «расходы»,
-                | «доходы»; объяснить необходимость и возможность покупки того или иного товара; воспитать правильное
-                | отношение к деньгам.
-              p.acc-description  ОПИСАНИЕ:
-              p.acc-text
-                | Теоретическая часть — презентация, подготовленная командой «Мы рядом». Проверка полученных
-                | знаний в конце занятия — тест по пройденному материалу.
-              button.toggle(data-toggle='collapse' data-target='#contentTwo' aria-expanded='true' aria-controls='contentTwo')
-                img(src='images/сlose.png')
+            .acc-content-container.collapse#contentTwo(aria-labelledby="headTwo" data-parent="#accordion")
+              .acc-content
+                p.acc-tit Место проведения:
+                p.acc-text «Руденская вспомогательная школа-интернат», г.п. Руденск.
+                p.acc-tit Целевая аудитория:
+                p.acc-text 9, 10, 12 класс (42 человека)
+                p.acc-tit  Цель занятия:
+                p.acc-text
+                  | Формирование основ финансовой грамотности у детей-сирот с интеллектуальной
+                  | недостаточностью.
+                p.acc-tit  Задачи:
+                p.acc-text
+                  | Познакомить детей с понятиями «деньги», «купюра», «монеты», «банк», «бюджет», «расходы»,
+                  | «доходы»; объяснить необходимость и возможность покупки того или иного товара; воспитать правильное
+                  | отношение к деньгам.
+                p.acc-description  ОПИСАНИЕ:
+                p.acc-text
+                  | Теоретическая часть — презентация, подготовленная командой «Мы рядом». Проверка полученных
+                  | знаний в конце занятия — тест по пройденному материалу.
+                button.toggle(data-toggle='collapse' data-target='#contentTwo' aria-expanded='true' aria-controls='contentTwo')
+                  img(src='images/сlose.png')
           .accordion-item
             .acc-banner#headTree
               span  Банк и деньги (часть 1)
               span.data 12 января
               span 11:00
               button.toggle(data-toggle='collapse' data-target='#contentThree' aria-expanded='true' aria-controls='contentThree')  Подробнее
-            .acc-content.collapse#contentThree(aria-labelledby="headTree" data-parent="#accordion")
-              p.acc-tit Место проведения:
-              p.acc-text «Руденская вспомогательная школа-интернат», г.п. Руденск.
-              p.acc-tit Целевая аудитория:
-              p.acc-text 9, 10, 12 класс (42 человека)
-              p.acc-tit  Цель занятия:
-              p.acc-text
-                | Формирование основ финансовой грамотности у детей-сирот с интеллектуальной
-                | недостаточностью.
-              p.acc-tit  Задачи:
-              p.acc-text
-                | Познакомить детей с понятиями «деньги», «купюра», «монеты», «банк», «бюджет», «расходы»,
-                | «доходы»; объяснить необходимость и возможность покупки того или иного товара; воспитать правильное
-                | отношение к деньгам.
-              p.acc-description  ОПИСАНИЕ:
-              p.acc-text
-                | Теоретическая часть — презентация, подготовленная командой «Мы рядом». Проверка полученных
-                | знаний в конце занятия — тест по пройденному материалу.
-              button.toggle(data-toggle='collapse' data-target='#contentThree' aria-expanded='true' aria-controls='contentThree')
-                img(src='images/сlose.png')
+            .acc-content-container.collapse#contentThree(aria-labelledby="headTree" data-parent="#accordion")
+              .acc-content
+                p.acc-tit Место проведения:
+                p.acc-text «Руденская вспомогательная школа-интернат», г.п. Руденск.
+                p.acc-tit Целевая аудитория:
+                p.acc-text 9, 10, 12 класс (42 человека)
+                p.acc-tit  Цель занятия:
+                p.acc-text
+                  | Формирование основ финансовой грамотности у детей-сирот с интеллектуальной
+                  | недостаточностью.
+                p.acc-tit  Задачи:
+                p.acc-text
+                  | Познакомить детей с понятиями «деньги», «купюра», «монеты», «банк», «бюджет», «расходы»,
+                  | «доходы»; объяснить необходимость и возможность покупки того или иного товара; воспитать правильное
+                  | отношение к деньгам.
+                p.acc-description  ОПИСАНИЕ:
+                p.acc-text
+                  | Теоретическая часть — презентация, подготовленная командой «Мы рядом». Проверка полученных
+                  | знаний в конце занятия — тест по пройденному материалу.
+                button.toggle(data-toggle='collapse' data-target='#contentThree' aria-expanded='true' aria-controls='contentThree')
+                  img(src='images/сlose.png')
     section.news
       .heading-news
         h1 Новости
