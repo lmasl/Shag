@@ -1,6 +1,13 @@
+import 'bootstrap';
 import './styles/main.scss';
-// import './js/form';
 import Tabs from './js/tabs';
+import Accordion from './js/accordion';
+
+
+
+// import about from './about.html';
+// import contacts from './contacts.html';
+// import event from './event.html';
 
 (() => {
   const donationTabs = new Tabs('.tab', 'active', (el, index) => {
@@ -22,3 +29,28 @@ import Tabs from './js/tabs';
     console.log(el, index);
   });
 })();
+
+// const toggleButtons = Array.from(document.querySelectorAll('.toggle'));
+
+// $('.toggle').button();
+// // toggleButtons.forEach((btn) => {
+// //   .button();
+// //   btn.addEventListener('click', (e) => {
+// //     console.log('btn');
+// //   })
+// // });
+//
+//  console.log('>>>', $);
+// $('.accordion').accordion({
+//   header: 'div.acc-banner',
+//   animate: 200,
+// });
+
+// const eventsTabs = new Accordion({
+//   itemSelector: '.accordion-item',
+//   buttonSelector: '.accordion .toggle',
+//   contentSelector: '.acc-content',
+//   displayNoneClass: 'hidden',
+//   showClass: 'show',
+//   cb: ({ target }, index) => console.log(target, index),
+// });

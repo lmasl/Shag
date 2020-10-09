@@ -8,8 +8,10 @@
 
   <title>The step</title>
 </head>
-
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <body>
+
 <section class="wr-header">
   <header>
     <div class="container flat-menu">
@@ -17,7 +19,6 @@
         <img src="./images/logo-2.png" alt="Logo">
       </div>
       <div class="bg">
-        <!-- <img src="./images/bg-up.png"> -->
       </div>
       <div class="main-navigation">
         <ul>
@@ -39,7 +40,10 @@
       </div>
     </div>
   </header>
-  <section class="base">
+
+</section>
+<section class="wrapper-base">
+  <div class="base">
     <div class="base-caption">
       <div class="caption">
         <h1>Образовательный проект</h1>
@@ -71,12 +75,13 @@
       <div class="form">
         <div class="form-head">
           <h2>Пожертвовать</h2>
-          <img src="images/visa.png" alt="visa">
+          <div class="card-icon">
+            <img src="images/mastercard.png" alt="mastercard">
+            <img src="images/visa.png" alt="visa">
+          </div>
         </div>
         <ul class="tab-group">
-          <!--href="#signup"-->
           <li class="tab active"><a>Сумма</a></li>
-          <!--#login-->
           <li class="tab"><a>Другая сумма</a></li>
         </ul>
 
@@ -85,40 +90,25 @@
 
             <form action="/" method="post" class="form-signup">
               <div class="field-wrap">
-                <label>
-                  Назначение платежа<span class="req">*</span>
-                </label>
-                <input type="email" required autocomplete="off" name="email"/>
+                <input type="email" required autocomplete="off" name="email" placeholder="Назначение платежа*"/>
               </div>
 
               <div class="top-row">
                 <div class="field-wrap">
-                  <label>
-                    Имя<span class="req">*</span>
-                  </label>
-                  <input type="text" required autocomplete="off"/>
+                  <input type="text" required autocomplete="off" placeholder="Имя*"/>
                 </div>
 
                 <div class="field-wrap">
-                  <label>
-                    Фамилия<span class="req">*</span>
-                  </label>
-                  <input type="text" required autocomplete="off"/>
+                  <input type="text" required autocomplete="off" placeholder="Фамилия*"/>
                 </div>
               </div>
 
               <div class="field-wrap">
-                <label>
-                  E-mail<span class="req">*</span>
-                </label>
-                <input type="email" required autocomplete="off"/>
+                <input type="email" required autocomplete="off" placeholder="E-mail*"/>
               </div>
 
               <div class="field-wrap">
-                <label>
-                  Телефон<span class="req">*</span>
-                </label>
-                <input type="password" required autocomplete="off"/>
+                <input type="password" required autocomplete="off" placeholder="Телефон*"/>
               </div>
 
               <button type="submit" class="button button-block">Помочь</button>
@@ -132,17 +122,17 @@
             <form action="/" method="post">
 
               <div class="field-wrap">
-                <label>
+                <!-- <label>
                   E-mail<span class="req">*</span>
-                </label>
-                <input type="email" required autocomplete="off"/>
+                </label> -->
+                <input type="email" required autocomplete="off" placeholder="E-mail*"/>
               </div>
 
               <div class="field-wrap">
-                <label>
+                <!-- <label>
                   Телефон<span class="req">*</span>
-                </label>
-                <input type="password" required autocomplete="off"/>
+                </label> -->
+                <input type="password" required autocomplete="off" placeholder="Телефон*"/>
               </div>
 
 
@@ -182,10 +172,8 @@
         </div> -->
       </div>
     </div>
-
-  </section>
+  </div>
 </section>
-
 <section class="wr-doing">
   <div class="heading-doing">
     <h1>Что мы делаем?</h1>
@@ -338,51 +326,138 @@
     </svg> -->
 
 </section>
-
 <section class="event">
-  <div class="heading-event">
-    <h1>Ближайшие события</h1>
-    <div class="bg-event">
-      <img src="./images/bg-event.png">
+  <div class="container">
+    <div class="heading-event">
+      <h1>Ближайшие события</h1>
+      <div class="bg-event">
+        <img src="./images/bg-event.png">
+      </div>
+
+    </div>
+    <div class="accordion" >
+      <li class="accordion-item">
+        <div class="acc-banner">
+          <span> Банк и деньги (часть 1) </span>
+          <span class="data">12 января</span>
+          <span>11:00</span>
+          <button class="toggle"> Подробнее</button>
+        </div>
+        <div class="acc-content">
+          <p class="acc-tit">Место проведения:</p>
+          <p class="acc-text">«Руденская вспомогательная школа-интернат», г.п. Руденск.</p>
+          <p class="acc-tit">Целевая аудитория:</p>
+          <p class="acc-text">9, 10, 12 класс (42 человека) </p>
+          <p class="acc-tit"> Цель занятия:</p>
+          <p class="acc-text">Формирование основ финансовой грамотности у детей-сирот с интеллектуальной
+            недостаточностью.</p>
+          <p class="acc-tit"> Задачи:</p>
+          <p class="acc-text">Познакомить детей с понятиями «деньги», «купюра», «монеты», «банк», «бюджет», «расходы»,
+            «доходы»; объяснить необходимость и возможность покупки того или иного товара; воспитать правильное
+            отношение к деньгам.</p>
+          <p class="acc-description"> ОПИСАНИЕ:</p>
+          <p class="acc-text">Теоретическая часть — презентация, подготовленная командой «Мы рядом». Проверка полученных
+            знаний в конце занятия — тест по пройденному материалу.</p>
+          <button class="toggle"><img src="./images/сlose.png"/></button>
+        </div>
+      </li>
+      <li class="accordion-item">
+        <div class="acc-banner">
+          <span> Банк и деньги (часть 1) </span>
+          <span class="data">12 января</span>
+          <span>11:00</span>
+          <button class="toggle"> Подробнее</button>
+        </div>
+        <div class="acc-content">
+          <p class="acc-tit">Место проведения:</p>
+          <p class="acc-text">«Руденская вспомогательная школа-интернат», г.п. Руденск.</p>
+          <p class="acc-tit">Целевая аудитория:</p>
+          <p class="acc-text">9, 10, 12 класс (42 человека) </p>
+          <p class="acc-tit"> Цель занятия:</p>
+          <p class="acc-text">Формирование основ финансовой грамотности у детей-сирот с интеллектуальной
+            недостаточностью.</p>
+          <p class="acc-tit"> Задачи:</p>
+          <p class="acc-text">Познакомить детей с понятиями «деньги», «купюра», «монеты», «банк», «бюджет», «расходы»,
+            «доходы»; объяснить необходимость и возможность покупки того или иного товара; воспитать правильное
+            отношение к деньгам.</p>
+          <p class="acc-description"> ОПИСАНИЕ:</p>
+          <p class="acc-text">Теоретическая часть — презентация, подготовленная командой «Мы рядом». Проверка полученных
+            знаний в конце занятия — тест по пройденному материалу.</p>
+          <button class="toggle"><img src="images/spot6.png"></button>
+        </div>
+      </li>
+      <li class="accordion-item">
+        <div class="acc-banner">
+          <span> Банк и деньги (часть 1) </span>
+          <span class="data">12 января</span>
+          <span>11:00</span>
+          <button class="toggle"> Подробнее</button>
+        </div>
+        <div class="acc-content">
+          <p class="acc-tit">Место проведения:</p>
+          <p class="acc-text">«Руденская вспомогательная школа-интернат», г.п. Руденск.</p>
+          <p class="acc-tit">Целевая аудитория:</p>
+          <p class="acc-text">9, 10, 12 класс (42 человека) </p>
+          <p class="acc-tit"> Цель занятия:</p>
+          <p class="acc-text">Формирование основ финансовой грамотности у детей-сирот с интеллектуальной
+            недостаточностью.</p>
+          <p class="acc-tit"> Задачи:</p>
+          <p class="acc-text">Познакомить детей с понятиями «деньги», «купюра», «монеты», «банк», «бюджет», «расходы»,
+            «доходы»; объяснить необходимость и возможность покупки того или иного товара; воспитать правильное
+            отношение к деньгам.</p>
+          <p class="acc-description"> ОПИСАНИЕ:</p>
+          <p class="acc-text">Теоретическая часть — презентация, подготовленная командой «Мы рядом». Проверка полученных
+            знаний в конце занятия — тест по пройденному материалу.</p>
+          <button class="toggle"><img src="images/spot6.png"></button>
+        </div>
+      </li>
     </div>
 
-  </div>
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Collapsible Group Item #1
+            </button>
+          </h5>
+        </div>
 
-  <div class="faq">
-    <div class="faq-item">
-      <input class="faq-input" type="checkbox" id="faq_1">
-      <label class="faq-title" for="faq_1"><span class="name">Банк (часть1)</span> <span class="data"> 12 августа</span>
-        <span class="time">11:00 </span></label>
-
-      <div class="faq-text">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eum, ipsum. Voluptatum deleniti ut ipsa
-          blanditiis, modi facere distinctio impedit illum fugiat ex vel, quasi sit, explicabo veniam nemo
-          reprehenderit!</p>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Collapsible Group Item #2
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Collapsible Group Item #3
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="faq-item">
-      <input class="faq-input" type="checkbox" id="faq_2">
-      <label class="faq-title" for="faq_2"><span class="name">Банк (часть1)</span> <span class="data"> 12 августа</span>
-        <span class="time">11:00 </span></label>
-      <div class="faq-text">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eum, ipsum. Voluptatum deleniti ut ipsa
-          blanditiis, modi facere distinctio impedit illum fugiat ex vel, quasi sit, explicabo veniam nemo
-          reprehenderit!</p>
-      </div>
-    </div>
-    <div class="faq-item">
-      <input class="faq-input" type="checkbox" id="faq_3">
-      <label class="faq-title" for="faq_3"><span class="name">Банк (часть1)</span> <span class="data"> 12 августа</span>
-        <span class="time">11:00 </span></label>
-      <div class="faq-text">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eum, ipsum. Voluptatum deleniti ut ipsa
-          blanditiis, modi facere distinctio impedit illum fugiat ex vel, quasi sit, explicabo veniam nemo
-          reprehenderit!</p>
-      </div>
-    </div>
-  </div>
-
 </section>
 <section class="news">
   <div class="heading-news">
@@ -516,7 +591,6 @@
   </div>
 
 </section>
-
 </body>
 
 </html>

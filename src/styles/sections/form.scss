@@ -22,41 +22,47 @@ $br: 4px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   h2 {
       text-align: center;
-      margin-top: -10px;
       font-family: Ubuntu;
       font-style: normal;
       font-weight: 500;
       font-size: 24px;
       line-height: 28px;
+      letter-spacing: 0.05em;
       color: #333333;
   }
-  img {
-    width: 70px;
-    height: 30px;
+  .card-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      margin-left: 10px;
+    }
   }
+  
 
 }
 .form-pay {
   display: flex;
   flex-direction: column;
-  background-image: url(/images/bg-right.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 85%;
-  background-position: right 0% bottom 0%;
+  // background-image: url(/images/bg-right.png);
+  // background-repeat: no-repeat;
+  // background-position: right;
+  // background-size: 85%;
+  // background-position: right 0% bottom 0%;
 }
 .form {
   background:#FFFFFF;
   padding: 40px;
-  max-width:520px;
+  max-width:500px;
   margin:40px auto;
   box-shadow: 2px 4px 10px rgba(81, 102, 102, 0.3);
   border-radius: 30px;
   font-family:Ubuntu;
   font-style: normal;
-  margin-right: 100px;
+  // margin-right: 100px;
 
   a {
     text-decoration:none;
@@ -155,13 +161,17 @@ input, textarea {
   background-image:none;
   border:none;
   border-bottom:  1px solid #1DA4A4 ;
-  color:$white;
+  color:#595E62;
   transition:border-color .25s ease, box-shadow .25s ease;
+  
   &:focus {
 		outline:0;
 		border-color:$main;
   }
 }
+
+
+
 
 textarea {
   border:2px solid $gray-light;
@@ -223,10 +233,10 @@ textarea {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 150px;
-  margin-right: 150px;
-  margin-top: 50px;
-  margin-bottom: 150px;
+  // margin-left: 150px;
+  // margin-right: 150px;
+  // margin-top: 50px;
+  // margin-bottom: 150px;
 
   }
 
@@ -262,10 +272,11 @@ textarea {
       }
   }
 
-  @media (max-width: 1024px ) {
-    .form-pay {
+//  @media (max-width: 1024px ) {
+    
+//   .pay {
 
-      background-image: none;
+//        background-image: none;
 
-    }
-  }
+//     }
+// }
