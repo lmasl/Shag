@@ -11,18 +11,21 @@
 @import 'sections/news.scss';
 @import 'sections/foother.scss';
 @import 'sections/history.scss';
+@import 'sections/modal.scss';
 @import 'includes/normalize.scss';
-// @import 'sections/burger-menu.scss';
- //@import 'reset.scss';
+// @import 'includes/slick.scss';
+//  @import 'includes/slick-theme.scss';
+// @import 'sections/burger-menu.scss'; //бъет ошибки при подключении
+
 @import 'fonts';
 @import 'settings.scss';
 @import 'styles.scss';
 
 body {
-
- 
+  min-width: 320px;
+  box-sizing: border-box;
   margin : 0;
-padding : 0;
+  padding : 0;
 }
 
 @media screen and (max-width: 1024px ) {

@@ -80,6 +80,11 @@ module.exports = {
       filename: 'contacts.html',
       template: './src/contacts.html',
     }),
+    new HtmlWebpackPlugin({
+      title : 'firstmodal.html',
+      filename: 'firstmodal.html',
+      template: './src/firstmodal.html',
+    }),
     new MiniCssExtractPlugin({
       filename: 'styles.css',
 
