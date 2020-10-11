@@ -161,6 +161,7 @@
             margin-left: 0px;
             margin-right: 0px;
             padding: 50px 30px 30px 30px;
+            flex-direction: column;
     
             h4{
                 font-family: a_FuturaRoundDemi;
@@ -173,10 +174,8 @@
             }
             .unit-1, .unit-2 {
                 font-size: 14px;
+                margin-right: auto;
             }
-            // .unit-1 {
-            //     display: none;
-            // }
         }
         .contacts {
     
@@ -198,6 +197,62 @@
                 justify-content: center;
     
     
+                .icon {
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 376px ) {
+    .wrapper-foother {
+        padding-top: 100px;
+        background-image: url(/images/f-bg-min.png);
+        background-size: 150% 42%;
+        background-repeat: no-repeat;
+        background-position-y: 100%;
+        
+        .foother-content {
+            margin-left: 0px;
+            margin-right: 0px;
+            padding:30px 30px 70px 30px;
+            flex-direction: column;
+
+    
+            h4{
+                font-family: a_FuturaRoundDemi;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 25px;
+                letter-spacing: 0.03em;
+                color: #E55266;
+            }
+            .unit-1 {
+                
+                margin-right: auto;
+            }
+        }
+        .contacts {
+            font-size: 15px;
+            line-height: 23px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 30px;
+            .requisites {
+               p {
+                margin-block-start: 0em;
+                margin-block-end: 0em;}
+            }
+            .soc-icons {
+                margin-top: 40px;
+                display: flex;
+                flex-direction: row;
+                align-items:center;
+                justify-content: center;
                 .icon {
                     padding-left: 30px;
                 }

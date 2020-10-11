@@ -15,15 +15,16 @@
 @import 'includes/normalize.scss';
 // @import 'includes/slick.scss';
 //  @import 'includes/slick-theme.scss';
-// @import 'sections/burger-menu.scss'; //бъет ошибки при подключении
+
 
 @import 'fonts';
 @import 'settings.scss';
 @import 'styles.scss';
 
 body {
-  min-width: 320px;
+  width: 100%;
   box-sizing: border-box;
+
   margin : 0;
   padding : 0;
 }

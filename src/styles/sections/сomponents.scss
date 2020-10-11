@@ -29,11 +29,19 @@
     @media screen and (max-width: 650px ) {
       background-position-x: 54%;
       background-position-y: 70%;
-      background-size: 65%;
+      background-size: 78%;
+      h2 {
+        font-size: 24px;
+      }
+    } 
+    @media screen and (max-width: 320px ) {
+      background-position-x: 65%;
+      background-position-y: 59%;
+      background-size: 78%;
       h2 {
         font-size: 25px;
       }
-    } 
+}
   }
   .heading-event {
     background-image:url(/images/heading.png);
@@ -69,6 +77,14 @@
         font-size: 25px;
       }
     } 
+    @media screen and (max-width: 340px ) {
+      background-position-x: 54%;
+      background-position-y: 70%;
+      background-size: 85%;
+      h2 {
+        font-size: 22px;
+      }
+    } 
   }
   .heading-second {
     background-image:url(/images/heading.png);
@@ -91,19 +107,20 @@
             font-size: 40px;
           }  
         }
-     @media screen and (max-width: 1024px ) {
+    @media screen and (max-width: 1024px ) {
         background-position-x: 60%;
         background-position-y: 80%;
         background-size: 40%;
     }
     @media screen and (max-width: 650px ) {
-      background-position-x: 65%;
-      background-position-y: 59%;
-      background-size: 55%;
-      h2 {
-        font-size: 25px;
-      }
+            background-position-x: 65%;
+            background-position-y: 59%;
+            background-size: 55%;
+            h2 {
+              font-size: 25px;
+            }
     } 
+     
   }
   
   .heading-team {
@@ -149,4 +166,12 @@
             font-size: 40px;
           }  
         }
+    @media screen and (max-width: 650px ) {
+          background-position-x: 54%;
+          background-position-y: 50%;
+          background-size: 150%;
+          h2 {
+            font-size: 24px;
+          }
+    } 
   }
