@@ -1,108 +1,106 @@
 .wrapper-team {
-    // height: 120vh;
-    margin-top: 70px;
-    background-image: url(/images/bg-team.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    
-    .info {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        padding-top: 70px;
-         padding-bottom: 70px;
-        padding-left: 5%;
-        padding-right: 5%;
-   
-        .curator {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items:center;
-            width: 355px;
-            height: 644px;
-            background: #FFFFFF;
-            box-shadow: 2px 4px 10px rgba(11, 60, 60, 0.3);
-            border-radius: 31px;
-            
-            margin-top: 50px;
+  // height: 120vh;
+  margin-top: 70px;
+  background-image: url(/images/bg-team.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 
-            h3 {
-                font-family: Ubuntu;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 24px;
-                line-height: 28px;
-                color: #E55266;
-                text-align: center;
-                margin: 10px;
-                
-            }
-            .function {
-                
-                p {
-                    font-family: Ubuntu;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 18px;
-                    line-height: 21px;
-                    color: #000000;
-                    text-align: center;
-                    margin: 10px;
-                
-                }
-            }
-            .about-me {
-               display: flex;
-               justify-content: flex-start;
-                p {
-                    font-family: Ubuntu;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 20px;
-                    color: #000000;
-                    padding-left: 30px;
-                }
-            }
-            .team-btn {
-                button {
-                    border:0;
-                    border-radius: 50px;
-                    outline:none;
-                    padding:15px 0;
-                    width: 170px;
-                    font-family: Ubuntu;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 22px;
-                    line-height: 28px;
-                    text-transform: capitalize;
-                    background:#1DA4A4;
-                    color: #FFFFFF;
-                    transition:all.5s ease;
-                    -webkit-appearance: none;
-                    box-shadow: 0px 4px 4px rgba(170, 175, 182, 0.49);
-                  
-                    &:hover, &:focus {
-                        background:rgb(20, 131, 131);
-                    }
-                }
+  .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 
-            }
-            .fb {
-               padding-top: 20px;
-            }
-        }
+  .curator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 355px;
+    height: 644px;
+    background: #FFFFFF;
+    box-shadow: 2px 4px 10px rgba(11, 60, 60, 0.3);
+    border-radius: 31px;
+
+    margin-top: 50px;
+
+    h3 {
+      font-family: Ubuntu;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 28px;
+      color: #E55266;
+      text-align: center;
+      margin: 10px;
+
     }
+    .function {
+
+      p {
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        text-align: center;
+        margin: 10px;
+      }
+    }
+    .about-me {
+      display: flex;
+      justify-content: flex-start;
+      p {
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        color: #000000;
+        padding-left: 30px;
+      }
+    }
+    .team-btn {
+      button {
+        border: 0;
+        border-radius: 50px;
+        outline: none;
+        padding: 15px 0;
+        width: 170px;
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 28px;
+        text-transform: capitalize;
+        background: #1DA4A4;
+        color: #FFFFFF;
+        transition: all .5s ease;
+        -webkit-appearance: none;
+        box-shadow: 0px 4px 4px rgba(170, 175, 182, 0.49);
+
+        &:hover, &:focus {
+          background: rgb(20, 131, 131);
+        }
+      }
+
+    }
+    .fb {
+      padding-top: 20px;
+    }
+  }
 }
 
+@media (max-width: 1024px) {
 
-@media (max-width: 1024px )  {
-
-    .wrapper-team {
-        display: none;
-    }
+  .wrapper-team {
+    display: none;
+  }
 }
 

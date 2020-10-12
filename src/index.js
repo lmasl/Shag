@@ -2,6 +2,8 @@ import './styles/main.scss';
 // import './js/form';
 import Tabs from './js/tabs';
 import Accordion from './js/accordion';
+import './js/burger';
+import './js/sliders';
 
 (() => {
   const donationTabs = new Tabs('.tab', 'active', (el, index) => {
@@ -42,10 +44,10 @@ const eventsTabs = new Accordion({
 //    const slider = () => {
 //     const slide = document.querySelectorAll('.portfolio-item'),
 //         btn = document.querySelectorAll('.portfolio-btn'),
-       
+
 //         dots = document.querySelector('.portfolio-dots'),
 //         slider = document.querySelector('.portfolio-content');
-    
+
 //     let currentSlide = 0,
 //         dotNew,
 //         interval;
@@ -55,7 +57,7 @@ const eventsTabs = new Accordion({
 //     dotNew.classList.add('dot');
 //     dots.appendChild(dotNew);
 //     }
-    
+
 
 //     let  dot = document.querySelectorAll('.dot');
 //     dot[0].classList.add('dot-active');
@@ -69,7 +71,7 @@ const eventsTabs = new Accordion({
 
 //     const autoPlaySlide = () => {
 //         prevSlide(slide, currentSlide, 'portfolio-item-active');
-        
+
 //         prevSlide(dot, currentSlide, 'dot-active');
 //         currentSlide++;
 //         if(currentSlide >= slide.length){
@@ -90,7 +92,7 @@ const eventsTabs = new Accordion({
 //         event.preventDefault();
 
 //         let target = event.target;
-        
+
 //          if(!target.matches('.portfolio-btn, .dot')){
 //              return;
 //          }
@@ -133,7 +135,7 @@ const eventsTabs = new Accordion({
 //             startSlide();
 //         }
 //     });
-//     startSlide(5000); 
- 
+//     startSlide(5000);
+
 // }
 // slider();

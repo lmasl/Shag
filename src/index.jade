@@ -1,55 +1,457 @@
 doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1")
-        title Step
-        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
-    body
-        main
-            section.wr-doing
-                div.container
-                    .wrapper
-                        svg.snake-background
-                            use(xlink:href="#snake")
-                        .spot.spot-1
-                            .spot-wrapper
-                                img.spot-bkg(src="./images/spot1.png" alt="step-background")
-                                .content
-                                    img.icon(src="./images/spot1-icon.png" alt="step-icon")
-                                    p Учим воспитанников распределять бюджет
-                        .spot.spot-2
-                            .spot-wrapper
-                                img.spot-bkg(src="./images/spot2.png" alt="step-background")
-                                .content
-                                    img.icon(src="./images/spot2-icon.png" alt="step-icon")
-                                    p Объясняем, как выбирать продукты в магазине
-                        .spot.spot-3
-                            .spot-wrapper
-                                img.spot-bkg(src="./images/spot3.png" alt="step-background")
-                                .content
-                                    img.icon(src="./images/spot3-icon.png" alt="step-icon")
-                                    p Учим, как платить за коммунальные услуги
-                        .spot.spot-4
-                            .spot-wrapper
-                                img.spot-bkg(src="./images/spot4.png" alt="step-background")
-                                .content
-                                    img(src="./images/spot4-icon.png" alt="step-icon")
-                                    p Объясняем, что такое кредиты
-                        .spot.spot-5
-                            .spot-wrapper
-                                img.spot-bkg(src="./images/spot5.png" alt="step-background")
-                                .content
-                                    img.icon(src="./images/spot5-icon.png" alt="step-icon")
-                                    p Учим пользоваться банковскими картами
-                        .spot.spot-6
-                            .spot-wrapper
-                                img.spot-bkg(src="./images/spot6.png" alt="step-background")
-                                .content
-                                    img.icon(src="./images/spot6-icon.png" alt="step-icon")
-                                    p Рассказываем, какие бывают документы
-
-svg(display="none")
-    defs
-        symbol(id="snake" viewBox='0 0 928 1115' preserveAspectRatio="none" fill='none', xmlns='http://www.w3.org/2000/svg')
-            path(d='M214.224 80.5808C214.224 80.5808 670.516 -21.375 755.503 8.07912C840.491 37.5332 943.789 103.145 922.619 197.737C901.449 292.33 341.205 272.237 229.619 286.737C118.032 301.237 -31.0372 359.237 55.2474 603.737C141.532 848.237 465.159 562.737 788.032 562.737C956.032 562.737 936.119 772.237 874.123 801.952C605.808 930.557 158.763 646.262 19.032 883.737C-11.9634 936.415 -1.09304 1018.34 55.2473 1085.24C106.618 1146.23 436.119 1085.24 436.119 1085.24', stroke='#1DA4A4', stroke-width='4', stroke-linecap='round', stroke-dasharray='4 12')
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='x-ua-compatible' content='ie=edge')
+    title The step
+  body
+    // шапка+навигационное меню
+    section.wrapper-header
+      header
+        .container.flat-menu
+          .first-logo
+            img(src='./images/logo-2.png' alt='Logo')
+          .hamburger-menu
+            input#menu__toggle(type='checkbox')
+            label.menu__btn(for='menu__toggle')
+              span
+            ul.menu__box
+              li
+                a.menu__item(href='#') о нас
+              li
+                a.menu__item(href='#') тренинги
+              li
+                a.menu__item(href='#') контакты
+          .main-navigation
+            ul
+              li
+                a.main-menu__link(href='about.html') о нас
+              li
+                a.main-menu__link(href='event.html') тренинги
+              li
+                a.main-menu__link(href='contacts.html') контакты
+          .contacts
+            .contacts__number
+              p +375 (33) 640-18-11
+            .contacts__mode
+              p время работы 9:00 - 19:00
+          .second-logo
+            img(src='./images/logo-1.png' alt='Logo')
+    // форма для оплаты
+    section.wrapper-base
+      .base
+        .base-caption
+          .caption
+            h1 Образовательный проект
+          .description
+            p
+              | Помогаем детям-воспитанникам
+              br
+              |           из школ-интернатов развить навыки,
+              br
+              |           которые дети из полноценных семей
+              br
+              |           приобретают дома.
+          .base-button
+            button(id='#')
+              a(href='about.html')
+                p Узнать больше
+          .social-icons
+            .social-icon
+              a(href='#')
+                img(src='./images/fb-icon.png' alt='fb')
+            .social-icon
+              a(href='#')
+                img(src='./images/inst-icon.png' alt='instagram')
+            .social-icon
+              a(href='#')
+                img(src='./images/yt-icon.png' alt='youtube')
+        .form-pay
+          .form
+            .form-head
+              h4 Пожертвовать
+              .card-icon
+                img(src='images/mastercard.png' alt='mastercard')
+                img(src='images/visa.png' alt='visa')
+            ul.tab-group
+              li.tab.active
+                a Сумма
+              li.tab
+                a Другая сумма
+            .tab-content
+              #signup
+                form.form-signup(action='/' method='post')
+                  .field-wrap
+                    input(type='email' required='' autocomplete='off' name='email' placeholder='Назначение платежа*')
+                  .top-row
+                    .field-wrap
+                      input(type='text' required='' autocomplete='off' placeholder='Имя*')
+                    .field-wrap
+                      input(type='text' required='' autocomplete='off' placeholder='Фамилия*')
+                  .field-wrap
+                    input(type='email' required='' autocomplete='off' placeholder='E-mail*')
+                  .field-wrap
+                    input(type='password' required='' autocomplete='off' placeholder='Телефон*')
+                  button.button.button-block(type='submit') Помочь
+              #login.hide
+                form(action='/' method='post')
+                  .field-wrap
+                    .top-row
+                      .field-wrap
+                        input(type='text' required='' autocomplete='off' placeholder='Имя*')
+                      .field-wrap
+                        input(type='text' required='' autocomplete='off' placeholder='Фамилия*')
+                    input(type='email' required='' autocomplete='off' placeholder='E-mail*')
+                  .field-wrap
+                    input(type='password' required='' autocomplete='off' placeholder='Телефон*')
+                  button.button.button-block(type='submit')
+                    a(href='firstmodal.html')
+                    | Помочь
+          .pay
+            .erip
+              h2 Оплата через систему ЕРИП
+            .pay-caption
+              img(src='./images/erip.svg' alt='button')
+              p Благотворительность, общественные объединения
+            .pay-caption
+              img(src='./images/erip.svg' alt='button')
+              p Помощь детям, взрослым
+            .pay-caption
+              img(src='./images/erip.svg' alt='button')
+              p Мы рядом
+    // "что мы делаем?"
+    section.wrapper-doing
+      .heading.doing
+        h2 Что мы делаем?
+      .doing-description
+        p Проводим тренинги-интерактивы для детей, где:
+      .wr-container
+        .wrapper
+          svg.snake-background
+            use(xlink:href='#snake')
+          .spot.spot-1
+            .spot-wrapper
+              img.spot-bkg(src='./images/spot1.png' alt='step-background')
+              .content
+                img.icon(src='./images/spot1-icon.png' alt='step-icon')
+                p Учим воспитанников распределять бюджет
+          .spot.spot-2
+            .spot-wrapper
+              img.spot-bkg(src='./images/spot2.png' alt='step-background')
+              .content
+                img.icon(src='./images/spot2-icon.png' alt='step-icon')
+                p Объясняем, как выбирать продукты в магазине
+          .spot.spot-3
+            .spot-wrapper
+              img.spot-bkg(src='./images/spot3.png' alt='step-background')
+              .content
+                img.icon(src='./images/spot3-icon.png' alt='step-icon')
+                p Учим, как платить за коммунальные услуги
+          .spot.spot-4
+            .spot-wrapper
+              img.spot-bkg(src='./images/spot4.png' alt='step-background')
+              .content
+                img(src='./images/spot4-icon.png' alt='step-icon')
+                p Объясняем, что такое кредиты
+          .spot.spot-5
+            .spot-wrapper
+              img.spot-bkg(src='./images/spot5.png' alt='step-background')
+              .content
+                img.icon(src='./images/spot5-icon.png' alt='step-icon')
+                p Учим пользоваться банковскими картами
+          .spot.spot-6
+            .spot-wrapper
+              img.spot-bkg(src='./images/spot6.png' alt='step-background')
+              .content
+                img.icon(src='./images/spot6-icon.png' alt='step-icon')
+                p Рассказываем, какие бывают документы
+    // команда
+    section.wrapper-team
+      .heading-team
+        h2 Наша команда
+      .info
+        .curator
+          .foto
+            img(src='./images/ekaterina.png')
+          h3 Архипова Екатерина
+          .function
+            p руководитель образовательных проектов
+          .about-me
+            p
+              | Дети, воспитанные в семье,
+              br
+              |           получают основные жизненные навыки, знания
+              br
+              |           в рамках семьи. Нас в детстве
+              br
+              |           отправляли за хлебом,
+              br
+              |           молоком, давали деньги - мы
+              br
+              |           приносили сдачу...
+          .team-btn
+            button Подробнее
+          .fb
+            a
+              img(src='./images/fb-pink.png')
+        .curator
+          .foto
+            img(src='./images/alexandra.png')
+          h3 Хвойницкая Александра
+          .function
+            p председатель правления
+          .about-me
+            p
+              | В благотворительной
+              br
+              |           деятельности я с 15 лет:
+              br
+              |           случайно попала
+              br
+              |           в организацию, которая
+              br
+              |           организовывала
+              br
+              |           поздравление для детей
+              br
+              |           с инвалидностью...
+          .team-btn
+            button Подробнее
+          .fb
+            a
+              img(src='./images/fb-pink.png')
+        .curator
+          .foto
+            img(src='./images/anatoly.png')
+          h3 Гаврилов Анатолий
+          .function
+            p руководитель спортивных проектов
+          .about-me
+            p
+              | Александр Македонский
+              br
+              |           просил, чтобы его хоронили
+              br
+              |           таким образом, чтобы руки
+              br
+              |           лежали не в гробу. Этим он
+              br
+              |           показал, что смог завоевать
+              br
+              |           весь мир, но с собой ничего
+              br
+              |           не забирает...
+          .team-btn
+            button Подробнее
+          .fb
+            a
+              img(src='./images/fb-pink.png')
+      //
+        <svg class="team-background" viewBox="0 0 1280 784" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M651 253.472C875.065 -81.3359 1331 11.9435 1331 11.9435V784H-31C-31 784 426.935 588.28 651 253.472Z" fill="#FF8DA9"/>
+        </svg>
+    // мероприятия
+    section.wrapper-event
+      .container
+        .heading-event
+          h2 Ближайшие события
+        // аккордеон
+        ul.accordion
+          li.accordion-item
+            .acc-banner
+              span  Банк и деньги (часть 1)
+              span.data 12 января
+              span.time 11:00
+              button.toggle  Подробнее
+            .acc-content
+              p.acc-tit Место проведения:
+              p.acc-text «Руденская вспомогательная школа-интернат», г.п. Руденск.
+              p.acc-tit Целевая аудитория:
+              p.acc-text 9, 10, 12 класс (42 человека)
+              p.acc-tit  Цель занятия:
+              p.acc-text
+                | Формирование основ финансовой грамотности у детей-сирот с интеллектуальной
+                | недостаточностью.
+              p.acc-tit  Задачи:
+              p.acc-text
+                | Познакомить детей с понятиями «деньги», «купюра», «монеты», «банк», «бюджет», «расходы»,
+                | «доходы»; объяснить необходимость и возможность покупки того или иного товара; воспитать правильное
+                | отношение к деньгам.
+              p.acc-description  ОПИСАНИЕ:
+              p.acc-text
+                | Теоретическая часть — презентация, подготовленная командой «Мы рядом». Проверка полученных
+                | знаний в конце занятия — тест по пройденному материалу.
+              button.toggle
+                img(src='./images/сlose.png')
+          li.accordion-item
+            .acc-banner
+              span  Банк и деньги (часть 1)
+              span.data 12 января
+              span.time 11:00
+              button.toggle  Подробнее
+            .acc-content
+              p.acc-tit Место проведения:
+              p.acc-text «Руденская вспомогательная школа-интернат», г.п. Руденск.
+              p.acc-tit Целевая аудитория:
+              p.acc-text 9, 10, 12 класс (42 человека)
+              p.acc-tit  Цель занятия:
+              p.acc-text
+                | Формирование основ финансовой грамотности у детей-сирот с интеллектуальной
+                | недостаточностью.
+              p.acc-tit  Задачи:
+              p.acc-text
+                | Познакомить детей с понятиями «деньги», «купюра», «монеты», «банк», «бюджет», «расходы»,
+                | «доходы»; объяснить необходимость и возможность покупки того или иного товара; воспитать правильное
+                | отношение к деньгам.
+              p.acc-description  ОПИСАНИЕ:
+              p.acc-text
+                | Теоретическая часть — презентация, подготовленная командой «Мы рядом». Проверка полученных
+                | знаний в конце занятия — тест по пройденному материалу.
+              button.toggle
+                img(src='./images/сlose.png')
+          li.accordion-item
+            .acc-banner
+              span  Банк и деньги (часть 1)
+              span.data 12 января
+              span.time 11:00
+              button.toggle  Подробнее
+            .acc-content
+              p.acc-tit Место проведения:
+              p.acc-text «Руденская вспомогательная школа-интернат», г.п. Руденск.
+              p.acc-tit Целевая аудитория:
+              p.acc-text 9, 10, 12 класс (42 человека)
+              p.acc-tit  Цель занятия:
+              p.acc-text
+                | Формирование основ финансовой грамотности у детей-сирот с интеллектуальной
+                | недостаточностью.
+              p.acc-tit  Задачи:
+              p.acc-text
+                | Познакомить детей с понятиями «деньги», «купюра», «монеты», «банк», «бюджет», «расходы»,
+                | «доходы»; объяснить необходимость и возможность покупки того или иного товара; воспитать правильное
+                | отношение к деньгам.
+              p.acc-description  ОПИСАНИЕ:
+              p.acc-text
+                | Теоретическая часть — презентация, подготовленная командой «Мы рядом». Проверка полученных
+                | знаний в конце занятия — тест по пройденному материалу.
+              button.toggle
+                img(src='./images/сlose.png')
+        .event-link
+          a(href='event.html') Смотреть все
+    // новости instagram
+    section.wrapper-news
+      .heading-second
+        h2 Новости
+      .networks
+        .instagram-1
+          .foto
+            img(src='./images/anatoly-team.png' alt='picture')
+          .contents
+            .logo-instagram
+              img(src='./images/logo-instagram.png' alt='logo')
+            .text-content
+              h4
+                | mi.ryadom •
+                a(href='https://www.instagram.com/mi.ryadom') Подписаться
+              p
+                | Первый образовательный
+                br
+                |             проект "Шаг вперёд". Что
+                br
+                |             мы делаем? ✅...
+          .btn-details
+            button Подробнее
+        .instagram-2
+          .foto
+            img(src='./images/anatoly-team.png' alt='picture')
+          .contents
+            .logo-instagram
+              img(src='./images/logo-instagram.png' alt='logo')
+            .text-content
+              h4
+                | mi.ryadom •
+                a(href='https://www.instagram.com/mi.ryadom') Подписаться
+              p
+                | Первый образовательный
+                br
+                |             проект "Шаг вперёд". Что
+                br
+                |             мы делаем? ✅...
+          .btn-details
+            button Подробнее
+        .instagram-3
+          .foto
+            img(src='./images/anatoly-team.png' alt='picture')
+          .contents
+            .logo-instagram
+              img(src='./images/logo-instagram.png' alt='logo')
+            .text-content
+              h4
+                | mi.ryadom •
+                a(href='https://www.instagram.com/mi.ryadom') Подписаться
+              p
+                | Первый образовательный
+                br
+                |             проект "Шаг вперёд". Что
+                br
+                |             мы делаем? ✅...
+          .btn-details
+            button Подробнее
+      .all-news
+        a(href='#') Все новости
+    // контакты
+    section.wrapper-foother
+      .heading-second
+        h2 Контакты
+        // <img class="bg-heading" src="./images/bg-event.png">
+      .foother-content
+        .unit-1
+          p
+            | Благотворительное общественное
+            | объединение «Мы Рядом».
+            br
+            |         Все права защищены и охраняются
+            |         законом.
+            br
+            |         Политика конфиденциальности.
+        .unit-2
+          h4 Что мы делаем
+          p
+            | Мы учим воспитанников распределять бюджет,
+            br
+            |         выбирать продукты в магазине, платить за
+            br
+            |         коммунальные услуги, объясняем, что такое
+            br
+            |         кредиты, как пользоваться банковскими
+            br
+            |         картами, какие бывают документы.
+        .unit-3
+          img(src='./images/logo-1.png' alt='Logo')
+      .contacts
+        .requisites
+          h4 Наши реквизиты
+          p Благотворительное общественное объединение «Мы Рядом» УНП 194905074
+          p  Свидетельство о государственной регистрации №05/1161 от 3 мая 2017 года
+          br
+          br
+          p
+            | +375 33 640-18-11
+            br
+            |         mi.ryadom.rb@gmail.com
+            br
+            |         Минск, ул.Тимирязева 65, пом. 221 (№209)
+        .soc-icons
+          .icon(class="1")
+          a(href='#')
+            img(src='./images/fb-icon.png' alt='fb')
+          .icon(class="2")
+          a(href='#')
+            img(src='./images/inst-icon.png' alt='instagram')
+          .icon(class="3")
+          a(href='#')
+            img(src='./images/yt-icon.png' alt='youtube')
+svg(display='none')
+  defs
+    symbol#snake(viewBox='0 0 928 1115' preserveAspectRatio='none' fill='none' xmlns='http://www.w3.org/2000/svg')
+      path(d='M214.224 80.5808C214.224 80.5808 670.516 -21.375 755.503 8.07912C840.491 37.5332 943.789 103.145 922.619 197.737C901.449 292.33 341.205 272.237 229.619 286.737C118.032 301.237 -31.0372 359.237 55.2474 603.737C141.532 848.237 465.159 562.737 788.032 562.737C956.032 562.737 936.119 772.237 874.123 801.952C605.808 930.557 158.763 646.262 19.032 883.737C-11.9634 936.415 -1.09304 1018.34 55.2473 1085.24C106.618 1146.23 436.119 1085.24 436.119 1085.24' stroke='#1DA4A4' stroke-width='4' stroke-linecap='round' stroke-dasharray='4 12')
