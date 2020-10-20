@@ -1,0 +1,118 @@
+// .wave{
+//     position: relative;
+//     width: 100%;
+// }
+// .letters{
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     width: 42vw;
+//     margin-top: 727vh;
+// }
+.foother {
+
+    background-image: url(/images/foother.png);
+    background-size: 100% 95%;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    .heading-foother{
+
+
+        h1 {
+            font-family: a_FuturaRoundDemi;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 61px;
+            letter-spacing: 0.05em;
+            margin-top: -2%;
+            position: absolute;
+            z-index: 3;
+            margin-left: 40%;
+            // background-image: url(./../images/bg-heading.png);
+        }
+        .bg-heading {
+            margin-left: 39%;
+            position: relative;
+        }
+    }
+
+    .foother-content {
+        display: flex;
+        flex-direction: row;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 70px;
+        margin-bottom: 250px;
+        align-items:center;
+        justify-content: space-between;
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 23px;
+        color: #0A3737;
+
+        h4{
+            font-family: a_FuturaRoundDemi;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 25px;
+            letter-spacing: 0.03em;
+            color: #E55266;
+        }
+    }
+    .contacts {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 23px;
+        margin-left: 100px;
+        margin-right: 100px;
+        padding-bottom: 100px;
+
+        color: #FFFFFF;
+
+
+
+        .social-icons {
+            display: flex;
+            flex-direction: row;
+
+
+            img {
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px ) {
+
+    .foother {
+
+        background-image: url(/images/f-bg-min.png);
+        background-size: 100% 65%;
+        background-repeat: no-repeat;
+        background-position-y: 100%;
+
+
+        .foother-content {
+            margin-left: 80px;
+            margin-right: 80px;
+
+
+            .unit-3 {
+                display: none;
+            }
+
+        }
+
+    }
+}

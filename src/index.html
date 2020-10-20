@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>The step</title>
+</head>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<body>
+
+<section class="wr-header">
+  <header>
+    <div class="container flat-menu">
+      <div class="first-logo">
+        <img src="./images/logo-2.png" alt="Logo">
+      </div>
+      <div class="bg">
+      </div>
+      <div class="main-navigation">
+        <ul>
+          <li><a href="about.html">о нас</a></li>
+          <li><a href="#">тренинги</a></li>
+          <li><a href="#">контакты</a></li>
+        </ul>
+      </div>
+      <div class="contacts">
+        <div class="contacts__number">
+          <p>+375 (33) 640-18-11</p>
+        </div>
+        <div class="contacts__mode">
+          <p>время работы 9:00 - 19:00</p>
+        </div>
+      </div>
+      <div class="second-logo">
+        <img src="./images/logo-1.png" alt="Logo">
+      </div>
+    </div>
+  </header>
+
+</section>
+<section class="wrapper-base">
+  <div class="base">
+    <div class="base-caption">
+      <div class="caption">
+        <h1>Образовательный проект</h1>
+      </div>
+      <div class="description">
+        <p>Помогаем детям-воспитанникам <br>
+          из школ-интернатов развить навыки, <br>
+          которые дети из полноценных семей <br>
+          приобретают дома.
+        </p>
+      </div>
+      <div class="base-button">
+        <button id=#><p>Узнать больше</p></button>
+      </div>
+      <div class="social-icons">
+        <div class="social-icon">
+          <img src="./images/fb-icon.png" alt="fb">
+        </div>
+        <div class="social-icon">
+          <img src="./images/inst-icon.png" alt="instagram">
+        </div>
+        <div class="social-icon">
+          <img src="./images/yt-icon.png" alt="youtube">
+        </div>
+
+      </div>
+    </div>
+    <div class="form-pay">
+      <div class="form">
+        <div class="form-head">
+          <h2>Пожертвовать</h2>
+          <div class="card-icon">
+            <img src="images/mastercard.png" alt="mastercard">
+            <img src="images/visa.png" alt="visa">
+          </div>
+        </div>
+        <ul class="tab-group">
+          <li class="tab active"><a>Сумма</a></li>
+          <li class="tab"><a>Другая сумма</a></li>
+        </ul>
+
+        <div class="tab-content">
+          <div id="signup">
+
+            <form action="/" method="post" class="form-signup">
+              <div class="field-wrap">
+                <input type="email" required autocomplete="off" name="email" placeholder="Назначение платежа*"/>
+              </div>
+
+              <div class="top-row">
+                <div class="field-wrap">
+                  <input type="text" required autocomplete="off" placeholder="Имя*"/>
+                </div>
+
+                <div class="field-wrap">
+                  <input type="text" required autocomplete="off" placeholder="Фамилия*"/>
+                </div>
+              </div>
+
+              <div class="field-wrap">
+                <input type="email" required autocomplete="off" placeholder="E-mail*"/>
+              </div>
+
+              <div class="field-wrap">
+                <input type="password" required autocomplete="off" placeholder="Телефон*"/>
+              </div>
+
+              <button type="submit" class="button button-block">Помочь</button>
+
+            </form>
+
+          </div>
+
+          <div id="login" class="hide">
+
+            <form action="/" method="post">
+
+              <div class="field-wrap">
+                <!-- <label>
+                  E-mail<span class="req">*</span>
+                </label> -->
+                <input type="email" required autocomplete="off" placeholder="E-mail*"/>
+              </div>
+
+              <div class="field-wrap">
+                <!-- <label>
+                  Телефон<span class="req">*</span>
+                </label> -->
+                <input type="password" required autocomplete="off" placeholder="Телефон*"/>
+              </div>
+
+
+              <button type="submit" class="button button-block">Помочь</button>
+
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="pay">
+        <div class="erip">
+          <h2>Оплата через систему ЕРИП</h2>
+        </div>
+        <div class="pay-caption">
+          <img src="./images/btn.png" alt="button">
+
+          <p>Благотворительность, общественные объединения</p>
+        </div>
+        <div class="pay-caption">
+          <img src="./images/btn.png" alt="button">
+          <p>Помощь детям, взрослым</p>
+        </div>
+        <div class="pay-caption">
+          <img src="./images/btn.png" alt="button">
+          <p>Мы рядом</p>
+        </div>
+        <!-- <div class="pay-bg">
+          <svg class="elem-3" width="430" height="383" viewBox="0 0 430 383" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M80 339.966C27.2 353.737 4.66667 374.393 0 383H430V-0.000244141C302 8.6065 278 182.893 250 251.747C222 320.601 146 322.753 80 339.966Z" fill="#FF8DA9"/>
+          </svg>
+          <svg class="elem-4" width="152" height="242" viewBox="0 0 152 242" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M29.3028 180.412C-6.56026 125.618 50.3907 59.6421 83.3491 33.5032C97.1768 26.4276 122.874 19.9616 153 25.1557L153 237.778C124.063 229.511 66.7839 237.677 29.3028 180.412Z" fill="#FFF968"/>
+          </svg>
+
+        </div> -->
+      </div>
+    </div>
+  </div>
+</section>
+<section class="wr-doing">
+  <div class="heading-doing">
+    <h1>Что мы делаем?</h1>
+    <div class="bg-heading">
+      <img src="./images/heading.png">
+    </div>
+    <div class="doing-description">
+      <p>Проводим тренинги-интерактивы для детей, где:</p>
+    </div>
+  </div>
+  <div class="wr-container">
+    <div class="wrapper">
+      <svg class="snake-background">
+        <use xlink:href="#snake"></use>
+      </svg>
+      <div class="spot spot-1">
+        <div class="spot-wrapper"><img class="spot-bkg" src="./images/spot1.png" alt="step-background">
+          <div class="content"><img class="icon" src="./images/spot1-icon.png" alt="step-icon">
+            <p>Учим воспитанников распределять бюджет</p>
+          </div>
+        </div>
+      </div>
+      <div class="spot spot-2">
+        <div class="spot-wrapper"><img class="spot-bkg" src="./images/spot2.png" alt="step-background">
+          <div class="content"><img class="icon" src="./images/spot2-icon.png" alt="step-icon">
+            <p>Объясняем, как выбирать продукты в магазине</p>
+          </div>
+        </div>
+      </div>
+      <div class="spot spot-3">
+        <div class="spot-wrapper"><img class="spot-bkg" src="./images/spot3.png" alt="step-background">
+          <div class="content"><img class="icon" src="./images/spot3-icon.png" alt="step-icon">
+            <p>Учим, как платить за коммунальные услуги</p>
+          </div>
+        </div>
+      </div>
+      <div class="spot spot-4">
+        <div class="spot-wrapper"><img class="spot-bkg" src="./images/spot4.png" alt="step-background">
+          <div class="content"><img src="./images/spot4-icon.png" alt="step-icon">
+            <p>Объясняем, что такое кредиты</p>
+          </div>
+        </div>
+      </div>
+      <div class="spot spot-5">
+        <div class="spot-wrapper"><img class="spot-bkg" src="./images/spot5.png" alt="step-background">
+          <div class="content"><img class="icon" src="./images/spot5-icon.png" alt="step-icon">
+            <p>Учим пользоваться банковскими картами</p>
+          </div>
+        </div>
+      </div>
+      <div class="spot spot-6">
+        <div class="spot-wrapper"><img class="spot-bkg" src="./images/spot6.png" alt="step-background">
+          <div class="content"><img class="icon" src="./images/spot6-icon.png" alt="step-icon">
+            <p>Рассказываем, какие бывают документы</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="team">
+  <div class="heading-team">
+    <h1>Наша команда</h1>
+    <div class="bg-heading">
+      <img src="./images/heading.png">
+    </div>
+  </div>
+  <div class="info">
+    <div class="curator">
+      <div class="foto">
+        <img src="./images/ekaterina.png">
+      </div>
+      <h3>Архипова Екатерина</h3>
+      <div class="function">
+        <p>руководитель образовательных проектов</p>
+      </div>
+      <div class="about-me">
+        <p>Дети, воспитанные в семье,<br>
+          получают основные жизненные навыки, знания <br>
+          в рамках семьи. Нас в детстве <br>
+          отправляли за хлебом, <br>
+          молоком, давали деньги - мы <br>
+          приносили сдачу...</p>
+      </div>
+      <div class="team-btn">
+        <button>Подробнее</button>
+      </div>
+      <div class="fb">
+        <a><img src="./images/fb-pink.png"></a>
+      </div>
+    </div>
+
+    <div class="curator">
+      <div class="foto">
+        <img src="./images/alexandra.png">
+      </div>
+      <h3>Хвойницкая Александра</h3>
+      <div class="function">
+        <p>председатель правления</p>
+      </div>
+      <div class="about-me">
+        <p>В благотворительной <br>
+          деятельности я с 15 лет: <br>
+          случайно попала <br>
+          в организацию, которая <br>
+          организовывала <br>
+          поздравление для детей <br>
+          с инвалидностью...</p>
+      </div>
+      <div class="team-btn">
+        <button>Подробнее</button>
+      </div>
+      <div class="fb">
+        <a><img src="./images/fb-pink.png"></a>
+      </div>
+    </div>
+    <div class="curator">
+      <div class="foto">
+        <img src="./images/anatoly.png">
+      </div>
+      <h3>Гаврилов Анатолий</h3>
+      <div class="function">
+        <p>руководитель спортивных проектов</p>
+      </div>
+      <div class="about-me">
+        <p>
+          Александр Македонский <br>
+          просил, чтобы его хоронили <br>
+          таким образом, чтобы руки <br>
+          лежали не в гробу. Этим он <br>
+          показал, что смог завоевать <br>
+          весь мир, но с собой ничего <br>
+          не забирает...
+        </p>
+      </div>
+
+
+      <div class="team-btn">
+        <button>Подробнее</button>
+      </div>
+      <div class="fb">
+        <a><img src="./images/fb-pink.png"></a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- <svg class="team-background" viewBox="0 0 1280 784" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M651 253.472C875.065 -81.3359 1331 11.9435 1331 11.9435V784H-31C-31 784 426.935 588.28 651 253.472Z" fill="#FF8DA9"/>
+    </svg> -->
+
+</section>
+<section class="event">
+  <div class="container">
+    <div class="heading-event">
+      <h1>Ближайшие события</h1>
+      <div class="bg-event">
+        <img src="./images/bg-event.png">
+      </div>
+
+    </div>
+    <div class="accordion" >
+      <li class="accordion-item">
+        <div class="acc-banner">
+          <span> Банк и деньги (часть 1) </span>
+          <span class="data">12 января</span>
+          <span>11:00</span>
+          <button class="toggle"> Подробнее</button>
+        </div>
+        <div class="acc-content">
+          <p class="acc-tit">Место проведения:</p>
+          <p class="acc-text">«Руденская вспомогательная школа-интернат», г.п. Руденск.</p>
+          <p class="acc-tit">Целевая аудитория:</p>
+          <p class="acc-text">9, 10, 12 класс (42 человека) </p>
+          <p class="acc-tit"> Цель занятия:</p>
+          <p class="acc-text">Формирование основ финансовой грамотности у детей-сирот с интеллектуальной
+            недостаточностью.</p>
+          <p class="acc-tit"> Задачи:</p>
+          <p class="acc-text">Познакомить детей с понятиями «деньги», «купюра», «монеты», «банк», «бюджет», «расходы»,
+            «доходы»; объяснить необходимость и возможность покупки того или иного товара; воспитать правильное
+            отношение к деньгам.</p>
+          <p class="acc-description"> ОПИСАНИЕ:</p>
+          <p class="acc-text">Теоретическая часть — презентация, подготовленная командой «Мы рядом». Проверка полученных
+            знаний в конце занятия — тест по пройденному материалу.</p>
+          <button class="toggle"><img src="./images/сlose.png"/></button>
+        </div>
+      </li>
+      <li class="accordion-item">
+        <div class="acc-banner">
+          <span> Банк и деньги (часть 1) </span>
+          <span class="data">12 января</span>
+          <span>11:00</span>
+          <button class="toggle"> Подробнее</button>
+        </div>
+        <div class="acc-content">
+          <p class="acc-tit">Место проведения:</p>
+          <p class="acc-text">«Руденская вспомогательная школа-интернат», г.п. Руденск.</p>
+          <p class="acc-tit">Целевая аудитория:</p>
+          <p class="acc-text">9, 10, 12 класс (42 человека) </p>
+          <p class="acc-tit"> Цель занятия:</p>
+          <p class="acc-text">Формирование основ финансовой грамотности у детей-сирот с интеллектуальной
+            недостаточностью.</p>
+          <p class="acc-tit"> Задачи:</p>
+          <p class="acc-text">Познакомить детей с понятиями «деньги», «купюра», «монеты», «банк», «бюджет», «расходы»,
+            «доходы»; объяснить необходимость и возможность покупки того или иного товара; воспитать правильное
+            отношение к деньгам.</p>
+          <p class="acc-description"> ОПИСАНИЕ:</p>
+          <p class="acc-text">Теоретическая часть — презентация, подготовленная командой «Мы рядом». Проверка полученных
+            знаний в конце занятия — тест по пройденному материалу.</p>
+          <button class="toggle"><img src="images/spot6.png"></button>
+        </div>
+      </li>
+      <li class="accordion-item">
+        <div class="acc-banner">
+          <span> Банк и деньги (часть 1) </span>
+          <span class="data">12 января</span>
+          <span>11:00</span>
+          <button class="toggle"> Подробнее</button>
+        </div>
+        <div class="acc-content">
+          <p class="acc-tit">Место проведения:</p>
+          <p class="acc-text">«Руденская вспомогательная школа-интернат», г.п. Руденск.</p>
+          <p class="acc-tit">Целевая аудитория:</p>
+          <p class="acc-text">9, 10, 12 класс (42 человека) </p>
+          <p class="acc-tit"> Цель занятия:</p>
+          <p class="acc-text">Формирование основ финансовой грамотности у детей-сирот с интеллектуальной
+            недостаточностью.</p>
+          <p class="acc-tit"> Задачи:</p>
+          <p class="acc-text">Познакомить детей с понятиями «деньги», «купюра», «монеты», «банк», «бюджет», «расходы»,
+            «доходы»; объяснить необходимость и возможность покупки того или иного товара; воспитать правильное
+            отношение к деньгам.</p>
+          <p class="acc-description"> ОПИСАНИЕ:</p>
+          <p class="acc-text">Теоретическая часть — презентация, подготовленная командой «Мы рядом». Проверка полученных
+            знаний в конце занятия — тест по пройденному материалу.</p>
+          <button class="toggle"><img src="images/spot6.png"></button>
+        </div>
+      </li>
+    </div>
+
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Collapsible Group Item #1
+            </button>
+          </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Collapsible Group Item #2
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Collapsible Group Item #3
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<section class="news">
+  <div class="heading-news">
+    <h1>Новости</h1>
+    <div class="bg-news">
+      <img src="./images/heading.png">
+    </div>
+  </div>
+  <div class="networks">
+    <div class="instagram-1">
+      <div class="foto">
+        <img src="./images/instagram.png" alt="picture">
+      </div>
+      <div class="contents">
+        <div class="logo-instagram">
+          <img src="./images/logo-instagram.png" alt="logo">
+        </div>
+        <div class="text-content">
+          <h4>mi.ryadom &bull; <a>Подписаться</a></h4>
+          <p>Первый образовательный <br>
+            проект "Шаг вперёд". Что <br>
+            мы делаем? &#9989;...</p>
+        </div>
+      </div>
+      <div class="btn-details">
+        <button>Подробнее</button>
+      </div>
+    </div>
+    <div class="instagram-2">
+      <div class="foto">
+        <img src="./images/instagram.png" alt="picture">
+      </div>
+      <div class="contents">
+        <div class="logo-instagram">
+          <img src="./images/logo-instagram.png" alt="logo">
+        </div>
+        <div class="text-content">
+          <h4>mi.ryadom &bull; <a>Подписаться</a></h4>
+          <p>Первый образовательный <br>
+            проект "Шаг вперёд". Что <br>
+            мы делаем? &#9989;...</p>
+        </div>
+      </div>
+      <div class="btn-details">
+        <button>Подробнее</button>
+      </div>
+    </div>
+    <div class="instagram-3">
+      <div class="foto">
+        <img src="./images/instagram.png" alt="picture">
+      </div>
+      <div class="contents">
+        <div class="logo-instagram">
+          <img src="./images/logo-instagram.png" alt="logo">
+        </div>
+        <div class="text-content">
+          <h4>mi.ryadom &bull; <a>Подписаться</a></h4>
+          <p>Первый образовательный <br>
+            проект "Шаг вперёд". Что <br>
+            мы делаем? &#9989;...</p>
+        </div>
+      </div>
+      <div class="btn-details">
+        <button>Подробнее</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="all-news">
+    <a href="#">Все новости</a>
+  </div>
+
+  <!-- <svg class="network1" width="324" height="502" viewBox="0 0 324 502" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M-87.1113 310.138C19.0783 208.263 -124.358 55.6635 -40.1426 0.839642C-40.1426 0.839642 165.415 4.71373 261.877 68.7266C468.805 206.045 96.9376 532.047 -9.28449 498.675C-115.507 465.304 -175.924 395.341 -87.1113 310.138Z" fill="#FF8DA9"/>
+    </svg> -->
+
+</section>
+
+<section class="foother">
+
+  <div class="heading-foother">
+    <h1>Контакты </h1>
+    <img class="bg-heading" src="./images/bg-event.png">
+  </div>
+  <div class="foother-content">
+    <div class="unit-1">
+      <p>
+        Благотворительное общественное<br>
+        объединение «Мы Рядом».<br>
+        <br>
+        Все права защищены и охраняются <br>
+        законом.<br>
+        <br>
+        Политика конфиденциальности.
+      </p>
+    </div>
+    <div class="unit-2">
+      <h4>Что мы делаем</h4>
+      <p>Мы учим воспитанников распределять бюджет,<br>
+        выбирать продукты в магазине, платить за <br>
+        коммунальные услуги, объясняем, что такое <br>
+        кредиты, как пользоваться банковскими <br>
+        картами, какие бывают документы.</p>
+    </div>
+    <div class="unit-3">
+      <img src="./images/logo-1.png" alt="Logo">
+    </div>
+  </div>
+  <div class="contacts">
+    <div class="requisites">
+      <h4>Наши реквизиты</h4>
+      <p>Благотворительное общественное объединение «Мы Рядом» УНП 194905074 </p>
+      <p> Свидетельство о государственной регистрации №05/1161 от 3 мая 2017 года </p>
+      <br>
+      <br>
+      <p>+375 33 640-18-11<br>
+        mi.ryadom.rb@gmail.com <br>
+        Минск, ул.Тимирязева 65, пом. 221 (№209)</p>
+    </div>
+    <div class="social-icons">
+      <div class="social-icon">
+        <img src="./images/fb-icon.png" alt="fb">
+      </div>
+      <div class="social-icon">
+        <img src="./images/inst-icon.png" alt="instagram">
+      </div>
+      <div class="social-icon">
+        <img src="./images/yt-icon.png" alt="youtube">
+      </div>
+    </div>
+  </div>
+
+</section>
+</body>
+
+</html>
+
+<svg display="none">
+  <defs>
+    <symbol id="snake" viewBox="0 0 928 1115" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M214.224 80.5808C214.224 80.5808 670.516 -21.375 755.503 8.07912C840.491 37.5332 943.789 103.145 922.619 197.737C901.449 292.33 341.205 272.237 229.619 286.737C118.032 301.237 -31.0372 359.237 55.2474 603.737C141.532 848.237 465.159 562.737 788.032 562.737C956.032 562.737 936.119 772.237 874.123 801.952C605.808 930.557 158.763 646.262 19.032 883.737C-11.9634 936.415 -1.09304 1018.34 55.2473 1085.24C106.618 1146.23 436.119 1085.24 436.119 1085.24"
+        stroke="#1DA4A4" stroke-width="4" stroke-linecap="round" stroke-dasharray="4 12"></path>
+    </symbol>
+  </defs>
+</svg>
