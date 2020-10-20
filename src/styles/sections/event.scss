@@ -7,10 +7,11 @@
   background-size: 100% 95%;
   padding-top: 100px;
   padding-bottom: 100px;
-  @media screen and (max-width: 1024px ) {
+  @media screen and (max-width: 1024px) {
     padding-top: 0%;
   }
-}
+
+
 .accordion {
   padding-top: 100px;
   width: 100%;
@@ -19,222 +20,246 @@
   justify-content: center;
   flex-direction: column;
   padding-inline-start: 0px;
+  @media screen and (max-width: 650px) {
+    padding-top: 50px;
+  }
+}
+.accordion-item {
+  width: 100%;
+  background: #ffffff38;
+  box-shadow: 2px 4px 10px rgba(11, 60, 60, 0.3);
+  border-radius: 30px;
 
-  li {
-    width: 100%;
-    background: #ffffff38;
-    box-shadow: 2px 4px 10px rgba(11, 60, 60, 0.3);
-    border-radius: 30px;
+  max-width: 1000px;
+  margin-bottom: 50px;
+  overflow: hidden;
+  @media screen and (max-width: 1024px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 768px) {
+    width: 95%;
+  }
+}
 
-    max-width: 1000px;
-    margin-bottom: 50px;
-    overflow: hidden;
-    @media screen and (max-width: 1024px ) {
-      width: 80%;
-    }
-    @media screen and (max-width: 768px ) {
-      width: 95%;
-    }
-    .acc-banner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: relative;
-      padding: 30px;
+.acc-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 30px;
 
-      background: #FFFFFF;
-      box-shadow: 2px 4px 10px rgba(11, 60, 60, 0.3);
-      border-radius: 30px;
-      z-index: 5;
+  background: #FFFFFF;
+  box-shadow: 2px 4px 10px rgba(11, 60, 60, 0.3);
+  border-radius: 30px;
+  z-index: 5;
 
-      span {
-        font-family: Ubuntu;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 28px;
+  span {
+    font-family: Ubuntu;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
 
-        color: #000000;
-        @media all and (max-width: 550px) {
-          font-size: 14px;
+    color: #000000;
+    @media all and (max-width: 550px) {
+      font-size: 14px;
 
-        }
-      }
-      .data {
-        color: #E55266;
-      }
-      .time {
-        @media all and (max-width: 550px) {
-         display: none;
-          
-        }
-      }
-      .toggle {
-        border: 0;
-        border-radius: 50px;
-        outline: none;
-        font-size: 22px;
-        font-family: Ubuntu;
-        font-style: normal;
-        line-height: 22px;
-        background: #1DA4A4;
-        color: #FFFFFF;
-        width: 180px;
-        height: 45px;
-        transition: all .5s ease;
-        -webkit-appearance: none;
-        box-shadow: 0px 3.18095px 3.18095px rgba(170, 175, 182, 0.49);
-        border-radius: 39.7619px;
-        &:hover, &:focus {
-          background: rgb(20, 131, 131);
-        }
-        
-      }
-      @media screen and (max-width: 768px ) {
-        font-size: 17px;
-
-        .toggle {
-          font-size: 16px;
-          width: 150px;
-          height: 45px;
-          
-        }
-      }
-      @media screen and (max-width: 650px ) {
-        font-size: 17px;
-
-        .toggle {
-          font-size: 15px;
-          width: 100px;
-          height: 40px;
-          
-        }
-      }
-    }
-    .acc-content {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-
-      padding: 40px;
-      margin-block-start: 0em;
-      margin-block-end: 0em;
-
-      margin-top: calc(-106% + 113px);
-      transition: all 0.35s;
-      z-index: 0;
-      @media screen and (max-width: 1024px ) {
-        margin-top: calc(-137% + 113px);
-        transition: all 0.35s;
-        z-index: 0;
-      }
-      @media screen and (max-width: 768px ) {
-        margin-top: calc(-163% + 113px);
-        transition: all 0.35s;
-        z-index: 0;
-      }
-      @media screen and (max-width: 650px ) {
-        margin-top: calc(-330% + 113px);
-        transition: all 0.35s;
-        z-index: 0;
-      }
-
-      .acc-tit {
-        font-family: Ubuntu;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 28px;
-
-        color: #0A8B8B;
-        margin-block-start: 0em;
-        margin-block-end: 0em;
-        @media screen and (max-width: 650px ) {
-          font-size: 16px;
-        }
-      }
-      .acc-text {
-        font-family: Ubuntu;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 22.9792px;
-        line-height: 35px;
-        padding-bottom: 20px;
-        @media screen and (max-width: 650px ) {
-          font-size: 16px;
-        }
-      }
-
-      .acc-description {
-        font-family: Ubuntu;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 28px;
-        text-transform: uppercase;
-        color: #E55266;
-
-        margin-block-start: 0em;
-        margin-block-end: 0em;
-
-        @media screen and (max-width: 650px ) {
-          font-size: 16px;
-        }
-      }
-    }
-    .acc-content.show {
-      margin-top: 0;
-    }
-    .acc-content.hidden {
-      display: none;
     }
   }
-  @media screen and (max-width: 650px ) {
-    padding-top: 50px;
-   }
+
+  .data {
+    color: #E55266;
+  }
+
+  .time {
+    @media all and (max-width: 550px) {
+      display: none;
+
+    }
+  }
+
+  .toggle {
+    border: 0;
+    border-radius: 50px;
+    outline: none;
+    font-size: 22px;
+    font-family: Ubuntu;
+    font-style: normal;
+    line-height: 22px;
+    background: #1DA4A4;
+    color: #FFFFFF;
+    width: 180px;
+    height: 45px;
+    transition: all .5s ease;
+    -webkit-appearance: none;
+    box-shadow: 0px 3.18095px 3.18095px rgba(170, 175, 182, 0.49);
+    border-radius: 39.7619px;
+
+    &:hover, &:focus {
+      background: rgb(20, 131, 131);
+    }
+
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 17px;
+
+    .toggle {
+      font-size: 16px;
+      width: 150px;
+      height: 45px;
+
+    }
+  }
+  @media screen and (max-width: 650px) {
+    font-size: 17px;
+
+    .toggle {
+      font-size: 15px;
+      width: 100px;
+      height: 40px;
+
+    }
+  }
 }
+
+.acc-content-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  padding: 40px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+
+  //margin-top: calc(-106% + 113px);
+  //transition: all 0.35s;
+  z-index: 0;
+
+  .acc-content {
+    padding: 40px;
+  }
+
+  .acc-tit {
+    font-family: Ubuntu;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #0A8B8B;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    @media screen and (max-width: 650px) {
+      font-size: 16px;
+    }
+  }
+
+  .acc-text {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22.9792px;
+    line-height: 35px;
+    padding-bottom: 20px;
+    @media screen and (max-width: 650px) {
+      font-size: 16px;
+    }
+  }
+
+  .acc-description {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #E55266;
+
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+
+    @media screen and (max-width: 650px) {
+      font-size: 16px;
+    }
+  }
+
+  .toggle {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-top: calc(-137% + 113px);
+    transition: all 0.35s;
+    z-index: 0;
+  }
+  @media screen and (max-width: 768px) {
+    margin-top: calc(-163% + 113px);
+    transition: all 0.35s;
+    z-index: 0;
+  }
+  @media screen and (max-width: 650px) {
+    margin-top: calc(-330% + 113px);
+    transition: all 0.35s;
+    z-index: 0;
+  }
+}
+
+.acc-content.show {
+  margin-top: 0;
+}
+
+.acc-content.hidden {
+  display: none;
+}
+
 .event-link {
   display: flex;
-    justify-content: flex-end;
-    margin-right: 15%;
-     font-family: Ubuntu;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    
-    padding-bottom: 100px;
+  justify-content: flex-end;
+  margin-right: 15%;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
 
-    a {
-        text-decoration: underline;
-        // text-decoration-style: dotted;
-        color:#0B6B6B;
-    }
-    @media screen and (max-width: 650px ) {
-      font-size: 20px;
-     }
+  padding-bottom: 100px;
+
+  a {
+    text-decoration: underline;
+    // text-decoration-style: dotted;
+    color: #0B6B6B;
+  }
+
+  @media screen and (max-width: 650px) {
+    font-size: 20px;
+  }
 }
 
 .events {
-  background-image:  url(/images/bg-history-2.png),
+  background-image: url(/images/bg-history-2.png),
   url(/images/bg-history.png),
   url(/images/bg-wr-team-2.png);
   background-repeat: no-repeat;
   background-position: right top,
-    left top 45%,
-    left top 100%;
+  left top 45%,
+  left top 100%;
 
   background-size: 35% 70%, auto, auto;
 
   padding-bottom: 150px;
-  padding-top:100px;
+  padding-top: 100px;
 }
-@media screen and (max-width: 1024px ) {
+
+@media screen and (max-width: 1024px) {
   .wrapper-event {
     height: 100%;
   }
 }
 
-@media screen and (max-width: 768px ) {
+@media screen and (max-width: 768px) {
   .wrapper-event {
     height: 100%;
     padding-bottom: 0px;
   }
+}
 }
