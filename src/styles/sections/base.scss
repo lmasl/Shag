@@ -17,7 +17,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    // flex-wrap: wrap;
     width: 80%;
    
 
@@ -26,8 +25,6 @@
         flex-direction: column;
         padding-top: 100px;
         padding-bottom: 70px;
-        // margin-top: 70px;
-        // margin-left: 100px;
 
        .caption {
         font-family: a_FuturaRound;
@@ -58,10 +55,12 @@
         margin-top: 30px;
         display: flex;
         justify-content: flex-end;
+        align-items:center;
         button {
         border:  2px solid #1DA4A4;
         box-sizing: border-box;
         border-radius: 50px;
+        height: 50px;
         cursor:pointer;
         transition:all.5s ease;
         font-family: Ubuntu;
@@ -70,13 +69,17 @@
         font-size: 20px;
         line-height: 28px;
         text-transform: uppercase;
+        text-align: center;
         color: #0B6B6B;
         padding: 0px 20px;
+        
         
 
         &:hover, &:focus {
             border:  2px solid #EC5F72;
             color: #EC5F72;
+            border-radius: 50px;
+            outline: none;
           }
       }
     }

@@ -1,7 +1,7 @@
 $mainText: #212121;
 
 header {
-  .container {
+  .container_flat-menu {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -15,7 +15,6 @@ header {
         color: #FFFFFF;
         display: inline;
         list-style-type: none;
-        // padding-left: 40px;
         text-align: center;
         margin-left: -45px;
         padding-right: 60px;
@@ -173,7 +172,7 @@ header {
 
 @media screen and (max-width: 768px) {
   header {
-    .container {
+    .container_flat-menu{
       // margin-left: 20px;
       // margin-right: 0px;
       ul {
@@ -204,7 +203,7 @@ header {
 
 @media screen and (max-width: 650px) {
   header {
-    .container {
+    .container_flat-menu{
       // margin-left: 20px;
       // margin-right: 0px;
       .first-logo {
@@ -238,7 +237,7 @@ header {
 
 @media screen and (max-width: 450px) {
   header {
-    .container {
+    .container_flat-menu{
      #hamburger {
        visibility: visible;
      }

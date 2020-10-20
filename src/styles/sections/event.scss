@@ -4,7 +4,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: 100% 95%;
+  background-size: 100% 99%;
   padding-top: 100px;
   padding-bottom: 100px;
   @media screen and (max-width: 1024px) {
@@ -21,6 +21,7 @@
     font-size: 24px;
 
     padding-bottom: 100px;
+    padding-top: 110px;
 
     a {
       text-decoration: underline;
@@ -68,6 +69,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-top: 100px;
   @media screen and (max-width: 650px) {
     padding-top: 50px;
   }
@@ -111,7 +113,7 @@
     color: #000000;
     @media all and (max-width: 550px) {
       font-size: 14px;
-
+      width:40%;
     }
   }
 
@@ -120,9 +122,12 @@
   }
 
   .time {
-    @media all and (max-width: 550px) {
+    @media all and (max-width: 768px) {
       display: none;
     }
+  }
+  @media all and (max-width: 430px) {
+    padding: 15px;
   }
 
   .toggle {
